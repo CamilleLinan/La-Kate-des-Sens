@@ -6,8 +6,8 @@ const Header: FC = () => {
   return (
      <header className='header'>
       <div className='header__container'>
-        {/* <img src={logo} alt="Wealth Health logo" /> */}
-        <h1 className='header__title'>Pause Essentielle</h1>
+        {/* <img src={logo} alt="" /> */}
+        <h1 className='header__title'>La Kate des Sens</h1>
         <nav className='header__nav'>
           <NavLink 
             className={({ isActive }) => (
