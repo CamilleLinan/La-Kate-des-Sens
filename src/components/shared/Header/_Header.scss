@@ -1,0 +1,59 @@
+@use '@scss/variables' as *;
+
+.header {
+    padding: 0 1em 0 1em;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & img {
+            width: 45px;
+            margin: 5px 5px 5px 0;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-family: 'Cormorant Garamond', sans-serif;
+        font-size: 24px;
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 3.5em;
+    }
+
+    & .link {
+        position: relative;
+        font-family: 'Lato', sans-serif;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -3px;
+            left: 50%;
+            background-color: $pryClr;
+            transition: width 0.4s ease, left 0.4s ease;
+        }
+
+        &.active::after,
+        &.inactive:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .header__nav {
+        gap: 1.8em;
+    }
+}

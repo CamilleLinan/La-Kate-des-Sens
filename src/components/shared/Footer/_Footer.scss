@@ -1,0 +1,22 @@
+
+.footer {
+    background-color: rgb(229, 243, 218);
+    padding: 0.5rem 1em;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    };
+
+    &__title {
+        font-family: 'Cormorant Garamond', sans-serif;
+    }
+
+    &__copyright {
+        opacity: 0.5;
+        text-align: center;
+    };
+};
