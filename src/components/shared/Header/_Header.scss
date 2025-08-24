@@ -1,7 +1,7 @@
 @use '@scss/variables' as *;
 
 .header {
-    padding: 0 1em 0 1em;
+    padding: 0.5em 3em;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -10,9 +10,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         & img {
             width: 45px;
             margin: 5px 5px 5px 0;
+        }
+
+        &__icons {
+            display: flex;
+            gap: 5px;
         }
     }
 
@@ -26,6 +32,7 @@
     &__nav {
         display: flex;
         gap: 3.5em;
+        align-items: center;
     }
 
     & .link {
@@ -47,6 +54,14 @@
         &.inactive:hover::after {
             width: 100%;
             left: 0;
+        }
+
+        &.icon {
+            font-size: 20px;
+
+            &:hover {
+                color: $pryClr;
+            }
         }
     }
 }

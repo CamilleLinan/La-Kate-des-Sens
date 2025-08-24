@@ -1,6 +1,7 @@
+@use '@scss/variables' as *;
 
 .footer {
-    background-color: rgb(229, 243, 218);
+    background-color: $pryClr;
     padding: 0.5rem 1em;
     font-size: 0.9rem;
     font-family: 'Lato', sans-serif;

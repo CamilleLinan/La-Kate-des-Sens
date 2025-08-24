@@ -6,6 +6,7 @@ body {
 
 html {
     font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    color: $textClr;
 }
 
 #root {
@@ -20,6 +21,6 @@ main {
 }
 
 a {
-    color: black;
+    color: $textClr;
     text-decoration: none;
 }
