@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Layout from "@components/shared/Layout";
+import Layout from "@components/shared/Layout/Layout";
 import Home from "../pages/Home";
 
 const IndexRouter: FC = () => {

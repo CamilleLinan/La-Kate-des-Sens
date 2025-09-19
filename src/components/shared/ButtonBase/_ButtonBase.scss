@@ -1,0 +1,36 @@
+@use "sass:color";
+@use '@scss/variables' as *;
+
+.btn {
+    background: linear-gradient(
+        155deg,
+        $pryClr,
+        color.scale($pryClr, $lightness: -15%)
+    );
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    width: auto;
+    min-width: 220px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba($pryClr, 0.55);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba($pryClr, 0.55);
+        background: linear-gradient(
+            135deg,
+            $pryClr,
+            color.scale($pryClr, $lightness: -25%),
+        );   
+    }
+
+    &:active {
+        transform: translateY(0px);
+        box-shadow: 0 4px 12px rgba($pryClr, 0.2);
+    }
+}
