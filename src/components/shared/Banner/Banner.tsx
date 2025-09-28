@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_Banner.scss";
-import illu from "../../../assets/banner/illu_banner1.png";
+import illu from "@assets/banner/illu_banner1.png";
 import ButtonBase from "../ButtonBase/ButtonBase";
 
 const Banner: FC = () => {
