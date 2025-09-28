@@ -20,10 +20,11 @@
     &__text {
       font-size: 18px;
 
-      & h2 {
+      & .title {
         margin-top: 0;
         color: $tryClr;
         font-size: 34px;
+        justify-content: start;
       }
     }
 

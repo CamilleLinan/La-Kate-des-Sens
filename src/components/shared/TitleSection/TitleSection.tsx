@@ -8,7 +8,7 @@ interface TitleSectionProps {
 
 const TitleSection: FC<TitleSectionProps> = ({ titleText }) => {
   return (
-    <h2>
+    <h2 className="title">
       <Icon className="deco-icon" />
       {titleText}
       <Icon className="deco-icon" />

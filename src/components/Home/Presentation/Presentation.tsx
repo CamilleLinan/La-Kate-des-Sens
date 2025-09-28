@@ -8,11 +8,6 @@ const Presentation: FC = () => {
     <section className="instant-sacre">
       <img src={illu_pres} alt="" className="illu-pres" />
       <div className="intro">
-        {/* <h2>
-          <Icon className="deco-icon" />
-          Instant Sacré
-          <Icon className="deco-icon" />
-        </h2> */}
         <TitleSection titleText="Instant Sacré" />
         <div>
           <p>
