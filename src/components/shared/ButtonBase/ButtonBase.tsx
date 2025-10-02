@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, FC, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import "./_ButtonBase.scss";
 
 interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -17,7 +17,10 @@ const ButtonBase: FC<BtnProps> = ({
 }) => {
   return (
     <button
-      className={`btn btn-${variant} ${fullWidth ? "btn-full" : ""} ${className}`}
+      className={`btn 
+        ${variant ? `btn-${variant}` : ""} 
+        ${fullWidth ? "btn-full" : ""} 
+        ${className ? `${className}` : ""}`}
       {...props}
     >
       {children}

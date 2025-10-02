@@ -10,12 +10,13 @@
   border: none;
   border-radius: 12px;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 1em;
   color: white;
   width: auto;
   min-width: 220px;
+  height: fit-content;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba($pryClr, 0.55);
   transition: all 0.3s ease-in-out;
