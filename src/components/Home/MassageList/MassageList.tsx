@@ -35,11 +35,7 @@ const MassageList: FC = () => {
         slidesPerRow={slidesToShow}
       >
         {massages.map((massage) => (
-          <div
-            key={massage.id}
-            className="slide-container"
-            style={{ width: "initial" }}
-          >
+          <div key={massage.id} className="slide-container">
             <Card cover={<img alt={massage.title} src={massage.image} />}>
               <Meta
                 title={massage.title}
