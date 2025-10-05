@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Noto Serif Georgian", serif;
+  color: $textClr;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  flex: 1;
+}
+
+a {
+  color: $textClr;
+  text-decoration: none;
+}

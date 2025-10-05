@@ -1,0 +1,82 @@
+@use "@scss/variables" as *;
+
+.header {
+  padding: 0.5em 3em;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    & img {
+      width: 85px;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    font-family: "Alex Brush", cursive;
+    color: $sdyClr;
+    padding-top: 5px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3.5em;
+    align-items: center;
+  }
+
+  & .link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -3px;
+      left: 50%;
+      background-color: $pryClr;
+      transition: width 0.4s ease, left 0.4s ease;
+    }
+
+    &.active::after,
+    &.inactive:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    &.icon {
+      font-size: 20px;
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: $pryClr;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header__nav {
+    gap: 1.8em;
+  }
+}

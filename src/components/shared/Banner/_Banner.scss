@@ -1,0 +1,48 @@
+@use "@scss/variables" as *;
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 243, 0.8) 0%,
+    rgba(245, 240, 243, 0.8) 93%,
+    transparent 100%
+  );
+  padding: 3em 3em 3em 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 1.5;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      font-size: 18px;
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      & .title {
+        margin-top: 0;
+        color: $tryClr;
+        font-size: 34px;
+        justify-content: start;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 53%;
+      right: 6em;
+      transform: translateY(-50%);
+      width: 370px;
+      object-fit: contain;
+      opacity: 0.75;
+    }
+  }
+}

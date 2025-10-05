@@ -1,0 +1,67 @@
+@use "@scss/variables" as *;
+
+.footer {
+  padding: 0.5rem 1em;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & img {
+      width: 300px;
+      margin-top: 26px;
+    }
+
+    &-icons {
+      & .link > .anticon {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &-title {
+    color: $tryClr;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &-copyright {
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  & .anticon {
+    color: $sdyClr;
+    margin-right: 0.5em;
+    font-size: 18px;
+  }
+
+  & ul {
+    padding-left: 15px;
+    margin-bottom: 0;
+
+    & li {
+      &::marker {
+        color: $sdyClr;
+        font-size: 16px;
+      }
+
+      & p {
+        margin-left: 0.4em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  & .underline {
+    height: 2px;
+    width: 90px;
+    background-color: $tryClr;
+    margin-bottom: 20px;
+  }
+}

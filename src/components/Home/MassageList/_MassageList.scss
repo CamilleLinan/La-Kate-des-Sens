@@ -1,0 +1,86 @@
+@use "@scss/variables" as *;
+
+.massage-list {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+
+  & .btn {
+    margin: 1em auto 0 auto;
+  }
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-card {
+  font-family: "Noto Serif Georgian", serif;
+
+  & .ant-card-meta-title {
+    color: $tryClr;
+    font-size: 18px;
+  }
+
+  & .ant-card-meta-description {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  & .card-small-infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    color: $sdyClr;
+  }
+}
+
+.ant-carousel {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #efe4eb 10%,
+    #efe4eb 90%,
+    transparent 100%
+  );
+  border-radius: 5px;
+  padding: 1em 0 4em 0;
+
+  & .slick-slide img {
+    display: block;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  & .slick-list .slick-slide > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+    gap: 2em;
+
+    & .slide-container {
+      width: initial;
+    }
+  }
+
+  & .slick-prev {
+    inset-inline-start: 12px;
+    color: $tryClr;
+  }
+
+  .slick-next {
+    inset-inline-end: 12px;
+    color: $tryClr;
+  }
+
+  & .slick-dots-bottom {
+    bottom: -10px;
+  }
+
+  & .slick-dots {
+    & li button,
+    & li.slick-active::after {
+      background: $tryClr;
+    }
+  }
+}

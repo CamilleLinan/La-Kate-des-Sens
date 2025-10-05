@@ -1,0 +1,19 @@
+@use "@scss/variables" as *;
+
+.title {
+  font-size: 32px;
+  color: $tryClr;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  & .deco-icon {
+    height: 25px;
+    & g {
+      fill: $tryClr;
+    }
+  }
+}
