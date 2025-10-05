@@ -4,14 +4,15 @@
   overflow: hidden;
   background: linear-gradient(
     to bottom,
-    #f5f0f3 0%,
-    #f5f0f3 93%,
+    rgba(245, 240, 243, 0.8) 0%,
+    rgba(245, 240, 243, 0.8) 93%,
     transparent 100%
   );
   padding: 3em 3em 3em 6em;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  line-height: 1.5;
 
   &__container {
     display: flex;

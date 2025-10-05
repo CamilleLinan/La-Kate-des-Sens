@@ -1,75 +1,73 @@
-@use '@scss/variables' as *;
+@use "@scss/variables" as *;
 
 .header {
-    padding: 0.5em 3em;
-    background-color: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+  padding: 0.5em 3em;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        & img {
-            width: 45px;
-            margin: 5px 5px 5px 0;
-        }
-
-        &__icons {
-            display: flex;
-            gap: 5px;
-        }
+    & img {
+      width: 45px;
+      margin: 5px 5px 5px 0;
     }
 
-    &__title {
-        font-weight: bold;
-        font-family: 'Cormorant Garamond', sans-serif;
-        font-size: 24px;
-        margin: 0.5em 0 0.5em 0;
+    &__icons {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3.5em;
+    align-items: center;
+  }
+
+  & .link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -3px;
+      left: 50%;
+      background-color: $pryClr;
+      transition: width 0.4s ease, left 0.4s ease;
     }
 
-    &__nav {
-        display: flex;
-        gap: 3.5em;
-        align-items: center;
+    &.active::after,
+    &.inactive:hover::after {
+      width: 100%;
+      left: 0;
     }
 
-    & .link {
-        position: relative;
-        font-family: 'Lato', sans-serif;
+    &.icon {
+      font-size: 20px;
+      transition: color 0.4s ease;
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            bottom: -3px;
-            left: 50%;
-            background-color: $pryClr;
-            transition: width 0.4s ease, left 0.4s ease;
-        }
-
-        &.active::after,
-        &.inactive:hover::after {
-            width: 100%;
-            left: 0;
-        }
-
-        &.icon {
-            font-size: 20px;
-            transition: color 0.4s ease;
-
-            &:hover {
-                color: $pryClr;
-            }
-        }
+      &:hover {
+        color: $pryClr;
+      }
     }
+  }
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-    .header__nav {
-        gap: 1.8em;
-    }
+  .header__nav {
+    gap: 1.8em;
+  }
 }
