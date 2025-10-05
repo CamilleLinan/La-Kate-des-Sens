@@ -11,9 +11,15 @@
     justify-content: space-between;
     align-items: center;
 
+    &-logo {
+      display: flex;
+      align-items: center;
+    }
+
     & img {
-      width: 45px;
-      margin: 5px 5px 5px 0;
+      width: 85px;
+      object-fit: cover;
+      margin-right: 15px;
     }
 
     &__icons {
@@ -24,8 +30,11 @@
 
   &__title {
     font-weight: bold;
-    font-size: 24px;
-    margin: 0.5em 0 0.5em 0;
+    font-size: 30px;
+    margin: 0;
+    font-family: "Alex Brush", cursive;
+    color: $sdyClr;
+    padding-top: 5px;
   }
 
   &__nav {

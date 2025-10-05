@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_TitleSection.scss";
-import Icon from "@assets/deco_lotus.svg?react";
+import lotusIcon from "@assets/logo/lotus_title.png";
 
 interface TitleSectionProps {
   titleText: string;
@@ -9,9 +9,9 @@ interface TitleSectionProps {
 const TitleSection: FC<TitleSectionProps> = ({ titleText }) => {
   return (
     <h2 className="title">
-      <Icon className="deco-icon" />
+      <img src={lotusIcon} alt="" className="deco-icon" />
       {titleText}
-      <Icon className="deco-icon" />
+      <img src={lotusIcon} alt="" className="deco-icon" />
     </h2>
   );
 };

@@ -9,12 +9,13 @@ import {
   MailOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
+import logo from "@assets/logo/logo.png";
 
 const Footer: FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <h4 className="footer-logo">La Kate des Sens</h4>
+        <img src={logo} alt="" />
 
         <nav>
           <h4 className="footer-title">Me Contacter</h4>

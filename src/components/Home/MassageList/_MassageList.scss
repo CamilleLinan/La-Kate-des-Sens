@@ -3,7 +3,7 @@
 .massage-list {
   display: flex;
   flex-direction: column;
-  padding: 4em 0;
+  padding: 2em 0;
 
   & .btn {
     margin: 1em auto 0 auto;
@@ -16,7 +16,7 @@
 }
 
 .ant-card {
-  font-family: "Georgia", sans-serif;
+  font-family: "Noto Serif Georgian", serif;
 
   & .ant-card-meta-title {
     color: $tryClr;

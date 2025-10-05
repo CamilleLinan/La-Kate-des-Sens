@@ -2,13 +2,16 @@ import type { FC } from "react";
 import "./_Header.scss";
 import { NavLink } from "react-router-dom";
 import { FacebookFilled, InstagramOutlined } from "@ant-design/icons";
+import logo from "@assets/logo/logo_stars.png";
 
 const Header: FC = () => {
   return (
     <header className="header">
       <div className="header__container">
-        {/* <img src={logo} alt="" /> */}
-        <h1 className="header__title">La Kate des Sens</h1>
+        <div className="header__container-logo">
+          <img src={logo} alt="" />
+          <h1 className="header__title">La Kate des Sens</h1>
+        </div>
 
         <nav className="header__nav">
           <NavLink
@@ -28,17 +31,7 @@ const Header: FC = () => {
             title="Prestations"
             to={"/prestations"}
           >
-            Prestations
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "link active" : "link inactive"
-            }
-            title="Tarifs"
-            to={"/tarifs"}
-          >
-            Tarifs
+            Prestations & Tarifs
           </NavLink>
 
           <NavLink
