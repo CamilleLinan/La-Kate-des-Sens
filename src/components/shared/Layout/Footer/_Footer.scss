@@ -1,23 +1,50 @@
-@use '@scss/variables' as *;
+@use "@scss/variables" as *;
 
 .footer {
-    background-color: $pryClr;
-    padding: 0.5rem 1em;
-    font-size: 0.9rem;
-    font-family: 'Lato', sans-serif;
+  padding: 0.5rem 1em;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    };
-
-    &__title {
-        font-family: 'Cormorant Garamond', sans-serif;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-icons {
+      & .link > .anticon {
+        font-size: 25px;
+      }
     }
+  }
 
-    &__copyright {
-        opacity: 0.5;
-        text-align: center;
-    };
-};
+  &-title {
+    color: $tryClr;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &-copyright {
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  & .anticon {
+    color: $sdyClr;
+    margin-right: 0.5em;
+    font-size: 18px;
+  }
+
+  & ul {
+    padding-left: 15px;
+    margin-bottom: 0;
+    & li {
+      &::marker {
+        color: $sdyClr;
+        font-size: 16px;
+      }
+      & p {
+        margin-left: 0.4em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

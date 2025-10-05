@@ -8,9 +8,18 @@ const Banner: FC = () => {
     <section className="banner">
       <div className="banner__container">
         <article className="banner__container__text">
-          <h2 className="title">Votre spécialiste massages, à domicile</h2>
-
-          <p>
+          <div>
+            <h2 className="title">Votre spécialiste massages, à domicile</h2>
+            <p>
+              Je m'appelle Catherine, passionnée par le bien-être et l’art du
+              lâcher-prise. À travers mes massages, j’offre à chacun un moment
+              de douceur et de reconnexion à soi.
+            </p>
+            <p>
+              Offrez-vous une parenthèse de sérénité, simplement, chez vous.
+            </p>
+          </div>
+          {/* <p>
             Je m'appelle Catherine et je suis passionnée par le bien-être et
             l'épanouissement personnel. Ma philosophie de vie, "carpe diem",
             m'inspire à vivre chaque instant pleinement et à profiter de chaque
@@ -31,7 +40,7 @@ const Banner: FC = () => {
             personnalisée, adaptée à vos besoins. Que vous cherchiez à réduire
             le stress, à soulager des tensions ou simplement à vous accorder un
             moment de douceur, je suis là pour vous accompagner.
-          </p>
+          </p> */}
 
           <ButtonBase children="Prendre rendez-vous" />
         </article>

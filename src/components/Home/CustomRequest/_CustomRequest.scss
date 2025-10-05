@@ -7,10 +7,17 @@
   justify-content: space-around;
   background: hsla(336, 100%, 94%, 0.1);
   padding: 2rem 6em;
-  border-top: 1px solid $tryClr;
-  border-bottom: 1px solid $tryClr;
   margin: 2em 0 0 0;
   overflow: hidden;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    rgba($sdyClr, 0.2),
+    rgba($tryClr, 0.5),
+    rgba($sdyClr, 0.2)
+  );
+  border-image-slice: 1;
 
   & .illu-pres {
     position: absolute;
@@ -28,7 +35,7 @@
   &-title {
     color: $tryClr;
     margin-bottom: 1rem;
-    font-size: 22px;
+    font-size: 26px;
   }
 
   & p {
@@ -39,7 +46,7 @@
   }
 
   & .btn {
-    font-size: 18px;
+    font-size: 20px;
     padding: 18px 28px;
   }
 }
