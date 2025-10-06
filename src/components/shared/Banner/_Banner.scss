@@ -45,6 +45,9 @@
 
 /* Responsive */
 @media (max-width: 980px) {
+  .banner {
+    padding: 3em 2em;
+  }
   .banner-container {
     &-text {
       width: 100%;

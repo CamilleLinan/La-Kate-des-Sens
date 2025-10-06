@@ -20,7 +20,7 @@ const Footer: FC = () => {
 
         <div className="footer-container-nav">
           <nav>
-            <h4 className="title">Me Contacter</h4>
+            <h4 className="footer-title">Me Contacter</h4>
             <div className="underline"></div>
             <p>
               <UserOutlined /> {CONTACT_INFO.name}
@@ -55,7 +55,7 @@ const Footer: FC = () => {
           </nav>
 
           <nav>
-            <h4 className="title">Infos Pratiques</h4>
+            <h4 className="footer-title">Infos Pratiques</h4>
             <div className="underline"></div>
             <ul>
               <li>
