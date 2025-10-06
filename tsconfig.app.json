@@ -18,6 +18,7 @@
     "paths": {
       "@scss/*": ["styles/*"],
       "@data/*": ["data/*"],
+      "@utils/*": ["utils/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@redux/*": ["redux/*"]

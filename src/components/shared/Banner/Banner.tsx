@@ -6,8 +6,8 @@ import ButtonBase from "../ButtonBase/ButtonBase";
 const Banner: FC = () => {
   return (
     <section className="banner">
-      <div className="banner__container">
-        <article className="banner__container__text">
+      <div className="banner-container">
+        <article className="banner-container-text">
           <div>
             <h2 className="title">Votre spécialiste massages, à domicile</h2>
             <p>
@@ -44,7 +44,7 @@ const Banner: FC = () => {
 
           <ButtonBase children="Prendre rendez-vous" />
         </article>
-        <img src={illu} alt="banniere" className="banner__container__img" />
+        <img src={illu} alt="banniere" className="banner-container-img" />
       </div>
     </section>
   );
