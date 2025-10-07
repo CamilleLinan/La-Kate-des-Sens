@@ -10,6 +10,7 @@ import {
   EnvironmentOutlined,
 } from "@ant-design/icons";
 import logo from "@assets/logo/logo.png";
+import { CONTACT_INFO } from "@utils/constants";
 
 const Footer: FC = () => {
   return (
@@ -17,63 +18,64 @@ const Footer: FC = () => {
       <div className="footer-container">
         <img src={logo} alt="" />
 
-        <nav>
-          <h4 className="footer-title">Me Contacter</h4>
-          <div className="underline"></div>
-          <p>
-            <EnvironmentOutlined /> Massage bien-être à domicile — Granchain &
-            alentours
-          </p>
-          <p>
-            <UserOutlined /> Catherine
-          </p>
-          <p>
-            <PhoneOutlined /> 06 12 34 56 78
-          </p>
-          <p>
-            <MailOutlined /> contact@lakatedessens.fr
-          </p>
+        <div className="footer-container-nav">
+          <nav>
+            <h4 className="footer-title">Me Contacter</h4>
+            <div className="underline"></div>
+            <p>
+              <UserOutlined /> {CONTACT_INFO.name}
+            </p>
+            <p>
+              <EnvironmentOutlined /> {CONTACT_INFO.location}
+            </p>
+            <p>
+              <PhoneOutlined /> {CONTACT_INFO.phone}
+            </p>
+            <p>
+              <MailOutlined /> {CONTACT_INFO.email}
+            </p>
 
-          <div className="footer-container-icons">
-            <NavLink
-              className="link icon"
-              title="Page Instagram"
-              to={"/instagram"}
-            >
-              <InstagramOutlined />
-            </NavLink>
+            <div className="footer-container-icons">
+              <NavLink
+                className="link icon"
+                title="Page Instagram"
+                to={CONTACT_INFO.instagramUrl}
+              >
+                <InstagramOutlined />
+              </NavLink>
 
-            <NavLink
-              className="link icon"
-              title="Page Facebook"
-              to={"/facebook"}
-            >
-              <FacebookFilled />
-            </NavLink>
-          </div>
-        </nav>
+              <NavLink
+                className="link icon"
+                title="Page Facebook"
+                to={CONTACT_INFO.facebookUrl}
+              >
+                <FacebookFilled />
+              </NavLink>
+            </div>
+          </nav>
 
-        <nav>
-          <h4 className="footer-title">Infos Pratiques</h4>
-          <div className="underline"></div>
-          <ul>
-            <li>
-              <p>Qui suis-je ?</p>
-            </li>
-            <li>
-              <p>Mes prestations</p>
-            </li>
-            <li>
-              <p>CGV</p>
-            </li>
-            <li>
-              <p>Mentions légales</p>
-            </li>
-            <li>
-              <p>Politique de confidentialité</p>
-            </li>
-          </ul>
-        </nav>
+          <nav>
+            <h4 className="footer-title">Infos Pratiques</h4>
+            <div className="underline"></div>
+            <ul>
+              <li>
+                <p>Qui suis-je ?</p>
+              </li>
+              <li>
+                <p>Mes prestations</p>
+              </li>
+              <li>
+                <p>CGV</p>
+              </li>
+              <li>
+                <p>Mentions légales</p>
+              </li>
+              <li>
+                <p>Politique de confidentialité</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <p className="footer-copyright">
