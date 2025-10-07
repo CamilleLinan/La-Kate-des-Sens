@@ -83,7 +83,7 @@ const Header: FC = () => {
     {
       key: "social-network",
       label: (
-        <div className="header__container__icons">
+        <div className="header-container-icons">
           <NavLink
             className="link icon"
             to={CONTACT_INFO.instagramUrl}
@@ -125,7 +125,7 @@ const Header: FC = () => {
         </nav>
 
         {/* Burger menu */}
-        <div className="mobile-menu">
+        <div className="header-nav mobile-menu">
           <Dropdown
             overlay={mobileMenu}
             trigger={["click"]}

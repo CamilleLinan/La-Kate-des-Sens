@@ -42,12 +42,12 @@
     gap: 3.5em;
     align-items: center;
 
-    & .desktop-menu {
+    &.desktop-menu {
       display: flex;
       gap: 20px;
     }
 
-    & .mobile-menu {
+    &.mobile-menu {
       display: none;
     }
   }
@@ -121,11 +121,13 @@
   .header {
     padding: 0.5em 1em;
   }
-  .header-nav.desktop-menu {
-    display: none;
-  }
+  .header-nav {
+    &.desktop-menu {
+      display: none;
+    }
 
-  .mobile-menu {
-    display: block;
+    &.mobile-menu {
+      display: block;
+    }
   }
 }
