@@ -2,7 +2,7 @@ import type { FC } from "react";
 import Banner from "@components/shared/Banner/Banner";
 import Presentation from "@components/Home/Presentation/Presentation";
 import MassageList from "@components/Home/MassageList/MassageList";
-import CustomRequest from "@components/Home/CustomRequest/CustomRequest";
+import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
 
 const Home: FC = () => {
   return (
