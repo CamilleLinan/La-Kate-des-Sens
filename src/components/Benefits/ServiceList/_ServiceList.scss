@@ -1,7 +1,7 @@
 @use "sass:color";
 @use "@scss/variables" as *;
 
-.prestations {
+.services {
   background: linear-gradient(
     to bottom,
     rgba(245, 240, 243, 0.8) 0%,
@@ -68,10 +68,10 @@
 }
 
 @media (max-width: 980px) {
-  .prestations {
+  .services {
     padding: 2em;
 
-    & .custom-list.services li {
+    & .custom-list.service-item li {
       align-items: start;
 
       & svg {

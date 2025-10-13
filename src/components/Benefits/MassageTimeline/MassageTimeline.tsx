@@ -3,6 +3,7 @@ import "./_MassageTimeline.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import { massages } from "@data/massages";
 import { ClockCircleOutlined, CreditCardOutlined } from "@ant-design/icons";
+import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 
 const MassageTimeline: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -15,7 +16,7 @@ const MassageTimeline: FC = () => {
   }, []);
 
   return (
-    <section className="prestations__massages">
+    <section className="massages">
       <TitleSection titleText="Les Massages Bien-Être" />
       <div className="massages__grid">
         {massages.map((massage, index) => (
@@ -57,6 +58,8 @@ const MassageTimeline: FC = () => {
         ))}
         <div className="massages__line"></div>
       </div>
+
+      <ButtonBase children="Prendre rendez-vous" />
     </section>
   );
 };
