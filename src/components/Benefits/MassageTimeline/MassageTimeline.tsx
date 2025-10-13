@@ -34,6 +34,9 @@ const MassageTimeline: FC = () => {
             <div className="massages__container">
               <h3 className="massages__title">{massage.title}</h3>
               <p className="massages__desc">{massage.descriptionLong}</p>
+              {massage.bonus && (
+                <p className="massages__bonus">{massage.bonus}</p>
+              )}
             </div>
             {massage.price ? (
               <p className="massages__info">

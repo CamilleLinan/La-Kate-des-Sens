@@ -1,8 +1,10 @@
 import type { FC } from "react";
 import "./_ServiceList.scss";
-import TitleSection from "@components/shared/TitleSection/TitleSection";
 import { services } from "@data/services";
+import { oils } from "@data/oils";
 import Icon from "@assets/lotus.svg?react";
+import TitleSection from "@components/shared/TitleSection/TitleSection";
+import CustomList from "@components/shared/CustomList/CustomList";
 
 const ServiceList: FC = () => {
   return (
@@ -15,20 +17,24 @@ const ServiceList: FC = () => {
           étudié pour recréer une ambiance <b>spa</b> dans votre domicile.
         </p>
 
-        <ul className="prestations__list">
-          {services.map((service, i) => (
-            <li key={i}>
-              <Icon className="icon" />
-              {service}
-            </li>
-          ))}
-        </ul>
+        <CustomList items={services} icon={Icon} className="services" />
+
+        <article className="oils__list">
+          <h3 className="oils__list__title">Les huiles Bio utilisées</h3>
+          {/* <p className="oils__quote">« Éveillez vos sens en trouvant vos sens »</p> */}
+          <CustomList items={oils} icon={Icon} className="oils" />
+        </article>
 
         <p className="prestations__text">
           Pour les massages à domicile*, j’arrive environ <b>10 à 15 minutes</b>{" "}
           avant l’heure convenue afin de préparer sereinement la table, le
           matériel et l’ambiance. L’installation et le rangement s’effectuent en
           dehors du temps du massage.
+        </p>
+        <p className="prestations__text">
+          Votre massage se terminera par une remise au monde, en prenant le
+          temps d’apprécier le soin reçu autour d’un thé ou d’une infusion... Un
+          pur moment de détente.
         </p>
         <p className="prestations__note">
           * Les frais de déplacement sont à ajouter aux tarifs des prestations.

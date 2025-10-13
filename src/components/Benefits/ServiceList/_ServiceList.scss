@@ -23,31 +23,6 @@
     margin-bottom: 1rem;
   }
 
-  &__list {
-    margin: 1.5rem 0;
-    list-style: none;
-    padding-left: 0;
-
-    li {
-      padding-left: 3rem;
-      display: flex;
-      align-items: center;
-      line-height: 35px;
-
-      svg {
-        margin-right: 0.5em;
-        // max-width: 22px;
-        // max-height: 22px;
-        // min-width: 22px;
-        // min-height: 22px;
-
-        g {
-          fill: $tryClr;
-        }
-      }
-    }
-  }
-
   &__note {
     font-size: 0.9rem;
     color: $tryClr;
@@ -70,16 +45,38 @@
   }
 }
 
+.oils__list {
+  margin: 2em 0;
+  border: 5px dotted rgb(226, 200, 224);
+  border-radius: 10px;
+  padding: 0 1em 0.5em;
+
+  &__title {
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  & .custom-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      padding-left: 1.8em;
+    }
+  }
+}
+
 @media (max-width: 980px) {
   .prestations {
     padding: 2em;
 
-    // &__text {
-    //   text-align: center;
-    // }
-
-    &__list li {
+    & .custom-list.services li {
       align-items: start;
+
+      & svg {
+        margin-top: 7px;
+      }
     }
   }
 }

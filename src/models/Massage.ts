@@ -3,7 +3,8 @@ export interface Massage {
   title: string;
   description: string;
   descriptionLong: string;
-  duration: string | null;
-  price: number | null;
+  bonus?: string;
+  duration?: string | null;
+  price?: number | null;
   image: string;
 }

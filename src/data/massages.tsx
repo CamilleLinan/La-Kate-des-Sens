@@ -17,6 +17,8 @@ export const massages: Massage[] = [
       "Enveloppant, qui invite au lâcher-prise et à la reconnexion avec soi-même.",
     descriptionLong:
       "Une expérience profonde de relaxation, idéale pour ceux qui souhaitent se détendre complètement et se ressourcer. Sa douceur et son enveloppement favorisent un relâchement total, parfait pour échapper au stress du quotidien et retrouver une paix intérieure.",
+    bonus:
+      "Comprend un rituel à la fleur de cerisier avec un bain de pieds délassant, au début du massage.",
     duration: "1h15",
     price: 60,
     image: carpediem,
@@ -92,8 +94,6 @@ export const massages: Massage[] = [
       "Un massage sur mesure, adapté à vos envies et besoins du moment.",
     descriptionLong:
       "Parce que chaque personne est unique, ce massage est créé spécialement pour vous. En fonction de vos attentes et de vos ressentis, il combine différentes techniques pour un soin parfaitement adapté.",
-    duration: null,
-    price: null,
     image: perso,
   },
 ];
