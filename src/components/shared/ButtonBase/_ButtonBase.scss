@@ -27,8 +27,46 @@
     background: linear-gradient(135deg, $pryClr, $sdyClr);
   }
 
-  &:active {
-    transform: translateY(0px);
-    box-shadow: 0 4px 12px rgba($pryClr, 0.2);
+  &.btn-secondary {
+    position: relative;
+    background: linear-gradient(
+      155deg,
+      $pryClr,
+      color.scale($pryClr, $lightness: -18%)
+    );
+    border: none;
+    color: $sdyClr;
+    cursor: pointer;
+
+    /* gradiant border */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      border-radius: inherit;
+      background: linear-gradient(
+        155deg,
+        $pryClr,
+        color.scale($pryClr, $lightness: -18%)
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    &:hover {
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba($pryClr, 0.55);
+      background: linear-gradient(135deg, $pryClr, $sdyClr);
+
+      &::before {
+        opacity: 0;
+      }
+    }
+
+    background: #fff;
   }
 }

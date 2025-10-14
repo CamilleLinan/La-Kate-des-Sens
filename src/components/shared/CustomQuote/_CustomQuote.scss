@@ -4,17 +4,22 @@
 .quote {
   max-width: 900px;
   margin: auto;
+  margin-right: 0;
   display: flex;
   justify-content: end;
 
-  .citation {
+  & .citation {
     font-style: italic;
-    text-align: center;
     font-size: 17px;
     color: $tryClr;
     padding: 1rem;
     border-left: 4px solid $sdyClr;
     background: color.scale($pryClr, $lightness: 65%);
     width: fit-content;
+
+    & cite {
+      color: #a0a0a0;
+      font-size: 14px;
+    }
   }
 }
