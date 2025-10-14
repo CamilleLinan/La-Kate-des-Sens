@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import Banner from "@components/shared/Banner/Banner";
-import Presentation from "@components/Home/Presentation/Presentation";
+import SacredMoment from "@components/Home/SacredMoment/SacredMoment";
 import MassageList from "@components/Home/MassageList/MassageList";
 import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
 
@@ -8,7 +8,7 @@ const Home: FC = () => {
   return (
     <>
       <Banner />
-      <Presentation />
+      <SacredMoment />
       <MassageList />
       <CustomRequest />
     </>

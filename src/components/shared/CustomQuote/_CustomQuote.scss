@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.quote {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+
+  .citation {
+    font-style: italic;
+    text-align: center;
+    font-size: 17px;
+    color: $tryClr;
+    padding: 1rem;
+    border-left: 4px solid $sdyClr;
+    background: color.scale($pryClr, $lightness: 65%);
+    width: fit-content;
+  }
+}
