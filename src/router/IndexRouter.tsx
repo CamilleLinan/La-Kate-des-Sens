@@ -1,9 +1,10 @@
 import type { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ScrollToTop from "@utils/ScrollToTop";
 import Layout from "@components/shared/Layout/Layout";
 import Home from "../pages/Home";
 import Benefits from "../pages/Benefits";
-import ScrollToTop from "@utils/ScrollToTop";
+import AboutMe from "../pages/AboutMe";
 
 const IndexRouter: FC = () => {
   return (
@@ -14,6 +15,7 @@ const IndexRouter: FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Home />} />
           <Route path="/prestations" element={<Benefits />} />
+          <Route path="/qui-suis-je" element={<AboutMe />} />
         </Route>
       </Routes>
     </BrowserRouter>
