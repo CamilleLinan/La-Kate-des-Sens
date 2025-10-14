@@ -1,0 +1,82 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.services {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 243, 0.8) 0%,
+    rgba(245, 240, 243, 0.8) 93%,
+    transparent 100%
+  );
+  padding: 2em 6em;
+  margin-bottom: 5em;
+  text-align: left;
+  border-radius: 15px;
+
+  &__content {
+    max-width: 850px;
+    margin: 2rem auto;
+  }
+
+  &__text {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  &__note {
+    font-size: 0.9rem;
+    color: $tryClr;
+    font-style: italic;
+    text-align: right;
+    margin: 1em 0;
+    opacity: 0.8;
+  }
+
+  &__quote {
+    font-style: italic;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border: 3px solid $tryClr;
+    border-style: double;
+    border-radius: 5px;
+    color: #6a4c50;
+    margin-top: 3em;
+    text-align: center;
+  }
+}
+
+.oils__list {
+  margin: 2em 0;
+  border: 5px dotted rgb(226, 200, 224);
+  border-radius: 10px;
+  padding: 0 1em 0.5em;
+
+  &__title {
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  & .custom-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      padding-left: 1.8em;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .services {
+    padding: 2em;
+
+    & .custom-list.service-item li {
+      align-items: start;
+
+      & svg {
+        margin-top: 7px;
+      }
+    }
+  }
+}

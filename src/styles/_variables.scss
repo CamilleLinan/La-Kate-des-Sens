@@ -1,8 +1,8 @@
 @use "sass:color";
 
-$textClr: #404040;
-$pryClr: #e2c8e0;
+$textClr: rgb(64, 64, 64);
+$pryClr: rgb(226, 200, 224);
 $sdyClr: color.scale($pryClr, $lightness: -35%);
 $tryClr: color.scale($pryClr, $lightness: -45%);
-$qtyClr: #a67b5b;
+$qtyClr: rgb(166, 123, 91);
 $bgSectionClr: #f0f0f0;

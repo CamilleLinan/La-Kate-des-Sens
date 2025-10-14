@@ -3,7 +3,7 @@ import "./_Footer.scss";
 import { NavLink } from "react-router-dom";
 import {
   UserOutlined,
-  FacebookFilled,
+  FacebookOutlined,
   InstagramOutlined,
   PhoneOutlined,
   MailOutlined,
@@ -49,7 +49,7 @@ const Footer: FC = () => {
                 title="Page Facebook"
                 to={CONTACT_INFO.facebookUrl}
               >
-                <FacebookFilled />
+                <FacebookOutlined />
               </NavLink>
             </div>
           </nav>
@@ -59,19 +59,19 @@ const Footer: FC = () => {
             <div className="underline"></div>
             <ul>
               <li>
-                <p>Qui suis-je ?</p>
+                <NavLink to="/prestations">Mes prestations</NavLink>
               </li>
               <li>
-                <p>Mes prestations</p>
+                <NavLink to="/qui-suis-je">Qui suis-je ?</NavLink>
               </li>
               <li>
-                <p>CGV</p>
+                <NavLink to="">CGV</NavLink>
               </li>
               <li>
-                <p>Mentions légales</p>
+                <NavLink to="">Mentions légales</NavLink>
               </li>
               <li>
-                <p>Politique de confidentialité</p>
+                <NavLink to="">Politique de confidentialité</NavLink>
               </li>
             </ul>
           </nav>
