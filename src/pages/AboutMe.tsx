@@ -9,12 +9,12 @@ const AboutMe: FC = () => {
       <CustomRequest
         column={true}
         title="Envie d’en savoir plus ou de vous offrir un moment de détente ?"
-        description="Découvrez nos massages relaxants et laissez votre corps et votre esprit se ressourcer."
+        description="Découvrez mes massages relaxants et laissez votre corps et votre esprit se ressourcer."
         buttons={[
           {
             children: "Découvrir les prestations",
             variant: "secondary",
-            link: "/services",
+            link: "/prestations",
           },
           {
             children: "Prendre rendez-vous",
