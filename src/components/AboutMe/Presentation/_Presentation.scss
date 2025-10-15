@@ -1,0 +1,81 @@
+@use "@scss/variables" as *;
+
+.about {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 240, 243, 0.8) 0%,
+    rgba(245, 240, 243, 0.8) 93%,
+    transparent 100%
+  );
+  padding: 3em 6em;
+  margin-bottom: 5em;
+  text-align: left;
+  border-radius: 15px;
+
+  &__text {
+    color: #4a4a4a;
+    line-height: 1.8;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    b {
+      color: $sdyClr;
+      font-weight: 600;
+    }
+  }
+
+  &__profil {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    // margin: 2em 0 0 0;
+
+    &__images {
+      position: relative;
+      min-width: 200px;
+      max-width: 200px;
+
+      & .picture {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 190px;
+        max-width: 190px;
+        border-radius: 100%;
+        border: 1px solid $tryClr;
+        padding: 0.5em;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        object-fit: contain;
+      }
+
+      & .frame {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 230px;
+        max-width: 230px;
+        border-radius: 100%;
+        object-fit: cover;
+        filter: blur(0.2px);
+        filter: sepia(20%);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  & .quote {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    max-width: 650px;
+
+    &__title {
+      margin-top: 0;
+    }
+  }
+}

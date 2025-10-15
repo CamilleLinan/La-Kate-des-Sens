@@ -1,9 +1,10 @@
 import type { FC } from "react";
-import "./_Presentation.scss";
+import "./_SacredMoment.scss";
 import illu_pres from "@assets/illu_pres.png";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
+import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 
-const Presentation: FC = () => {
+const SacredMoment: FC = () => {
   return (
     <section className="instant-sacre">
       <img src={illu_pres} alt="" className="illu-pres" />
@@ -57,14 +58,16 @@ const Presentation: FC = () => {
         </div>
       </div>
 
-      <div className="quote">
-        <div className="citation">
-          « <b>Happycultrice :</b> Femme qui crée son miel des petits bonheurs
-          de la vie »
-        </div>
-      </div>
+      <CustomQuote
+        text={
+          <span>
+            « <b>Happycultrice :</b> Femme qui crée son miel des petits bonheurs
+            de la vie »
+          </span>
+        }
+      />
     </section>
   );
 };
 
-export default Presentation;
+export default SacredMoment;

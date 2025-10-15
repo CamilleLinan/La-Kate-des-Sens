@@ -1,27 +1,23 @@
 import type { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import "./_ButtonBase.scss";
+import { useNavigate } from "react-router-dom";
 
-interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  link?: string;
   variant?: "primary" | "secondary" | "danger";
-  fullWidth?: boolean;
   className?: string;
 }
 
-const ButtonBase: FC<BtnProps> = ({
-  children,
-  variant,
-  fullWidth,
-  className,
-  ...props
-}) => {
+const ButtonBase: FC<BtnProps> = ({ children, link, variant, className }) => {
+  const navigate = useNavigate();
+
   return (
     <button
+      onClick={() => link && navigate(link)}
       className={`btn 
         ${variant ? `btn-${variant}` : ""} 
-        ${fullWidth ? "btn-full" : ""} 
         ${className ? `${className}` : ""}`}
-      {...props}
     >
       {children}
     </button>
