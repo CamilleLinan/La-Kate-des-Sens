@@ -5,6 +5,7 @@ import Layout from "@components/shared/Layout/Layout";
 import Home from "../pages/Home";
 import Benefits from "../pages/Benefits";
 import AboutMe from "../pages/AboutMe";
+import Contact from "../pages/Contact";
 
 const IndexRouter: FC = () => {
   return (
@@ -16,6 +17,7 @@ const IndexRouter: FC = () => {
           <Route path="*" element={<Home />} />
           <Route path="/prestations" element={<Benefits />} />
           <Route path="/qui-suis-je" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>

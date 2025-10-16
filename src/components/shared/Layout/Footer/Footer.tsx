@@ -1,16 +1,8 @@
 import type { FC } from "react";
 import "./_Footer.scss";
 import { NavLink } from "react-router-dom";
-import {
-  UserOutlined,
-  FacebookOutlined,
-  InstagramOutlined,
-  PhoneOutlined,
-  MailOutlined,
-  EnvironmentOutlined,
-} from "@ant-design/icons";
 import logo from "@assets/logo/logo.png";
-import { CONTACT_INFO } from "@utils/constants";
+import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayContactInfo";
 
 const Footer: FC = () => {
   return (
@@ -22,36 +14,7 @@ const Footer: FC = () => {
           <nav>
             <h4 className="footer-title">Me Contacter</h4>
             <div className="underline"></div>
-            <p>
-              <UserOutlined /> {CONTACT_INFO.name}
-            </p>
-            <p>
-              <EnvironmentOutlined /> {CONTACT_INFO.location}
-            </p>
-            <p>
-              <PhoneOutlined /> {CONTACT_INFO.phone}
-            </p>
-            <p>
-              <MailOutlined /> {CONTACT_INFO.email}
-            </p>
-
-            <div className="footer-container-icons">
-              <NavLink
-                className="link icon"
-                title="Page Instagram"
-                to={CONTACT_INFO.instagramUrl}
-              >
-                <InstagramOutlined />
-              </NavLink>
-
-              <NavLink
-                className="link icon"
-                title="Page Facebook"
-                to={CONTACT_INFO.facebookUrl}
-              >
-                <FacebookOutlined />
-              </NavLink>
-            </div>
+            <DisplayContactInfo />
           </nav>
 
           <nav>
@@ -65,10 +28,10 @@ const Footer: FC = () => {
                 <NavLink to="/qui-suis-je">Qui suis-je ?</NavLink>
               </li>
               <li>
-                <NavLink to="">CGV</NavLink>
+                <NavLink to="/contact">Formulaire de Contact</NavLink>
               </li>
               <li>
-                <NavLink to="">Mentions légales</NavLink>
+                <NavLink to="">CGV & Mentions légales</NavLink>
               </li>
               <li>
                 <NavLink to="">Politique de confidentialité</NavLink>

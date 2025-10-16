@@ -1,0 +1,48 @@
+@use "@scss/variables" as *;
+
+.contact-form {
+  margin-top: 3em;
+
+  & .ant-form {
+    padding: 0em 10em;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 2em;
+
+    & .ant-form-item {
+      width: 100%;
+
+      &-label label {
+        // color: $sdyClr;
+        color: #444;
+      }
+    }
+
+    & .anticon {
+      color: $sdyClr;
+    }
+
+    .ant-form-item-has-error .anticon {
+      color: red;
+    }
+  }
+
+  & .two-fieldset {
+    display: flex;
+    gap: 2em;
+
+    & .ant-input-number-group-wrapper {
+      display: flex;
+    }
+  }
+
+  & .btn-form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 14px;
+    padding: 1em 2em;
+    min-width: initial;
+    margin-top: 0.5em;
+  }
+}

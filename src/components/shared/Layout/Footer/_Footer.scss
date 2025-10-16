@@ -19,10 +19,6 @@
       justify-content: space-around;
       width: 100%;
     }
-
-    &-icons .link > .anticon {
-      font-size: 25px;
-    }
   }
 
   &-title {
@@ -30,12 +26,6 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
-  }
-
-  & .anticon {
-    color: $sdyClr;
-    margin-right: 0.5em;
-    font-size: 18px;
   }
 
   & ul {
