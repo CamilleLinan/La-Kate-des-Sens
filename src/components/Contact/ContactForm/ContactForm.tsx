@@ -1,7 +1,7 @@
-import type { FC } from "react";
+import { useState, type FC } from "react";
 import "./_ContactForm.scss";
 import emailjs from "@emailjs/browser";
-import { Form, Input } from "antd";
+import { Form, Input, notification, Spin } from "antd";
 import { MailOutlined, UserOutlined, PhoneOutlined } from "@ant-design/icons";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
@@ -19,25 +19,54 @@ const emailJS_public_key = import.meta.env.VITE_EMAILJS_PUBLIC_KEY!;
 
 const ContactForm: FC = () => {
   const [form] = Form.useForm<ContactFormValues>();
+  const [api, contextHolder] = notification.useNotification();
+  const [loading, setLoading] = useState(false);
 
   const onFinish = async (values: ContactFormValues) => {
-    await emailjs.send(
-      emailJS_service,
-      emailJS_template,
-      {
-        name: values.name,
-        phone: values.phone,
-        email: values.email,
-        message: values.message,
-      },
-      { publicKey: emailJS_public_key }
-    );
-    alert("Votre message a bien été envoyé. Merci !");
-    form.resetFields();
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        emailJS_service,
+        emailJS_template,
+        {
+          name: values.name,
+          phone: values.phone,
+          email: values.email,
+          message: values.message,
+        },
+        { publicKey: emailJS_public_key }
+      );
+
+      api["success"]({
+        message: "Message envoyé !",
+        description:
+          "Votre message a bien été envoyé. Merci pour votre confiance, je vous répondrai dans les plus brefs délais.",
+        placement: "bottom",
+        className: "form-notification success",
+        duration: 5,
+      });
+
+      form.resetFields();
+    } catch (error) {
+      console.error(error);
+
+      api["error"]({
+        message: "Erreur d’envoi",
+        description:
+          "Une erreur est survenue lors de l’envoi du message. Veuillez réessayer plus tard ou me contacter directement par e-mail ou par téléphone.",
+        placement: "bottom",
+        className: "form-notification error",
+        duration: 7,
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section className="contact-form">
+      {contextHolder}
       <TitleSection titleText="Formulaire de Contact" />
       <Form
         form={form}
@@ -102,9 +131,19 @@ const ContactForm: FC = () => {
 
         <Form.Item>
           <ButtonBase
-            children="Envoyer le message"
             className="btn-form"
             type="submit"
+            disabled={loading}
+            children={
+              loading ? (
+                <span>
+                  <Spin size="small" />
+                  Envoi en cours...
+                </span>
+              ) : (
+                "Envoyer le message"
+              )
+            }
           />
         </Form.Item>
       </Form>
