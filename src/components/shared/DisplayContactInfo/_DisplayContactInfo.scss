@@ -1,0 +1,21 @@
+@use "@scss/variables" as *;
+
+.banner-contact-info,
+.contact-info {
+  & .anticon {
+    color: $sdyClr;
+    margin-right: 0.5em;
+    font-size: 18px;
+  }
+
+  & .link {
+    & > .anticon {
+      font-size: 20px;
+    }
+
+    &.icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

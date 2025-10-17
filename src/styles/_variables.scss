@@ -2,7 +2,15 @@
 
 $textClr: rgb(64, 64, 64);
 $pryClr: rgb(226, 200, 224);
-$sdyClr: color.scale($pryClr, $lightness: -35%);
+$sdyClr: color.scale($pryClr, $lightness: -25%);
 $tryClr: color.scale($pryClr, $lightness: -45%);
 $qtyClr: rgb(166, 123, 91);
 $bgSectionClr: #f0f0f0;
+$bgBannerClr: linear-gradient(
+  to bottom,
+  rgba(245, 240, 243, 0.8) 0%,
+  rgba(245, 240, 243, 0.8) 93%,
+  transparent 100%
+);
+$successClr: rgb(120, 200, 160);
+$errorClr: rgb(240, 100, 100);

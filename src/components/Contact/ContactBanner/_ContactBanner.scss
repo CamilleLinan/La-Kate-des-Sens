@@ -1,0 +1,13 @@
+.banner {
+  &__subtitle {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  &-contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2em;
+    margin: auto;
+  }
+}

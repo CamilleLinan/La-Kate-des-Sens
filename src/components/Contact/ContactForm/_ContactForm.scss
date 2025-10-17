@@ -1,0 +1,88 @@
+@use "@scss/variables" as *;
+
+.contact-form {
+  margin-top: 3em;
+
+  & .ant-form {
+    padding: 0em 10em;
+    max-width: 850px;
+    margin: auto;
+    margin-top: 2em;
+
+    & .ant-form-item {
+      width: 100%;
+
+      &-label label {
+        color: #444;
+      }
+    }
+
+    & .anticon {
+      color: $sdyClr;
+    }
+
+    .ant-form-item-has-error .anticon {
+      color: $errorClr;
+    }
+  }
+
+  & .two-fieldset {
+    display: flex;
+    gap: 2em;
+
+    & .ant-input-number-group-wrapper {
+      display: flex;
+    }
+  }
+
+  & .btn-form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 14px;
+    padding: 1em 2em;
+    min-width: initial;
+    margin-top: 0.5em;
+
+    & .ant-spin,
+    .ant-spin .ant-spin-dot-holder {
+      color: #fff;
+    }
+
+    & .ant-spin .ant-spin-dot-holder {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.ant-input-group-wrapper-outlined.ant-input-group-wrapper-status-error
+  .ant-input-group-addon {
+  color: $errorClr;
+  border-color: $errorClr;
+}
+
+.ant-input-status-error:not(.ant-input-disabled) {
+  border-color: $errorClr;
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  color: $errorClr;
+}
+
+.form-notification {
+  &.success {
+    background-color: rgba(120, 200, 160, 0.1);
+
+    & .ant-notification-notice-with-icon > .anticon {
+      color: $successClr;
+    }
+  }
+
+  &.error {
+    background-color: rgba(240, 100, 100, 0.1);
+
+    & .ant-notification-notice-with-icon > .anticon {
+      color: $errorClr;
+    }
+  }
+}
