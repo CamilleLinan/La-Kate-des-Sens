@@ -11,6 +11,7 @@ interface ContactFormValues {
   phone: number;
   email: string;
   message: string;
+  website: string;
 }
 
 const emailJS_service = import.meta.env.VITE_EMAILJS_SERVICE_ID!;
@@ -23,6 +24,10 @@ const ContactForm: FC = () => {
   const [loading, setLoading] = useState(false);
 
   const onFinish = async (values: ContactFormValues) => {
+    if (values.website) {
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -127,6 +132,10 @@ const ContactForm: FC = () => {
             placeholder="Parlez-moi de vos besoins, envies, ou questions..."
             size="large"
           />
+        </Form.Item>
+
+        <Form.Item name="website" style={{ display: "none" }}>
+          <Input tabIndex={-1} autoComplete="off" />
         </Form.Item>
 
         <Form.Item>
