@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_TitleSection.scss";
-import lotusIcon from "@assets/logo/lotus_title.png";
+import lotusIcon from "@assets/lotus_title.png";
 
 interface TitleSectionProps {
   titleText: string;

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import {
   MenuOutlined,
   InstagramOutlined,
-  FacebookOutlined,
+  FacebookFilled,
 } from "@ant-design/icons";
 import { Dropdown, Menu } from "antd";
 import logo from "@assets/logo/logo_stars.png";
@@ -98,7 +98,7 @@ const Header: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FacebookOutlined />
+            <FacebookFilled />
           </NavLink>
         </div>
       ),
