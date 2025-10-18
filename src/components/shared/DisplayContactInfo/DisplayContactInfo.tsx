@@ -33,14 +33,14 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
         <MailOutlined /> {CONTACT_INFO.email}
       </p>
 
-      {/* <div className="container-icons"> */}
       <p>
         <NavLink
           className="link icon"
           title="Page Instagram"
           to={CONTACT_INFO.instagramUrl}
         >
-          <InstagramOutlined /> instagram.com/lakatedessens
+          <InstagramOutlined />{" "}
+          <span className="link-text">instagram.com/lakatedessens</span>
         </NavLink>
       </p>
 
@@ -50,10 +50,10 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
           title="Page Facebook"
           to={CONTACT_INFO.facebookUrl}
         >
-          <FacebookFilled /> facebook.com/lakatedessens
+          <FacebookFilled />{" "}
+          <span className="link-text">facebook.com/lakatedessens</span>
         </NavLink>
       </p>
-      {/* </div> */}
     </div>
   );
 };

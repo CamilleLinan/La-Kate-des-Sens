@@ -16,6 +16,17 @@
     &.icon {
       display: flex;
       align-items: center;
+
+      & .anticon-facebook svg {
+        border-radius: 5px;
+      }
+    }
+
+    &-text {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $sdyClr;
+      }
     }
   }
 }

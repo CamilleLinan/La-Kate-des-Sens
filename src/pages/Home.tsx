@@ -2,7 +2,7 @@ import type { FC } from "react";
 import Banner from "@components/shared/Banner/Banner";
 import SacredMoment from "@components/Home/SacredMoment/SacredMoment";
 import MassageList from "@components/Home/MassageList/MassageList";
-import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
+import HomeRequest from "@components/Home/HomeRequest/HomeRequest";
 
 const Home: FC = () => {
   return (
@@ -10,7 +10,7 @@ const Home: FC = () => {
       <Banner />
       <SacredMoment />
       <MassageList />
-      <CustomRequest />
+      <HomeRequest />
     </>
   );
 };

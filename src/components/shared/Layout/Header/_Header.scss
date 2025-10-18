@@ -79,6 +79,10 @@
       &:hover {
         color: $pryClr;
       }
+
+      & .anticon-facebook svg {
+        border-radius: 5px;
+      }
     }
   }
 }
