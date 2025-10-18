@@ -57,7 +57,7 @@ const MassageList: FC = () => {
           </div>
         ))}
       </Carousel>
-      <ButtonBase children="Voir tous les massages" />
+      <ButtonBase children="Voir tous les massages" link="/prestations" />
     </section>
   );
 };

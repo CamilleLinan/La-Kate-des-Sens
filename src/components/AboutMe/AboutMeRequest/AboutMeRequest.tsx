@@ -17,7 +17,7 @@ const AboutMeRequest: FC = () => {
         {
           children: "Prendre rendez-vous",
           variant: "primary",
-          link: "/contact",
+          link: "/reserver",
         },
       ]}
     />
