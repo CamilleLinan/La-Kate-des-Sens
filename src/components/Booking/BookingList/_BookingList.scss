@@ -1,0 +1,50 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.bookings {
+  background: $bgBannerClr;
+  padding: 3em 6em;
+  margin-bottom: 5em;
+  text-align: left;
+  border-radius: 15px;
+
+  &__content {
+    max-width: 850px;
+    margin: 2rem auto;
+  }
+
+  &__intro {
+    text-align: center;
+    margin-top: 0em;
+  }
+
+  & .ant-list {
+    background-color: #fff;
+    margin-top: 3em;
+
+    & .ant-list-item .ant-list-item-meta .ant-list-item-meta-title {
+      color: $sdyClr;
+      font-size: 16px;
+    }
+
+    & .ant-list-item .ant-list-item-meta .ant-list-item-meta-description {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  & .ant-btn {
+    background-color: color.scale($pryClr, $lightness: -15%);
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
+  .ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+    color: color.scale($pryClr, $lightness: -15%);
+    border-color: color.scale($pryClr, $lightness: -15%);
+  }
+
+  & .massage-duration {
+    font-style: italic;
+  }
+}
