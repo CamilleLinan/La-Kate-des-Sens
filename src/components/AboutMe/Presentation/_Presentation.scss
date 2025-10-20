@@ -1,33 +1,20 @@
 @use "@scss/variables" as *;
 
 .about {
-  background: $bgBannerClr;
-  padding: 3em 6em;
-  margin-bottom: 5em;
-  text-align: left;
-  border-radius: 15px;
-
   &__text {
     color: #4a4a4a;
-    line-height: 1.8;
     font-size: 1rem;
     display: flex;
-    align-items: center;
     max-width: 850px;
     margin: 0 auto;
     flex-wrap: wrap;
-
-    b {
-      color: $sdyClr;
-      font-weight: 600;
-    }
   }
 
   &__profil {
     display: flex;
     align-items: center;
     gap: 2em;
-    // margin: 2em 0 0 0;
+    margin-bottom: 1em;
 
     &__images {
       position: relative;
@@ -41,25 +28,28 @@
         transform: translate(-50%, -50%);
         min-width: 190px;
         max-width: 190px;
+        min-height: 190px;
+        max-height: 190px;
         border-radius: 100%;
         border: 1px solid $tryClr;
-        padding: 0.5em;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        object-fit: contain;
+        object-fit: cover;
+        object-position: 50% 0%;
       }
 
       & .frame {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 230px;
-        max-width: 230px;
+        top: 48%;
+        left: 40%;
+        transform: translate(-48%, -48%);
+        min-width: 255px;
+        max-width: 255px;
+        // transform: rotateY(145deg);
         border-radius: 100%;
         object-fit: cover;
         filter: blur(0.2px);
-        filter: sepia(20%);
-        opacity: 0.9;
+        // filter: sepia(20%);
+        // opacity: 0.9;
       }
     }
   }
@@ -72,5 +62,19 @@
     &__title {
       margin-top: 0;
     }
+  }
+}
+
+@media (max-width: 980px) {
+  .about__profil {
+    flex-direction: column;
+    margin-top: 7.5em;
+    &__images {
+      margin-bottom: 5em;
+    }
+  }
+
+  .about__text p:last-child {
+    margin-top: 0;
   }
 }

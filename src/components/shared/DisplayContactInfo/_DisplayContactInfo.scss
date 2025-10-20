@@ -1,7 +1,7 @@
 @use "@scss/variables" as *;
 
-.banner-contact-info,
-.contact-info {
+.contact__banner__info,
+.info {
   & .anticon {
     color: $sdyClr;
     margin-right: 0.5em;

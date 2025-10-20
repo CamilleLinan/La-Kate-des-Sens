@@ -19,7 +19,7 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
   bannerMode = false,
 }) => {
   return (
-    <div className={bannerMode ? "banner-contact-info" : "contact-info"}>
+    <div className={bannerMode ? "contact__banner__info" : "info"}>
       <p>
         <UserOutlined /> {CONTACT_INFO.name}
       </p>

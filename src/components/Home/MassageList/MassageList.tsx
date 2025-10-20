@@ -24,7 +24,7 @@ const MassageList: FC = () => {
   }, []);
 
   return (
-    <section className="massage-list">
+    <section className="massage__list">
       <TitleSection titleText="Mes Massages" />
       <Carousel
         arrows
@@ -35,14 +35,14 @@ const MassageList: FC = () => {
         slidesPerRow={slidesToShow}
       >
         {massages.map((massage) => (
-          <div key={massage.id} className="slide-container">
+          <div key={massage.id} className="slide__container">
             <Card cover={<img alt={massage.title} src={massage.image} />}>
               <Meta
                 title={massage.title}
                 description={
                   <>
                     <p>{massage.description}</p>
-                    <p className="card-small-infos">
+                    <p className="card__small__infos">
                       <strong>{massage.duration}</strong>
                       <strong>
                         {massage.price

@@ -9,15 +9,15 @@ interface CustomListProps {
 
 const CustomList: FC<CustomListProps> = ({ items, icon: Icon, className }) => {
   return (
-    <ul className={`custom-list ${className || ""}`}>
+    <ul className={`custom__list ${className || ""}`}>
       {items.map((item, i) => (
-        <li key={i} className="custom-list__item">
+        <li key={i} className="custom__list__item">
           {Icon && (
-            <span className="custom-list__icon">
+            <span className="custom__list__icon">
               <Icon />
             </span>
           )}
-          <span className="custom-list__text">{item}</span>
+          <span className="custom__list__text">{item}</span>
         </li>
       ))}
     </ul>

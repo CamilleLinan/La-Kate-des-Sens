@@ -19,11 +19,11 @@ const CustomRequest: FC<CustomRequestProps> = ({
   buttons,
 }) => {
   return (
-    <section className={`custom-request ${column && "column"}`}>
-      <img src={illu_request} alt="" className="illu-pres" />
+    <section className={`custom__request ${column && "column"}`}>
+      <img src={illu_request} alt="" className="illu__pres" />
 
-      <div className="custom-request-container">
-        <h3 className="custom-request-title">{title}</h3>
+      <div className="custom__request__container">
+        <h3 className="custom__request__title">{title}</h3>
 
         <p>{description}</p>
       </div>

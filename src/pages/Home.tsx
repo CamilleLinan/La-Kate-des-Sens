@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import Banner from "@components/shared/Banner/Banner";
+import HomeBanner from "@components/Home/HomeBanner/HomeBanner";
 import SacredMoment from "@components/Home/SacredMoment/SacredMoment";
 import MassageList from "@components/Home/MassageList/MassageList";
 import HomeRequest from "@components/Home/HomeRequest/HomeRequest";
@@ -7,7 +7,7 @@ import HomeRequest from "@components/Home/HomeRequest/HomeRequest";
 const Home: FC = () => {
   return (
     <>
-      <Banner />
+      <HomeBanner />
       <SacredMoment />
       <MassageList />
       <HomeRequest />
