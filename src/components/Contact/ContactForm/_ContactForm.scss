@@ -1,13 +1,13 @@
 @use "@scss/variables" as *;
 
-.contact-form {
+.contact__form {
   margin-top: 3em;
 
   & .ant-form {
-    padding: 0em 10em;
+    padding: 0em 7em;
     max-width: 850px;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 2.5em;
 
     & .ant-form-item {
       width: 100%;
@@ -35,7 +35,7 @@
     }
   }
 
-  & .btn-form {
+  & .btn__form {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -69,7 +69,7 @@
   color: $errorClr;
 }
 
-.form-notification {
+.form__notification {
   &.success {
     background-color: rgba(120, 200, 160, 0.1);
 

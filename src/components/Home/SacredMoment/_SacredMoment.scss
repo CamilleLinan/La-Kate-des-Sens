@@ -1,13 +1,13 @@
 @use "sass:color";
 @use "@scss/variables" as *;
 
-.instant-sacre {
+.instant__sacre {
   position: relative;
   padding: 3rem 2rem;
   margin: 0 auto;
   color: #444;
 
-  & .illu-pres {
+  & .illu__pres {
     position: absolute;
     z-index: -1;
     opacity: 0.1;

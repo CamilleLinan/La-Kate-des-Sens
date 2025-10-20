@@ -49,7 +49,7 @@
     margin-bottom: 0.5em;
   }
 
-  & .custom-list {
+  & .custom__list {
     display: flex;
     flex-wrap: wrap;
 
@@ -61,7 +61,7 @@
 
 @media (max-width: 980px) {
   .services {
-    & .custom-list.service-item li {
+    & .custom__list.service__item li {
       align-items: start;
 
       & svg {

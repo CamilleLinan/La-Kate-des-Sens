@@ -9,8 +9,8 @@ const HomeBanner: FC = () => {
     <>
       <CustomBanner
         children={
-          <div className="banner-container">
-            <article className="banner-container-text">
+          <div className="banner__container">
+            <article className="banner__container__text">
               <div>
                 <h2 className="title">
                   Votre spécialiste massages, à domicile
@@ -27,7 +27,7 @@ const HomeBanner: FC = () => {
 
               <ButtonBase children="Prendre rendez-vous" link="/contact" />
             </article>
-            <img src={illu} alt="banniere" className="banner-container-img" />
+            <img src={illu} alt="banniere" className="banner__container__img" />
           </div>
         }
       />

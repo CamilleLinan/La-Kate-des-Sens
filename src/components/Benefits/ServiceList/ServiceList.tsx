@@ -21,11 +21,15 @@ const ServiceList: FC = () => {
               votre domicile.
             </p>
 
-            <CustomList items={services} icon={Icon} className="service-item" />
+            <CustomList
+              items={services}
+              icon={Icon}
+              className="service__item"
+            />
 
             <article className="oils__list">
               <h3 className="oils__list__title">Les huiles Bio utilisées</h3>
-              <CustomList items={oils} icon={Icon} className="oil-item" />
+              <CustomList items={oils} icon={Icon} className="oil__item" />
             </article>
 
             <p className="services__text">

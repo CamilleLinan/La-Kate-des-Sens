@@ -16,7 +16,7 @@ const ButtonBase: FC<BtnProps> = ({ children, link, variant, className }) => {
     <button
       onClick={() => link && navigate(link)}
       className={`btn 
-        ${variant ? `btn-${variant}` : ""} 
+        ${variant ? `btn__${variant}` : ""} 
         ${className ? `${className}` : ""}`}
     >
       {children}

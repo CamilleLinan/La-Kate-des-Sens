@@ -48,7 +48,7 @@ const ContactForm: FC = () => {
         description:
           "Votre message a bien été envoyé. Merci pour votre confiance, je vous répondrai dans les plus brefs délais.",
         placement: "bottom",
-        className: "form-notification success",
+        className: "form__notification success",
         duration: 5,
       });
 
@@ -61,7 +61,7 @@ const ContactForm: FC = () => {
         description:
           "Une erreur est survenue lors de l’envoi du message. Veuillez réessayer plus tard ou me contacter directement par e-mail ou par téléphone.",
         placement: "bottom",
-        className: "form-notification error",
+        className: "form__notification error",
         duration: 7,
       });
     } finally {
@@ -70,7 +70,7 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <section className="contact-form">
+    <section className="contact__form">
       {contextHolder}
       <TitleSection titleText="Formulaire de Contact" />
       <Form
@@ -140,7 +140,7 @@ const ContactForm: FC = () => {
 
         <Form.Item>
           <ButtonBase
-            className="btn-form"
+            className="btn__form"
             type="submit"
             disabled={loading}
             children={

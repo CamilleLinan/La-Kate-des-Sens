@@ -7,18 +7,18 @@ import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayCon
 const Footer: FC = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer__container">
         <img src={logo} alt="" />
 
-        <div className="footer-container-nav">
+        <div className="footer__container__nav">
           <nav>
-            <h4 className="footer-title">Me Contacter</h4>
+            <h4 className="footer__title">Me Contacter</h4>
             <div className="underline"></div>
             <DisplayContactInfo />
           </nav>
 
           <nav>
-            <h4 className="footer-title">Infos Pratiques</h4>
+            <h4 className="footer__title">Infos Pratiques</h4>
             <div className="underline"></div>
             <ul>
               <li>
@@ -41,7 +41,7 @@ const Footer: FC = () => {
         </div>
       </div>
 
-      <p className="footer-copyright">
+      <p className="footer__copyright">
         &copy; {new Date().getFullYear()} La Kate des Sens — Tous droits
         réservés
       </p>

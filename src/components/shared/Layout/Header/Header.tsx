@@ -83,7 +83,7 @@ const Header: FC = () => {
     {
       key: "social-network",
       label: (
-        <div className="header-container-icons">
+        <div className="header__container__icons">
           <NavLink
             className="link icon"
             to={CONTACT_INFO.instagramUrl}
@@ -109,14 +109,14 @@ const Header: FC = () => {
 
   return (
     <header className="header">
-      <div className="header-container">
-        <div className="header-container-logo">
+      <div className="header__container">
+        <div className="header__container__logo">
           <img src={logo} alt="Logo" />
-          <h1 className="header-title">La Kate des Sens</h1>
+          <h1 className="header__title">La Kate des Sens</h1>
         </div>
 
         {/* Normal Menu */}
-        <nav className="header-nav desktop-menu">
+        <nav className="header__nav desktop__menu">
           {menuItems.map((item) => (
             <div key={item.key} className="link">
               {item.label}
@@ -125,7 +125,7 @@ const Header: FC = () => {
         </nav>
 
         {/* Burger menu */}
-        <div className="header-nav mobile-menu">
+        <div className="header__nav mobile__menu">
           <Dropdown
             overlay={mobileMenu}
             trigger={["click"]}
@@ -133,7 +133,7 @@ const Header: FC = () => {
             open={visible}
             onOpenChange={(visible: boolean) => setVisible(visible)}
           >
-            <MenuOutlined className="burger-icon" />
+            <MenuOutlined className="burger__icon" />
           </Dropdown>
         </div>
       </div>
