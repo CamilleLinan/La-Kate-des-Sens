@@ -67,19 +67,19 @@ const Header: FC = () => {
         </NavLink>
       ),
     },
-    {
-      key: "reserver",
-      label: (
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "link active" : "link inactive"
-          }
-          to="/reserver"
-        >
-          Réserver
-        </NavLink>
-      ),
-    },
+    // {
+    //   key: "reserver",
+    //   label: (
+    //     <NavLink
+    //       className={({ isActive }) =>
+    //         isActive ? "link active" : "link inactive"
+    //       }
+    //       to="/reserver"
+    //     >
+    //       Réserver
+    //     </NavLink>
+    //   ),
+    // },
     {
       key: "social-network",
       label: (

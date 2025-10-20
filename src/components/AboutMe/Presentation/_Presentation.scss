@@ -1,33 +1,19 @@
 @use "@scss/variables" as *;
 
 .about {
-  background: $bgBannerClr;
-  padding: 3em 6em;
-  margin-bottom: 5em;
-  text-align: left;
-  border-radius: 15px;
-
   &__text {
     color: #4a4a4a;
-    line-height: 1.8;
     font-size: 1rem;
     display: flex;
-    align-items: center;
     max-width: 850px;
     margin: 0 auto;
     flex-wrap: wrap;
-
-    b {
-      color: $sdyClr;
-      font-weight: 600;
-    }
   }
 
   &__profil {
     display: flex;
     align-items: center;
     gap: 2em;
-    // margin: 2em 0 0 0;
 
     &__images {
       position: relative;
@@ -72,5 +58,19 @@
     &__title {
       margin-top: 0;
     }
+  }
+}
+
+@media (max-width: 980px) {
+  .about__profil {
+    flex-direction: column;
+    margin-top: 7.5em;
+    &__images {
+      margin-bottom: 5em;
+    }
+  }
+
+  .about__text p:last-child {
+    margin-top: 0;
   }
 }

@@ -1,13 +1,31 @@
-.banner {
-  &__subtitle {
-    text-align: center;
-    margin-top: 0;
+.contact__banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  & .title {
+    margin-bottom: 0.5em;
   }
 
-  &-contact-info {
+  &__subtitle {
+    margin: auto;
+    margin-top: 0;
+    max-width: 700px;
+  }
+
+  &__info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 2em;
-    margin: auto;
+    margin: 0 auto 1em auto;
+    border: 5px dotted rgb(226, 200, 224);
+    border-radius: 10px;
+    padding: 0 1em 0.5em;
+  }
+}
+
+@media (max-width: 980px) {
+  .contact__banner__info {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

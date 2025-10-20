@@ -59,7 +59,7 @@ const MassageTimeline: FC = () => {
         <div className="massages__line"></div>
       </div>
 
-      <ButtonBase children="Prendre rendez-vous" />
+      <ButtonBase children="Prendre rendez-vous" link="/contact" />
     </section>
   );
 };

@@ -1,0 +1,42 @@
+@use "@scss/variables" as *;
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    font-size: 18px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & .title {
+      margin-top: 0;
+      color: $tryClr;
+      font-size: 34px;
+      justify-content: start;
+    }
+  }
+
+  &-img {
+    margin-top: -2em;
+    margin-bottom: -4em;
+    width: 370px;
+    object-fit: contain;
+    opacity: 0.75;
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .banner-container {
+    &-text {
+      width: 100%;
+    }
+
+    &-img {
+      display: none;
+    }
+  }
+}
