@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import "./_Presentation.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
+import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 import aboutImage from "@assets/aboutme/freepik__adjust__34116.png";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
-// import frameSakura from "@assets/aboutme/illu_frame_sakura.png";
+import sakuraFrame from "@assets/aboutme/sakura-frame.png";
 
 const Presentation: FC = () => {
   return (
@@ -21,11 +21,11 @@ const Presentation: FC = () => {
                   alt="Catherine - La Kate des Sens"
                   className="picture"
                 />
-                {/* <img
-              src={frameSakura}
-              alt="Catherine - La Kate des Sens"
-              className="frame"
-            /> */}
+                <img
+                  src={sakuraFrame}
+                  alt="Catherine - La Kate des Sens"
+                  className="frame"
+                />
               </div>
               <div>
                 <p>

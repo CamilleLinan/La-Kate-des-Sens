@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     gap: 2em;
+    margin-bottom: 1em;
 
     &__images {
       position: relative;
@@ -27,25 +28,28 @@
         transform: translate(-50%, -50%);
         min-width: 190px;
         max-width: 190px;
+        min-height: 190px;
+        max-height: 190px;
         border-radius: 100%;
         border: 1px solid $tryClr;
-        padding: 0.5em;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        object-fit: contain;
+        object-fit: cover;
+        object-position: 50% 0%;
       }
 
       & .frame {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 230px;
-        max-width: 230px;
+        top: 48%;
+        left: 40%;
+        transform: translate(-48%, -48%);
+        min-width: 255px;
+        max-width: 255px;
+        // transform: rotateY(145deg);
         border-radius: 100%;
         object-fit: cover;
         filter: blur(0.2px);
-        filter: sepia(20%);
-        opacity: 0.9;
+        // filter: sepia(20%);
+        // opacity: 0.9;
       }
     }
   }
