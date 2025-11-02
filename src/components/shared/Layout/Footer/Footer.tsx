@@ -1,10 +1,22 @@
 import type { FC } from "react";
 import "./_Footer.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "@assets/logo/logo.png";
 import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayContactInfo";
 
 const Footer: FC = () => {
+  const location = useLocation();
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    to: string
+  ) => {
+    if (location.pathname === to) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -22,13 +34,28 @@ const Footer: FC = () => {
             <div className="underline"></div>
             <ul>
               <li>
-                <NavLink to="/prestations">Mes prestations</NavLink>
+                <NavLink
+                  to="/prestations"
+                  onClick={(e) => handleNavClick(e, "/prestations")}
+                >
+                  Mes prestations
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/qui-suis-je">Qui suis-je ?</NavLink>
+                <NavLink
+                  to="/qui-suis-je"
+                  onClick={(e) => handleNavClick(e, "/qui-suis-je")}
+                >
+                  Qui suis-je ?
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Formulaire de Contact</NavLink>
+                <NavLink
+                  to="/contact"
+                  onClick={(e) => handleNavClick(e, "/contact")}
+                >
+                  Formulaire de Contact
+                </NavLink>
               </li>
               <li>
                 <NavLink to="">CGV & Mentions légales</NavLink>

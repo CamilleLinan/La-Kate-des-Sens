@@ -8,75 +8,92 @@ import sakuraFrame from "@assets/aboutme/sakura-frame.png";
 
 const Presentation: FC = () => {
   return (
-    <CustomBanner
-      children={
-        <article className="about">
-          <TitleSection titleText="Qui suis-je ?" />
+    <>
+      <CustomBanner
+        children={
+          <article className="about">
+            <TitleSection titleText="Qui suis-je ?" />
 
-          <div className="about__text">
-            <div className="about__profil">
-              <div className="about__profil__images">
-                <img
-                  src={aboutImage}
-                  alt="Catherine - La Kate des Sens"
-                  className="picture"
-                />
-                <img
-                  src={sakuraFrame}
-                  alt="Catherine - La Kate des Sens"
-                  className="frame"
-                />
-              </div>
-              <div>
-                <p>
-                  Je m'appelle <b>Catherine</b> et je suis passionnée par le
-                  bien-être et l’épanouissement personnel. Ma philosophie de
-                  vie,{" "}
-                  <b>
-                    <i>« Carpe Diem »</i>
-                  </b>
-                  , m’inspire à vivre chaque instant pleinement et à profiter de
-                  chaque opportunité qui se présente à moi.
-                </p>
-                <p>
-                  C’est cette approche qui m’a conduite à me former en
-                  <b> massage bien-être</b>. Au fil de ma formation, j’ai
-                  découvert l’importance de <b>prendre soin de soi</b>, tant sur
-                  le plan physique que mental.
-                </p>
+            <div className="about__text">
+              <div className="about__profil">
+                <div className="about__profil__images">
+                  <img
+                    src={aboutImage}
+                    alt="Catherine - La Kate des Sens"
+                    className="picture"
+                  />
+                  <img
+                    src={sakuraFrame}
+                    alt="Catherine - La Kate des Sens"
+                    className="frame"
+                  />
+                </div>
+                <div>
+                  <p>
+                    Je m'appelle <b>Catherine</b> et je suis passionnée par le
+                    bien-être et l’épanouissement personnel. Ma philosophie de
+                    vie,{" "}
+                    <b>
+                      <i>« Carpe Diem »</i>
+                    </b>
+                    , m’inspire à vivre chaque instant pleinement et à profiter
+                    de chaque opportunité qui se présente à moi.
+                  </p>
+                  <p>
+                    C’est cette approche qui m’a conduite à me former en{" "}
+                    <b>massage bien-être</b>. Au fil de ma formation, j’ai
+                    découvert l’importance de <b>prendre soin de soi</b>, tant
+                    sur le plan physique que mental.
+                  </p>
+
+                  <p>
+                    Mes valeurs : <b>l’écoute</b>, <b>la douceur</b> et le{" "}
+                    <b>respect de chacun</b>. Chaque massage est un moment de{" "}
+                    <b>connexion</b>, où j’invite chacun à se (re)découvrir dans
+                    un espace paisible et bienveillant.
+                  </p>
+                </div>
               </div>
             </div>
+          </article>
+        }
+      />
+      <article className="about__content">
+        <div className="about__text">
+          <p>
+            J’aime créer un espace où chacun peut se ressourcer, se reconnecter
+            à soi-même et <b>lâcher prise</b>. Mon objectif est de vous offrir
+            une <b>expérience unique et personnalisée</b>, adaptée à vos besoins
+            — que vous cherchiez à réduire le stress, à soulager des tensions ou
+            simplement à vous accorder un moment de douceur.
+          </p>
 
-            <p>
-              J’aime créer un espace où chacun peut se ressourcer, se
-              reconnecter à soi-même et <b>lâcher prise</b>. Mon objectif est de
-              vous offrir une <b>expérience unique et personnalisée</b>, adaptée
-              à vos besoins — que vous cherchiez à réduire le stress, à soulager
-              des tensions ou simplement à vous accorder un moment de douceur.
-            </p>
-          </div>
-
-          <CustomQuote
-            text={
-              <>
-                <p className="quote__title">
-                  <b>
-                    « Take time to drink your tea » — Prenez le temps de boire
-                    votre thé
-                  </b>
-                </p>
-                <span>
-                  Le bonheur est possible quand vous êtes capable de faire les
-                  choses et d’être ce qui vous voulez être.
-                </span>
-                <br />
-                <cite>— Thich Nhat Hanh, Réponses du cœur</cite>
-              </>
-            }
-          />
-        </article>
-      }
-    />
+          <p>
+            À travers mes massages, je cherche avant tout à transmettre une{" "}
+            <b>énergie apaisante</b> et à créer un <b>moment suspendu</b>,
+            simple et sincère — une <b>parenthèse rien qu’à vous</b>.
+          </p>
+        </div>
+        <CustomQuote
+          text={
+            <>
+              <p className="quote__title">
+                <b>
+                  « Take time to drink your tea » — Prenez le temps de boire
+                  votre thé
+                </b>
+              </p>
+              <span>
+                Le bonheur est possible quand vous êtes capable de faire les
+                choses et d’être ce qui vous voulez être.
+              </span>
+              <br />
+              <cite>— Thich Nhat Hanh, Réponses du cœur</cite>
+            </>
+          }
+        />
+      </article>
+    </>
   );
 };
 

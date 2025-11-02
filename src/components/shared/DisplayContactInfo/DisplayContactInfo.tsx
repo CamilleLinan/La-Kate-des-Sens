@@ -38,6 +38,8 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
           className="link icon"
           title="Page Instagram"
           to={CONTACT_INFO.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <InstagramOutlined />{" "}
           <span className="link-text">instagram.com/lakatedessens</span>
@@ -49,6 +51,8 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
           className="link icon"
           title="Page Facebook"
           to={CONTACT_INFO.facebookUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FacebookFilled />{" "}
           <span className="link-text">facebook.com/lakatedessens</span>

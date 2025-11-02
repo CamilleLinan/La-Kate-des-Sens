@@ -8,6 +8,10 @@
   display: flex;
   justify-content: end;
 
+  &__title {
+    margin-top: 0;
+  }
+
   & .citation {
     font-style: italic;
     font-size: 17px;
