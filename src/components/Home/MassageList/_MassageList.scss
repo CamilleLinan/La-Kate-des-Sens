@@ -5,6 +5,12 @@
   flex-direction: column;
   padding: 3em 0;
 
+  &__text {
+    margin: auto;
+    margin-bottom: 2em;
+    font-style: italic;
+  }
+
   & .btn {
     margin: 1em auto 0 auto;
   }

@@ -26,6 +26,10 @@ const MassageList: FC = () => {
   return (
     <section className="massage__list">
       <TitleSection titleText="Mes Massages" />
+      <p className="massage__list__text">
+        Une bulle de douceur où chacun, et chaque membre de la famille pourra
+        trouver sa place pour se ressourcer.
+      </p>
       <Carousel
         arrows
         adaptiveHeight={true}
