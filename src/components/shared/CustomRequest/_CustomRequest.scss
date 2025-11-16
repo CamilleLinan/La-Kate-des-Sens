@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 1em;
   background: hsla(336, 100%, 94%, 0.1);
   padding: 3rem 6em;
   margin: 4em 0 0 0;
@@ -50,6 +51,7 @@
     margin-top: 0;
     font-size: 18px;
     padding: 18px 28px;
+    min-width: max-content;
   }
 
   &.column {
@@ -74,6 +76,7 @@
   .custom__request {
     padding: 2rem;
     flex-direction: column;
+    gap: 0;
 
     &__container {
       width: 100%;

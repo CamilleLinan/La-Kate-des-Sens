@@ -55,7 +55,7 @@
   }
 }
 
-/* INPUT AntD */
+/* ANTD INPUT */
 .ant-input-group-wrapper-outlined.ant-input-group-wrapper-status-error
   .ant-input-group-addon {
   color: $errorClr;
@@ -85,5 +85,12 @@
     & .ant-notification-notice-with-icon > .anticon {
       color: $errorClr;
     }
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .contact__form .ant-form {
+    padding: 0 2em;
   }
 }
