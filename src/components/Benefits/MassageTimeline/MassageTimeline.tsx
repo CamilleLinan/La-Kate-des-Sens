@@ -39,9 +39,9 @@ const MassageTimeline: FC = () => {
             <div className="massages__container">
               <h3 className="massages__title">{massage.title}</h3>
 
-              {massage.descriptionLong.map((p, i) => (
+              {massage.descriptionLong.map((desc, i) => (
                 <p key={i} className="massages__desc">
-                  {p}
+                  {desc}
                 </p>
               ))}
 
