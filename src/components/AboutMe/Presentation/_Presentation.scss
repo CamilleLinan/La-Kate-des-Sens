@@ -44,24 +44,21 @@
         transform: translate(-48%, -48%);
         min-width: 255px;
         max-width: 255px;
-        // transform: rotateY(145deg);
         border-radius: 100%;
         object-fit: cover;
         filter: blur(0.2px);
-        // filter: sepia(20%);
-        // opacity: 0.9;
       }
     }
   }
+}
+.aboutme .quote {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  max-width: 750px;
 
-  & .quote {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    max-width: 650px;
-
-    &__title {
-      margin-top: 0;
-    }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -69,6 +66,7 @@
   .about__profil {
     flex-direction: column;
     margin-top: 7.5em;
+    margin-bottom: 0;
     &__images {
       margin-bottom: 5em;
     }
