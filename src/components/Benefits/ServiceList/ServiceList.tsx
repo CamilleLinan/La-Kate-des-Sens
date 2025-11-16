@@ -28,7 +28,10 @@ const ServiceList: FC = () => {
             />
 
             <article className="oils__list">
-              <h3 className="oils__list__title">Les huiles Bio utilisées</h3>
+              <div>
+                <h3 className="oils__list__title">Les huiles Bio utilisées</h3>
+                <span>&nbsp;- Douceur olfactive</span>
+              </div>
               <CustomList items={oils} icon={Icon} className="oil__item" />
             </article>
 
