@@ -3,38 +3,73 @@
 .massage__list {
   display: flex;
   flex-direction: column;
-  padding: 3em 0;
+  padding: 3em 0 1em 0;
+
+  &__text {
+    margin: auto;
+    margin-bottom: 2em;
+    font-style: italic;
+  }
 
   & .btn {
     margin: 1em auto 0 auto;
+  }
+
+  & .quote {
+    margin-top: 2em;
   }
 }
 
 .slide__container {
   display: flex;
   justify-content: center;
+  padding: 1rem;
 }
 
-.ant-card {
+.custom-card {
   font-family: "Noto Serif Georgian", serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 
-  & .ant-card-meta-title {
-    color: $tryClr;
+  & img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 0;
     font-size: 18px;
+    color: $tryClr;
   }
 
-  & .ant-card-meta-description {
-    color: rgba(0, 0, 0, 0.5);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 
-  & .card__small__infos {
+  &__content p {
+    flex: 1;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__small__infos {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0;
     color: $sdyClr;
+    font-weight: 700;
+    font-size: 15.5px;
   }
 }
 
+/* ANTD CAROUSEL */
 .ant-carousel {
   background: linear-gradient(
     to bottom,
@@ -56,7 +91,6 @@
     display: flex;
     justify-content: space-between;
     padding: 1em 2.5em;
-    gap: 2em;
 
     & .slide__container {
       width: initial;
@@ -81,6 +115,20 @@
     & li button,
     & li.slick-active::after {
       background: $tryClr;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .massage__list {
+    &__text {
+      padding: 0 2em;
+      text-align: center;
+    }
+
+    & .quote {
+      padding: 0 2em;
     }
   }
 }

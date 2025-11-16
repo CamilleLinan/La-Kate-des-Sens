@@ -10,7 +10,7 @@ const ContactRequest: FC = () => {
       buttons={[
         {
           children: "Découvrir les prestations",
-          variant: "secondary",
+          variant: "primary",
           link: "/prestations",
         },
       ]}

@@ -1,8 +1,8 @@
 import { useEffect, useState, type FC } from "react";
 import "./_MassageTimeline.scss";
-import TitleSection from "@components/shared/TitleSection/TitleSection";
 import { massages } from "@data/massages";
 import { ClockCircleOutlined, CreditCardOutlined } from "@ant-design/icons";
+import TitleSection from "@components/shared/TitleSection/TitleSection";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 
 const MassageTimeline: FC = () => {
@@ -18,6 +18,10 @@ const MassageTimeline: FC = () => {
   return (
     <section className="massages">
       <TitleSection titleText="Les Massages Bien-Être" />
+      <p className="massages__text">
+        Une bulle de douceur où chacun, et chaque membre de la famille pourra
+        trouver sa place pour se ressourcer.
+      </p>
       <div className="massages__grid">
         {massages.map((massage, index) => (
           <div
@@ -34,11 +38,18 @@ const MassageTimeline: FC = () => {
           >
             <div className="massages__container">
               <h3 className="massages__title">{massage.title}</h3>
-              <p className="massages__desc">{massage.descriptionLong}</p>
+
+              {massage.descriptionLong.map((p, i) => (
+                <p key={i} className="massages__desc">
+                  {p}
+                </p>
+              ))}
+
               {massage.bonus && (
                 <p className="massages__bonus">{massage.bonus}</p>
               )}
             </div>
+
             {massage.price ? (
               <p className="massages__info">
                 <span>
@@ -53,11 +64,18 @@ const MassageTimeline: FC = () => {
                 Tarif et durée sur mesure
               </p>
             )}
+
             {index % 2 === 0 && <div className="massages__dot" />}
           </div>
         ))}
         <div className="massages__line"></div>
       </div>
+
+      <p className="massages__text">
+        *Les massages <b>« Carpe Diem »</b> et <b>« L’Éveil des Sens »</b>{" "}
+        englobent le corps entier, de la tête jusqu’au bout des pieds et des
+        mains.
+      </p>
 
       <ButtonBase children="Prendre rendez-vous" link="/contact" />
     </section>

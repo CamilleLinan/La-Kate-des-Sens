@@ -13,15 +13,16 @@ const HomeBanner: FC = () => {
             <article className="banner__container__text">
               <div>
                 <h2 className="title">
-                  Votre spécialiste massages, à domicile
+                  Catherine, praticienne en massage bien-être
                 </h2>
                 <p>
-                  Je m'appelle Catherine, passionnée par le bien-être et l’art
-                  du lâcher-prise. À travers mes massages, j’offre à chacun un
-                  moment de douceur et de reconnexion à soi.
+                  Passionnée par le bien-être et l’art du lâcher-prise,
+                  j’accompagne chacun à travers des massages pensés comme de
+                  véritables moments de douceur et de reconnexion à soi.
                 </p>
                 <p>
-                  Offrez-vous une parenthèse de sérénité, simplement, chez vous.
+                  Offrez-vous une parenthèse de sérénité, simplement, à
+                  Granchain ou à votre domicile.
                 </p>
               </div>
 
