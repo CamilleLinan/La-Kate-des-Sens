@@ -1,5 +1,11 @@
 export const offers = [
-  "Offre massage de Noël : une touche de magie pour les fêtes",
-  "Saint-Valentin : une preuve d'amour et de soin",
-  "Fête des Mères et des Pères : un moment pour se ressourcer",
+  <span>
+    <b>Noël :</b> une touche de magie pour les fêtes
+  </span>,
+  <span>
+    <b>Saint-Valentin :</b> une preuve d'amour et de soin
+  </span>,
+  <span>
+    <b>Fête des Mères :</b> un moment pour se ressourcer
+  </span>,
 ];

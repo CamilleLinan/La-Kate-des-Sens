@@ -12,8 +12,9 @@ const OfferParrain: FC = () => {
         </p>
         <p className="offers__text">
           Pour chaque personne venant de votre part, vous cumulez
-          <b> 10 minutes</b> de massage. En parrainant 6 personnes, vous
-          bénéficiez ainsi d’une séance d’une heure offerte.
+          <b> 10 minutes</b> de massage. <br />
+          En parrainant <b>6 personnes</b>, vous bénéficiez ainsi d’une séance
+          d’une heure offerte.
         </p>
         <p className="offers__text">
           N’hésitez pas à en parler à vos proches&nbsp;!

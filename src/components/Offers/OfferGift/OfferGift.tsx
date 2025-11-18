@@ -9,12 +9,12 @@ const OfferGift: FC = () => {
     <article className="offers__block gift">
       <h3 className="offers__title">Bons Cadeaux</h3>
       <p className="offers__text">
-        Envie de faire plaisir à un proche&nbsp;? Le bon cadeau est idéal pour
-        offrir un moment de relaxation unique, une pause bien-être dont on se
-        souvient.
+        Envie de faire plaisir à un proche&nbsp;? Le <b>bon cadeau</b> est idéal
+        pour offrir un moment de relaxation unique, une <b>pause bien-être</b>{" "}
+        dont on se souvient.
       </p>
       <p className="offers__text">
-        Les bons cadeaux sont valables <b>6 mois</b> à compter de la date
+        Les bons cadeaux sont <b>valables 6 mois</b> à compter de la date
         d’achat. Ils ne sont ni échangeables, ni remboursables.
       </p>
 
