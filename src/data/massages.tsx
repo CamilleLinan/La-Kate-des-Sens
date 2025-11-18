@@ -90,7 +90,7 @@ export const massages: Massage[] = [
     description:
       "Tendre et apaisant, pensé pour les personnes sensibles, en situation de handicap ou âgées.",
     descriptionLong: [
-      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées ou en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
+      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées, les personnes en situation de handicap ou les personnes en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
     ],
     duration: "30 mn",
     price: 30,
