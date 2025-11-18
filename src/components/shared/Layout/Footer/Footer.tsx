@@ -8,7 +8,7 @@ const Footer: FC = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <img src={logo} alt="" />
+        <img src={logo} alt="la-kate-des-sens-logo" />
 
         <div className="footer__container__nav">
           <nav>
@@ -31,10 +31,10 @@ const Footer: FC = () => {
                 <NavLink to="/contact">Formulaire de Contact</NavLink>
               </li>
               <li>
-                <NavLink to="">CGV & Mentions légales</NavLink>
+                <NavLink to="/offres">Offres & Avantages</NavLink>
               </li>
               <li>
-                <NavLink to="">Politique de confidentialité</NavLink>
+                <NavLink to="">Mentions légales</NavLink>
               </li>
             </ul>
           </nav>

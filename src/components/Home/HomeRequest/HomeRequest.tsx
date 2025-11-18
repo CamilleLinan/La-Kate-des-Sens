@@ -5,13 +5,13 @@ import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
 const HomeRequest: FC = () => {
   return (
     <CustomRequest
-      title="Une question ou besoin d’information ?"
-      description="Vous souhaitez en savoir plus sur mes prestations, mes disponibilités ou le déroulement d’un soin ? N’hésitez pas à me contacter, je vous répondrai avec plaisir."
+      title="Découvrez mes Offres & Avantages"
+      description="Profitez de réductions, de jolis bons cadeaux et d’un programme de parrainage pour vivre ou offrir un moment de bien-être. Consultez la page dédiée pour en savoir plus."
       buttons={[
         {
-          children: "Me Contacter",
+          children: "Voir les Offres",
           variant: "primary",
-          link: "/contact",
+          link: "/offres",
         },
       ]}
     />

@@ -55,6 +55,19 @@ const Header: FC = () => {
       ),
     },
     {
+      key: "offers",
+      label: (
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "link active" : "link inactive"
+          }
+          to="/offres"
+        >
+          Mes offres
+        </NavLink>
+      ),
+    },
+    {
       key: "contact",
       label: (
         <NavLink
@@ -111,7 +124,7 @@ const Header: FC = () => {
     <header className="header">
       <div className="header__container">
         <div className="header__container__logo">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="la-kate-des-sens-logo" />
           <h1 className="header__title">La Kate des Sens</h1>
         </div>
 

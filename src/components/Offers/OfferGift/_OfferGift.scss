@@ -1,0 +1,19 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.offers {
+  &__block.gift {
+    margin-top: 3em;
+  }
+
+  &__giftlist {
+    margin-top: 1em;
+    border: 5px dotted rgb(226, 200, 224);
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
+
+    & .custom__list__item {
+      padding-left: 1.5em;
+    }
+  }
+}
