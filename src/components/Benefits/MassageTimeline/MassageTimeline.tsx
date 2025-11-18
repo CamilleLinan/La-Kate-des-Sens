@@ -71,7 +71,7 @@ const MassageTimeline: FC = () => {
         <div className="massages__line"></div>
       </div>
 
-      <p className="massages__text">
+      <p className="massages__text bonus">
         *Les massages <b>« Carpe Diem »</b> et <b>« L’Éveil des Sens »</b>{" "}
         englobent le corps entier, de la tête jusqu’au bout des pieds et des
         mains.

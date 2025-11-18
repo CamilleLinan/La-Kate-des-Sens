@@ -4,7 +4,7 @@ import carpediem from "./images/1carpediem.jpg";
 import californien from "./images/2californien.jpg";
 import visage from "./images/4visage.jpg";
 import pied from "./images/5pied.jpg";
-import kansu from "./images/6kansu.jpg";
+import kansu from "./images/6kansu 2.jpg";
 import senior from "./images/7senior.jpeg";
 import dos from "./images/3dos.jpg";
 // import perso from "./images/8perso.jpg";
@@ -90,7 +90,7 @@ export const massages: Massage[] = [
     description:
       "Tendre et apaisant, pensé pour les personnes sensibles, en situation de handicap ou âgées.",
     descriptionLong: [
-      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées ou en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
+      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées, les personnes en situation de handicap ou les personnes en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
     ],
     duration: "30 mn",
     price: 30,

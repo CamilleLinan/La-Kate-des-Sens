@@ -5,11 +5,11 @@ import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
 const HomeRequest: FC = () => {
   return (
     <CustomRequest
-      title="Vous avez une demande particulière ?"
-      description="Chaque personne est unique, et chaque massage peut être adapté à vos besoins. Pour un soin entièrement personnalisé, contactez-moi et créons ensemble votre moment bien-être."
+      title="Une question ou besoin d’information ?"
+      description="Vous souhaitez en savoir plus sur mes prestations, mes disponibilités ou le déroulement d’un soin ? N’hésitez pas à me contacter, je vous répondrai avec plaisir."
       buttons={[
         {
-          children: "Demander un devis",
+          children: "Me Contacter",
           variant: "primary",
           link: "/contact",
         },
