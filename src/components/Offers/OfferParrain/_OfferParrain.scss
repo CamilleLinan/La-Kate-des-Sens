@@ -1,0 +1,27 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.offers {
+  &__block.parrain {
+    margin-top: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+    color: $sdyClr;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .offers__block.parrain {
+    margin-top: 1rem;
+    padding: 0 2.5rem;
+  }
+}
