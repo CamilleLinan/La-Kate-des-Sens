@@ -3,7 +3,6 @@ import "./_ContactBanner.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayContactInfo";
 import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
-import { NavLink } from "react-router-dom";
 
 const ContactBanner: FC = () => {
   return (
@@ -18,9 +17,7 @@ const ContactBanner: FC = () => {
             <p>
               N’hésitez pas à me contacter pour poser vos questions, discuter de
               vos envies, ou simplement en savoir plus sur{" "}
-              <NavLink to="/prestations">
-                <b>mes prestations & tarifs.</b>
-              </NavLink>
+              <b>mes prestations & tarifs.</b>
             </p>
           </p>
           <DisplayContactInfo bannerMode={true} />
