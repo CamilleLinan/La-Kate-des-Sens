@@ -24,10 +24,12 @@ const MassageList: FC = () => {
   return (
     <section className="massage__list">
       <TitleSection titleText="Mes Massages" />
+
       <p className="massage__list__text">
         Une bulle de douceur où chacun, et chaque membre de la famille pourra
         trouver sa place pour se ressourcer.
       </p>
+
       <Carousel
         arrows
         adaptiveHeight={true}
@@ -56,7 +58,9 @@ const MassageList: FC = () => {
           </div>
         ))}
       </Carousel>
+
       <ButtonBase children="Voir tous les massages" link="/prestations" />
+
       <CustomQuote text="« Le Toucher est un art sacré hérité des traditions spirituelles, transmis dans la Présence. »" />
     </section>
   );
