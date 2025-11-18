@@ -4,7 +4,7 @@ import carpediem from "./images/1carpediem.jpg";
 import californien from "./images/2californien.jpg";
 import visage from "./images/4visage.jpg";
 import pied from "./images/5pied.jpg";
-import kansu from "./images/6kansu 2.jpg";
+import kansu from "./images/6kansu.jpg";
 import senior from "./images/7senior.jpeg";
 import dos from "./images/3dos.jpg";
 // import perso from "./images/8perso.jpg";
