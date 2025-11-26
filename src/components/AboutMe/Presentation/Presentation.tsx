@@ -3,7 +3,7 @@ import "./_Presentation.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
-import aboutImage from "@assets/aboutme/freepik__adjust__34116.png";
+import profil from "@assets/aboutme/profil.jpg";
 import sakuraFrame from "@assets/aboutme/sakura-frame.png";
 
 const Presentation: FC = () => {
@@ -18,7 +18,7 @@ const Presentation: FC = () => {
               <div className="about__profil">
                 <div className="about__profil__images">
                   <img
-                    src={aboutImage}
+                    src={profil}
                     alt="Catherine - La Kate des Sens"
                     className="picture"
                   />
