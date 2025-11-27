@@ -22,10 +22,10 @@ const GiftBanner: FC = () => {
           </p>
           <p className="gift-banner_subtitle">
             En ce moment, profitez de 10€ de réduction sur les massages de 1h et
-            plus 🎁
+            plus ! 🎁
           </p>
         </div>
-        <ButtonBase children="Contactez-moi" />
+        <ButtonBase children="Contactez-moi" link="/contact" />
       </article>
       <img
         src={bannerRight}
