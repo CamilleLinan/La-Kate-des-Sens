@@ -3,10 +3,12 @@ import HomeBanner from "@components/Home/HomeBanner/HomeBanner";
 import SacredMoment from "@components/Home/SacredMoment/SacredMoment";
 import MassageList from "@components/Home/MassageList/MassageList";
 import HomeRequest from "@components/Home/HomeRequest/HomeRequest";
+import GiftBanner from "@components/shared/GiftBanner/GiftBanner";
 
 const Home: FC = () => {
   return (
     <>
+      <GiftBanner />
       <HomeBanner />
       <SacredMoment />
       <MassageList />
