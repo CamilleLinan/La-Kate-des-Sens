@@ -3,7 +3,7 @@
 .massage__list {
   display: flex;
   flex-direction: column;
-  padding: 3em 0 1em 0;
+  padding: 1.5em 0 1em 0;
 
   &__text {
     margin: auto;
@@ -123,12 +123,12 @@
 @media (max-width: 980px) {
   .massage__list {
     &__text {
-      padding: 0 2em;
+      padding: 0 1.5em;
       text-align: center;
     }
 
     & .quote {
-      padding: 0 2em;
+      padding: 0 1.5em;
     }
   }
 }

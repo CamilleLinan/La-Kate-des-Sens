@@ -60,17 +60,17 @@ const Footer: FC = () => {
               <li>
                 <NavLink to="/offres">Offres & Avantages</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="">Mentions légales</NavLink>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
       </div>
 
       <p className="footer__copyright">
-        &copy; {new Date().getFullYear()} La Kate des Sens — Tous droits
-        réservés
+        Dev by Liñan Camille with React — &copy; {new Date().getFullYear()},
+        Tous droits réservés
       </p>
     </footer>
   );

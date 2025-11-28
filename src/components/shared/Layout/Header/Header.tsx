@@ -123,10 +123,10 @@ const Header: FC = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <div className="header__container__logo">
+        <NavLink to={"/home"} className="header__container__logo">
           <img src={logo} alt="la-kate-des-sens-logo" />
           <h1 className="header__title">La Kate des Sens</h1>
-        </div>
+        </NavLink>
 
         {/* Normal Menu */}
         <nav className="header__nav desktop__menu">

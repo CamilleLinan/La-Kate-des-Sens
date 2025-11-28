@@ -4,7 +4,6 @@
 .massages {
   &__text {
     margin: auto;
-    margin-bottom: 2em;
     font-style: italic;
     text-align: center;
 
@@ -112,6 +111,7 @@
   & .btn {
     display: flex;
     margin: auto;
+    margin-top: 1.5em;
   }
 }
 
@@ -119,13 +119,13 @@
 @media (max-width: 980px) {
   .massages {
     &__text {
-      padding: 0 2em;
+      padding: 0 1.5em;
     }
 
     &__grid {
       grid-template-columns: 1fr;
-      gap: 3rem;
-      margin-top: 3rem;
+      gap: 2rem;
+      margin: 2rem 1.5em;
     }
 
     &__block:nth-child(odd) {

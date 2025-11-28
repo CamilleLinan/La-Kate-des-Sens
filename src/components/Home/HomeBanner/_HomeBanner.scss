@@ -14,8 +14,8 @@
     & .title {
       margin-top: 0;
       color: $tryClr;
-      font-size: 34px;
       justify-content: start;
+      padding: 0;
     }
 
     & .btn {
@@ -35,6 +35,10 @@
 /* Responsive */
 @media (max-width: 980px) {
   .banner__container {
+    & .title {
+      text-align: inherit;
+    }
+
     &__text {
       width: 100%;
 
