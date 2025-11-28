@@ -18,11 +18,11 @@ const GiftBanner: FC = () => {
             Noël approche, faites plaisir...
           </h3>
           <p className="gift-banner_subtitle">
-            ...Offrez un massage bien-être à domicile à vos proches !
+            ...Offrez un massage bien-être à domicile à vos proches ! 🎁
           </p>
           <p className="gift-banner_subtitle">
             En ce moment, profitez de 10€ de réduction sur les massages de 1h et
-            plus ! 🎁
+            plus !
           </p>
         </div>
         <ButtonBase children="Contactez-moi" link="/contact" />

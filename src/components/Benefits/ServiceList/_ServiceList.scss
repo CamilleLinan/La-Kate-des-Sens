@@ -8,7 +8,7 @@
   }
 
   & .title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.8rem;
   }
 
   &__text {
@@ -73,11 +73,36 @@
 /* Responsive */
 @media (max-width: 980px) {
   .services {
+    & .oils__list {
+      & div {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+      }
+      &__title {
+        margin-bottom: 0;
+      }
+    }
     & .custom__list.service__item li {
       align-items: start;
 
       & svg {
         margin-top: 7px;
+      }
+    }
+    & .oils__list .custom__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      &__item {
+        padding-left: 1em;
+      }
+
+      & li {
+        align-items: start;
+
+        & svg {
+          margin-top: 7px;
+        }
       }
     }
   }

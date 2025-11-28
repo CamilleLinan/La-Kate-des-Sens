@@ -17,7 +17,7 @@ const MassageTimeline: FC = () => {
 
   return (
     <section className="massages">
-      <TitleSection titleText="Les Massages Bien-Être" />
+      <TitleSection titleText="Mes Massages" />
       <p className="massages__text">
         Une bulle de douceur où chacun, et chaque membre de la famille pourra
         trouver sa place pour se ressourcer.
