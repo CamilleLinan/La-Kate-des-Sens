@@ -19,7 +19,6 @@
     }
 
     & .btn {
-      margin: auto;
       margin-bottom: 0.5em;
     }
   }
@@ -38,6 +37,10 @@
   .banner__container {
     &__text {
       width: 100%;
+
+      & .btn {
+        margin: auto;
+      }
     }
 
     &__img {
