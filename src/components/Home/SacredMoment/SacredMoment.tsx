@@ -7,7 +7,6 @@ import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 const SacredMoment: FC = () => {
   return (
     <section className="instant__sacre">
-      <img src={illu_pres} alt="" className="illu__pres" />
       <div className="intro">
         <TitleSection titleText="Instant Sacré" />
         <div>
@@ -23,6 +22,7 @@ const SacredMoment: FC = () => {
       </div>
 
       <div className="content">
+        <img src={illu_pres} alt="" className="illu__pres" />
         <div className="block">
           <h3>Où se déroulent les séances ?</h3>
           <p>

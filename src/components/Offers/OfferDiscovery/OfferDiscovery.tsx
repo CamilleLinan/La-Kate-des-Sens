@@ -2,6 +2,7 @@ import type { FC } from "react";
 import "./_OfferDiscovery.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import giftIllu from "@assets/gift-illu.png";
 
 const OfferDiscovery: FC = () => {
   return (
@@ -10,6 +11,11 @@ const OfferDiscovery: FC = () => {
         children={
           <div>
             <TitleSection titleText="Mes Offres" />
+            <img
+              src={giftIllu}
+              alt="gift-illustration"
+              className="offers__img"
+            />
 
             <article className="offers__block discovery">
               <h3 className="offers__title">Offre Découverte</h3>
