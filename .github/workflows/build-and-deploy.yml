@@ -1,0 +1,50 @@
+name: Build et Deploy React
+
+on:
+  push:
+    branches:
+      - Deployment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+
+      - name: Installer Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Build Vite
+        run: npm run build
+
+      - name: Sauvegarder le build
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: ./dist
+
+  deploy:
+    needs: build # Dépend du job build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Télécharger l artefact du build
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: build
+
+      - name: Déployer vers OVH
+        uses: guitdev/ovhcloud-deploy-hosting-action@v1.1.1
+        with:
+          ftp_server: ${{ secrets.OVH_FTP_SERVER }}
+          ftp_username: ${{ secrets.OVH_FTP_USERNAME }}
+          ftp_password: ${{ secrets.OVH_FTP_PASSWORD }}
+          local_dir: ./build
+          remote_dir: ./
+          delete: true

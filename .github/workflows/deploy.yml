@@ -1,28 +1,28 @@
-name: deploy vers OVH
+# name: deploy vers OVH
 
-on:
-  push:
-    branches:
-      - Deployment
+# on:
+#   push:
+#     branches:
+#       - Deployment
 
-jobs:
-  deploy:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: telecharger l artefact du build
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: build
+#     steps:
+#       - name: telecharger l artefact du build
+#         uses: actions/download-artifact@v4
+#         with:
+#           name: build
+#           path: build
 
-      - name: deployer vers OVH
-        uses: guitdev/ovhcloud-deploy-hosting-action@v1.1.1
-        with:
-          ftp_server: ${{ secrets.OVH_FTP_SERVER }}
-          ftp_username: ${{ secrets.OVH_FTP_USERNAME }}
-          ftp_password: ${{ secrets.OVH_FTP_PASSWORD }}
-          local_dir: ./dist
-          remote_dir: ./
-          delete: true
+#       - name: deployer vers OVH
+#         uses: guitdev/ovhcloud-deploy-hosting-action@v1.1.1
+#         with:
+#           ftp_server: ${{ secrets.OVH_FTP_SERVER }}
+#           ftp_username: ${{ secrets.OVH_FTP_USERNAME }}
+#           ftp_password: ${{ secrets.OVH_FTP_PASSWORD }}
+#           local_dir: ./dist
+#           remote_dir: ./
+#           delete: true

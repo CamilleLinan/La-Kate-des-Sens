@@ -1,31 +1,31 @@
-name: build react
+# name: build react
 
-on:
-  push:
-    branches:
-      - Deployment
+# on:
+#   push:
+#     branches:
+#       - Deployment
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: recuperer le code
-        uses: actions/checkout@v3
+#     steps:
+#       - name: recuperer le code
+#         uses: actions/checkout@v3
 
-      - name: installer node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+#       - name: installer node
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18
 
-      - name: installer les dependances
-        run: npm install
+#       - name: installer les dependances
+#         run: npm install
 
-      - name: build du projet
-        run: npm run build
+#       - name: build du projet
+#         run: npm run build
 
-      - name: sauvegarder le build
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: ./dist
+#       - name: sauvegarder le build
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: build
+#           path: ./dist
