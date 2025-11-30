@@ -1,10 +1,9 @@
 name: deploy vers OVH
 
 on:
-  workflow_run:
-    workflows: ["build react"]
-    types:
-      - completed
+  push:
+    branches:
+      - Deployment
 
 jobs:
   deploy:
