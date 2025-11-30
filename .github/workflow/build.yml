@@ -3,7 +3,7 @@ name: build react
 on:
   push:
     branches:
-      - deployment
+      - Deployment
 
 jobs:
   build:
