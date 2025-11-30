@@ -30,21 +30,15 @@ jobs:
           path: ./dist
 
   deploy:
-    needs: build # Dépend du job build
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Télécharger l artefact du build
-        uses: actions/download-artifact@v4
+      - uses: actions/checkout@v3
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          name: build
-          path: build
-
-      - name: Déployer vers OVH
-        uses: guitdev/ovhcloud-deploy-hosting-action@main
-        with:
-          ftp_server: ${{ secrets.OVH_FTP_SERVER }}
-          ftp_username: ${{ secrets.OVH_FTP_USERNAME }}
-          ftp_password: ${{ secrets.OVH_FTP_PASSWORD }}
-          local_dir: ./build
-          remote_dir: ./
-          delete: true
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist
+          server-dir: ./
