@@ -10,17 +10,17 @@ const GiftBanner: FC = () => {
       <img
         src={bannerLeft}
         alt="gift-banner"
-        className="gift-banner_img left"
+        className="gift-banner__img left"
       />
-      <article className="gift-banner_content">
+      <article className="gift-banner__content">
         <div>
-          <h3 className="gift-banner_title">
+          <h3 className="gift-banner__title">
             Noël approche, faites plaisir...
           </h3>
-          <p className="gift-banner_subtitle">
+          <p className="gift-banner__subtitle">
             ...Offrez un massage bien-être à domicile à vos proches ! 🎁
           </p>
-          <p className="gift-banner_subtitle">
+          <p className="gift-banner__subtitle">
             En ce moment, profitez de 10€ de réduction sur les massages de 1h et
             plus !
           </p>
@@ -30,7 +30,7 @@ const GiftBanner: FC = () => {
       <img
         src={bannerRight}
         alt="gift-banner"
-        className="gift-banner_img right"
+        className="gift-banner__img right"
       />
     </section>
   );
