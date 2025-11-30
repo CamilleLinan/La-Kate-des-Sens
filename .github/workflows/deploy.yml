@@ -1,4 +1,4 @@
-name: deploy vers ovh
+name: deploy vers OVH
 
 on:
   workflow_run:
@@ -18,7 +18,7 @@ jobs:
           name: build
           path: build
 
-      - name: deployer vers ovh
+      - name: deployer vers OVH
         uses: guitdev/ovhcloud-deploy-hosting-action@v1.1.1
         with:
           ftp_server: ${{ secrets.OVH_FTP_SERVER }}
