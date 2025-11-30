@@ -40,7 +40,7 @@ jobs:
           path: build
 
       - name: Déployer vers OVH
-        uses: guitdev/ovhcloud-deploy-hosting-action@v1.1.1
+        uses: guitdev/ovhcloud-deploy-hosting-action@main
         with:
           ftp_server: ${{ secrets.OVH_FTP_SERVER }}
           ftp_username: ${{ secrets.OVH_FTP_USERNAME }}
