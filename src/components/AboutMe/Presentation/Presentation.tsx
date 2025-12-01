@@ -10,7 +10,7 @@ const Presentation: FC = () => {
   return (
     <div className="aboutme">
       <CustomBanner
-        children={
+        bannerContent={
           <article className="about">
             <TitleSection titleText="Qui suis-je ?" />
 

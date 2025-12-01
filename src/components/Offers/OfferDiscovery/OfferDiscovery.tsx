@@ -8,7 +8,7 @@ const OfferDiscovery: FC = () => {
   return (
     <section className="offers">
       <CustomBanner
-        children={
+        bannerContent={
           <div>
             <TitleSection titleText="Mes Offres" />
             <img

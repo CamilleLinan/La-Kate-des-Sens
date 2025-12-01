@@ -3,13 +3,13 @@ import "./_ButtonBase.scss";
 import { useNavigate } from "react-router-dom";
 
 export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
+  btnContent: ReactNode;
   link?: string;
   variant?: "primary" | "secondary" | "danger";
   className?: string;
 }
 
-const ButtonBase: FC<BtnProps> = ({ children, link, variant, className }) => {
+const ButtonBase: FC<BtnProps> = ({ btnContent, link, variant, className }) => {
   const navigate = useNavigate();
 
   return (
@@ -19,7 +19,7 @@ const ButtonBase: FC<BtnProps> = ({ children, link, variant, className }) => {
         ${variant ? `btn__${variant}` : ""} 
         ${className ? `${className}` : ""}`}
     >
-      {children}
+      {btnContent}
     </button>
   );
 };

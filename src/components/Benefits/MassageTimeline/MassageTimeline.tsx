@@ -77,7 +77,7 @@ const MassageTimeline: FC = () => {
         mains.
       </p>
 
-      <ButtonBase children="Prendre rendez-vous" link="/contact" />
+      <ButtonBase btnContent="Prendre rendez-vous" link="/contact" />
     </section>
   );
 };

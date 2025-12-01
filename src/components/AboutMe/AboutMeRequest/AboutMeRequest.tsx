@@ -10,12 +10,12 @@ const AboutMeRequest: FC = () => {
       description="Découvrez mes massages relaxants et laissez votre corps et votre esprit se ressourcer."
       buttons={[
         {
-          children: "Découvrir les prestations",
+          btnContent: "Découvrir les prestations",
           variant: "secondary",
           link: "/prestations",
         },
         {
-          children: "Prendre rendez-vous",
+          btnContent: "Prendre rendez-vous",
           variant: "primary",
           link: "/contact",
         },

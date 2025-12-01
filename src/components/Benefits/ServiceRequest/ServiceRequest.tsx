@@ -9,7 +9,7 @@ const ServiceRequest: FC = () => {
       description="Vous souhaitez en savoir plus sur mes prestations, mes disponibilités ou le déroulement d’un soin ? N’hésitez pas à me contacter, je vous répondrai avec plaisir."
       buttons={[
         {
-          children: "Me Contacter",
+          btnContent: "Me Contacter",
           variant: "primary",
           link: "/contact",
         },

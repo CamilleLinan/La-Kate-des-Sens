@@ -4,6 +4,7 @@ import SacredMoment from "@components/Home/SacredMoment/SacredMoment";
 import MassageList from "@components/Home/MassageList/MassageList";
 import HomeRequest from "@components/Home/HomeRequest/HomeRequest";
 import GiftBanner from "@components/shared/GiftBanner/GiftBanner";
+import OpinionList from "@components/Home/OpinionList/OpinionList";
 
 const Home: FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: FC = () => {
       <HomeBanner />
       <SacredMoment />
       <MassageList />
+      <OpinionList />
       <HomeRequest />
     </>
   );

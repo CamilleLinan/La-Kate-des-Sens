@@ -8,7 +8,7 @@ const HomeBanner: FC = () => {
   return (
     <>
       <CustomBanner
-        children={
+        bannerContent={
           <div className="banner__container">
             <article className="banner__container__text">
               <div>
@@ -26,7 +26,7 @@ const HomeBanner: FC = () => {
                 </p>
               </div>
 
-              <ButtonBase children="Prendre rendez-vous" link="/contact" />
+              <ButtonBase btnContent="Prendre rendez-vous" link="/contact" />
             </article>
             <img src={illu} alt="banniere" className="banner__container__img" />
           </div>

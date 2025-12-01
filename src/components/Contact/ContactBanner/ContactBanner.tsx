@@ -7,7 +7,7 @@ import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 const ContactBanner: FC = () => {
   return (
     <CustomBanner
-      children={
+      bannerContent={
         <article className="contact__banner">
           <TitleSection titleText="Me Contacter" />
           <p className="contact__banner__subtitle">
