@@ -24,7 +24,6 @@ const CustomCarousel: FC<CustomCarouselProps> = ({ carouselContent }) => {
   return (
     <Carousel
       arrows
-      adaptiveHeight={true}
       draggable={true}
       dots={true}
       infinite={true}

@@ -1,7 +1,18 @@
-const RandomPick = <T,>(items: T[], count: number): T[] => {
-  const max = Math.min(items.length, count);
-  const shuffled = [...items].sort(() => Math.random() - 0.5);
+import type { Opinion } from "models/Opinion";
+
+const RandomPickShort = (
+  items: Opinion[],
+  count: number,
+  longLimit = 250
+): Opinion[] => {
+  // Keep short opinions only
+  const shortItems = items.filter(
+    (item) => (item.opinion || "").length <= longLimit
+  );
+
+  const max = Math.min(shortItems.length, count);
+  const shuffled = [...shortItems].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, max);
 };
 
-export default RandomPick;
+export default RandomPickShort;
