@@ -68,6 +68,19 @@ const Header: FC = () => {
       ),
     },
     {
+      key: "opinions",
+      label: (
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "link active" : "link inactive"
+          }
+          to="/avis"
+        >
+          Avis
+        </NavLink>
+      ),
+    },
+    {
       key: "contact",
       label: (
         <NavLink

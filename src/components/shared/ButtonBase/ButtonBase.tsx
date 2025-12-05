@@ -9,12 +9,23 @@ export interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
 }
 
-const ButtonBase: FC<BtnProps> = ({ btnContent, link, variant, className }) => {
+const ButtonBase: FC<BtnProps> = ({
+  btnContent,
+  link,
+  variant,
+  className,
+  onClick,
+}) => {
   const navigate = useNavigate();
+
+  const handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    if (onClick) onClick(e);
+    if (link) navigate(link);
+  };
 
   return (
     <button
-      onClick={() => link && navigate(link)}
+      onClick={handleClick}
       className={`btn 
         ${variant ? `btn__${variant}` : ""} 
         ${className ? `${className}` : ""}`}

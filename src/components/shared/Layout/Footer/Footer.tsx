@@ -50,15 +50,18 @@ const Footer: FC = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to="/offres">Offres & Avantages</NavLink>
+              </li>
+              <li>
+                <NavLink to="/avis">Avis Clients</NavLink>
+              </li>
+              <li>
                 <NavLink
                   to="/contact"
                   onClick={(e) => handleNavClick(e, "/contact")}
                 >
                   Formulaire de Contact
                 </NavLink>
-              </li>
-              <li>
-                <NavLink to="/offres">Offres & Avantages</NavLink>
               </li>
               {/* <li>
                 <NavLink to="">Mentions légales</NavLink>
