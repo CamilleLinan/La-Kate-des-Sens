@@ -143,7 +143,7 @@ const ContactForm: FC = () => {
             className="btn__form"
             type="submit"
             disabled={loading}
-            children={
+            btnContent={
               loading ? (
                 <span>
                   <Spin size="small" />

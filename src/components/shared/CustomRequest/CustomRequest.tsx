@@ -28,7 +28,7 @@ const CustomRequest: FC<CustomRequestProps> = ({
         <p>{description}</p>
       </div>
 
-      <div className="btns">
+      <div className={buttons.length <= 1 ? "btns" : "btns multi"}>
         {buttons.map((btn, i) => (
           <ButtonBase key={i} {...btn} />
         ))}

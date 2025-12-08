@@ -10,7 +10,7 @@ import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 const ServiceList: FC = () => {
   return (
     <CustomBanner
-      children={
+      bannerContent={
         <article className="services">
           <TitleSection titleText="Mes Prestations" />
           <div className="services__content">

@@ -2,11 +2,11 @@ import type { FC, ReactNode } from "react";
 import "./_CustomBanner.scss";
 
 interface CustomBannerProps {
-  children: ReactNode;
+  bannerContent: ReactNode;
 }
 
-const CustomBanner: FC<CustomBannerProps> = ({ children }) => {
-  return <section className="banner">{children}</section>;
+const CustomBanner: FC<CustomBannerProps> = ({ bannerContent }) => {
+  return <section className="banner">{bannerContent}</section>;
 };
 
 export default CustomBanner;

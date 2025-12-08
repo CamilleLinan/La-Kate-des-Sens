@@ -25,7 +25,7 @@ const GiftBanner: FC = () => {
             plus !
           </p>
         </div>
-        <ButtonBase children="Contactez-moi" link="/contact" />
+        <ButtonBase btnContent="Contactez-moi" link="/contact" />
       </article>
       <img
         src={bannerRight}

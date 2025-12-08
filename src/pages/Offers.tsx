@@ -6,12 +6,12 @@ import OfferRequest from "@components/Offers/OfferRequest/OfferRequest";
 
 const Offers: FC = () => {
   return (
-    <>
+    <section className="offers">
       <OfferDiscovery />
       <OfferGift />
       <OfferParrain />
       <OfferRequest />
-    </>
+    </section>
   );
 };
 

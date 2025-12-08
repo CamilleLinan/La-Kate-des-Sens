@@ -7,18 +7,18 @@ import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 const ContactBanner: FC = () => {
   return (
     <CustomBanner
-      children={
+      bannerContent={
         <article className="contact__banner">
           <TitleSection titleText="Me Contacter" />
           <p className="contact__banner__subtitle">
             Chaque personne est <b>unique</b>, et je prends le temps d’
             <b>écouter vos besoins </b> pour vous orienter vers le
             <b> massage le plus adapté</b>.
-            <p>
-              N’hésitez pas à me contacter pour poser vos questions, discuter de
-              vos envies, ou simplement en savoir plus sur{" "}
-              <b>mes prestations & tarifs.</b>
-            </p>
+          </p>
+          <p className="contact__banner__subtitle">
+            N’hésitez pas à me contacter pour poser vos questions, discuter de
+            vos envies, ou simplement en savoir plus sur{" "}
+            <b>mes prestations & tarifs.</b>
           </p>
           <DisplayContactInfo bannerMode={true} />
           <p className="contact__banner__subtitle">

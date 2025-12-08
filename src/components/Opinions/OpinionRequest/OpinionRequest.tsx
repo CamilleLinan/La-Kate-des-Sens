@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import "./_AboutMeRequest.scss";
+import "./_OpinionRequest.scss";
 import CustomRequest from "@components/shared/CustomRequest/CustomRequest";
 
-const AboutMeRequest: FC = () => {
+const OpinionRequest: FC = () => {
   return (
     <CustomRequest
       column={true}
@@ -24,4 +24,4 @@ const AboutMeRequest: FC = () => {
   );
 };
 
-export default AboutMeRequest;
+export default OpinionRequest;

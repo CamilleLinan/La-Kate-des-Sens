@@ -23,15 +23,15 @@ const MassageTimeline: FC = () => {
         trouver sa place pour se ressourcer.
       </p>
       <div className="massages__grid">
-        {massages.map((massage, index) => (
+        {massages.map((massage, i) => (
           <div
             key={massage.id}
             className={`massages__block ${
               isMobile
-                ? index % 2 === 0
+                ? i % 2 === 0
                   ? "massages__block--light"
                   : "massages__block--rose"
-                : index % 4 === 0 || index % 4 === 3
+                : i % 4 === 0 || i % 4 === 3
                 ? "massages__block--light"
                 : "massages__block--rose"
             }`}
@@ -65,7 +65,7 @@ const MassageTimeline: FC = () => {
               </p>
             )}
 
-            {index % 2 === 0 && <div className="massages__dot" />}
+            {i % 2 === 0 && <div className="massages__dot" />}
           </div>
         ))}
         <div className="massages__line"></div>
@@ -77,7 +77,7 @@ const MassageTimeline: FC = () => {
         mains.
       </p>
 
-      <ButtonBase children="Prendre rendez-vous" link="/contact" />
+      <ButtonBase btnContent="Prendre rendez-vous" link="/contact" />
     </section>
   );
 };
