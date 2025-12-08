@@ -49,9 +49,6 @@
 
   & .btn {
     margin-top: 0;
-    font-size: 18px;
-    padding: 18px 28px;
-    min-width: max-content;
   }
 
   &.column {
@@ -60,11 +57,11 @@
     padding: 2em 0em;
 
     & .custom__request__container {
-      width: 90%;
+      width: 100%;
     }
 
     & .btns {
-      margin-top: 2em;
+      margin-top: 1em;
       display: flex;
       gap: 2em;
     }

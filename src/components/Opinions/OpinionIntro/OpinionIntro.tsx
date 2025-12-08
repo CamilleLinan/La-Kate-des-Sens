@@ -10,13 +10,18 @@ const OpinionIntro: FC = () => {
         <div className="opinions-banner">
           <TitleSection titleText="Moments Partagés" />
           <p className="opinions-banner__text">
-            Pendant ma formation, j’ai eu l’occasion de pratiquer plusieurs
-            techniques de massage. Ici, vous pouvez découvrir les témoignages de
-            celles et ceux qui ont bénéficié de mes soins : leur ressenti, leurs
-            moments de détente et leur expérience globale.
-            <br />
-            Chaque avis reflète un instant partagé, et je vous laisse le plaisir
-            de les parcourir pour vous faire une idée de mes prestations.
+            Pendant ma formation, j’ai eu l’occasion de <b>pratiquer</b>{" "}
+            plusieurs techniques de <b>massage</b>.
+          </p>
+          <p>
+            Ici, vous pouvez découvrir les témoignages de celles et ceux qui ont
+            bénéficié de mes soins : leur <b>ressenti</b> et leur{" "}
+            <b>expérience globale</b>.
+          </p>
+          <p>
+            Chaque avis reflète un <b>instant partagé</b>, et je vous laisse le
+            plaisir de les parcourir pour vous faire une idée de{" "}
+            <b>mes prestations</b>.
           </p>
         </div>
       }
