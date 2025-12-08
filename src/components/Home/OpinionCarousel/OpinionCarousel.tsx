@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import "./_OpinionList.scss";
+import "./_OpinionCarousel.scss";
 import { opinions } from "@data/opinions";
 import RandomPick from "@utils/RandomPick";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
@@ -7,7 +7,7 @@ import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 import CustomCarousel from "@components/shared/CustomCarousel/CustomCarousel";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 
-const OpinionList: FC = () => {
+const OpinionCarousel: FC = () => {
   // Select 9 opinions randomly
   const randomReviews = RandomPick(opinions, 9);
 
@@ -36,4 +36,4 @@ const OpinionList: FC = () => {
   );
 };
 
-export default OpinionList;
+export default OpinionCarousel;

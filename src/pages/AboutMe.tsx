@@ -4,10 +4,10 @@ import AboutMeRequest from "@components/AboutMe/AboutMeRequest/AboutMeRequest";
 
 const AboutMe: FC = () => {
   return (
-    <>
+    <section className="aboutme">
       <Presentation />
       <AboutMeRequest />
-    </>
+    </section>
   );
 };
 

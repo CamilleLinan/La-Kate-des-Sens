@@ -1,11 +1,11 @@
 import { type FC } from "react";
-import "./_MassageList.scss";
+import "./_MassageCarousel.scss";
 import { massages } from "@data/massages";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 import CustomCarousel from "@components/shared/CustomCarousel/CustomCarousel";
 
-const MassageList: FC = () => {
+const MassageCarousel: FC = () => {
   return (
     <section className="massage__list">
       <TitleSection titleText="Mes Massages" />
@@ -42,4 +42,4 @@ const MassageList: FC = () => {
   );
 };
 
-export default MassageList;
+export default MassageCarousel;

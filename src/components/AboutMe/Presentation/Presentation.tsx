@@ -8,7 +8,7 @@ import sakuraFrame from "@assets/aboutme/sakura-frame.png";
 
 const Presentation: FC = () => {
   return (
-    <div className="aboutme">
+    <>
       <CustomBanner
         bannerContent={
           <article className="about">
@@ -79,7 +79,7 @@ const Presentation: FC = () => {
           </>
         }
       />
-    </div>
+    </>
   );
 };
 
