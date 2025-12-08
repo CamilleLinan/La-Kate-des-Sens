@@ -11,12 +11,14 @@ const SacredMoment: FC = () => {
         <TitleSection titleText="Instant Sacré" />
         <div>
           <p>
-            Besoin de vous relaxer, de relâcher les tensions ou simplement de
-            prendre soin de vous ?
+            Besoin de vous <b>relaxer</b>, de <b>relâcher les tensions</b> ou
+            simplement de
+            <b>prendre soin de vous</b> ?
           </p>
           <p>
-            Offrez-vous un moment de détente et de relaxation avec un massage
-            bien-être. Une parenthèse pour vous aider à lâcher prise.
+            Offrez-vous un moment de <b>détente</b> et de <b>relaxation</b> avec
+            un massage bien-être. Une parenthèse pour vous aider à{" "}
+            <b>lâcher prise</b>.
           </p>
         </div>
       </div>
@@ -27,8 +29,9 @@ const SacredMoment: FC = () => {
           <h3>Où se déroulent les séances ?</h3>
           <p>
             Je me déplace jusqu'à chez vous (dans le secteur de <b>Bernay</b> et
-            ses environs), ou si vous venez à mon domicile, à <b>Granchain</b>,
-            vous serez accueillis dans une ambiance <b>calme et apaisante</b>.
+            ses environs), ou si vous venez à mon domicile, à{" "}
+            <b>Mesnil-en-Ouche</b>, vous serez accueillis dans une ambiance{" "}
+            <b>calme et apaisante</b>.
           </p>
         </div>
 

@@ -14,11 +14,11 @@ const ContactBanner: FC = () => {
             Chaque personne est <b>unique</b>, et je prends le temps d’
             <b>écouter vos besoins </b> pour vous orienter vers le
             <b> massage le plus adapté</b>.
-            <p>
-              N’hésitez pas à me contacter pour poser vos questions, discuter de
-              vos envies, ou simplement en savoir plus sur{" "}
-              <b>mes prestations & tarifs.</b>
-            </p>
+          </p>
+          <p className="contact__banner__subtitle">
+            N’hésitez pas à me contacter pour poser vos questions, discuter de
+            vos envies, ou simplement en savoir plus sur{" "}
+            <b>mes prestations & tarifs.</b>
           </p>
           <DisplayContactInfo bannerMode={true} />
           <p className="contact__banner__subtitle">
