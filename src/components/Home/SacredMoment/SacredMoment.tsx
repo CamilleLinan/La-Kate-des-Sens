@@ -20,6 +20,11 @@ const SacredMoment: FC = () => {
             un massage bien-être. Une parenthèse pour vous aider à{" "}
             <b>lâcher prise</b>.
           </p>
+          <p>
+            Et pour <b>remercier</b> celles et ceux qui reviennent
+            régulièrement, une <b>carte de fidélité</b> est disponible afin de
+            vous offrir des <b>avantages</b> au fil des séances.
+          </p>
         </div>
       </div>
 
