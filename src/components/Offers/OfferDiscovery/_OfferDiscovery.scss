@@ -38,9 +38,16 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     color: $sdyClr;
     font-weight: 600;
+  }
+
+  & .underline {
+    height: 2px;
+    width: 90px;
+    background-color: $sdyClr;
+    margin-bottom: 1em;
   }
 
   &__text {
