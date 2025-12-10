@@ -8,3 +8,7 @@ export const CONTACT_INFO = {
   facebookUrl: "https://www.facebook.com/lakatedessens",
   instagramUrl: "https://www.instagram.com/lakatedessens",
 };
+
+export const CONTACT_PARTNERSHIP = {
+  facebookUrl: "https://www.facebook.com/amelie.beaumet.3",
+};

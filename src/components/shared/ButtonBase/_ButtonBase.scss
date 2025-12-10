@@ -50,6 +50,7 @@
         $pryClr,
         color.scale($pryClr, $lightness: -18%)
       );
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask: linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
@@ -68,5 +69,16 @@
     }
 
     background: #fff;
+  }
+
+  &.toLinkExt {
+    padding: 7px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 16px;
+    margin-left: auto;
   }
 }

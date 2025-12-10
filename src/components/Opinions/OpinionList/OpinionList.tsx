@@ -1,4 +1,4 @@
-import { type FC, useState } from "react";
+import { useState, type FC } from "react";
 import "./_OpinionList.scss";
 import { opinions } from "@data/opinions";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";

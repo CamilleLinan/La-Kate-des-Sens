@@ -14,6 +14,8 @@ const OfferDiscovery: FC = () => {
 
           <article className="offers__block discovery">
             <h3 className="offers__title">Offre Découverte</h3>
+            <div className="underline"></div>
+
             <p className="offers__text">
               Profitez de <b>10€ de réduction</b> sur votre première séance de
               massage. Une belle occasion de découvrir un moment de détente et
