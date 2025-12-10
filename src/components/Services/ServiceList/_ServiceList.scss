@@ -45,13 +45,14 @@
     max-width: 470px;
     box-sizing: border-box;
     height: 3px;
-    margin: 2.5em auto 1.8em auto;
+    margin: 2.8em auto 2.8em auto;
     background-color: $sdyClr;
+    opacity: 0.5;
   }
 }
 
 .oils__list {
-  margin: 2em 0 1em 0;
+  margin: 2.3em 0 1.2em 0;
   border: 5px dotted rgb(226, 200, 224);
   border-radius: 10px;
   background-color: #fff;
