@@ -3,6 +3,9 @@ import "./_SacredMoment.scss";
 import illu_pres from "@assets/illu_pres.png";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
+import { LinkOutlined } from "@ant-design/icons";
+import { CONTACT_PARTNERSHIP } from "@utils/constants";
+import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 
 const SacredMoment: FC = () => {
   return (
@@ -12,8 +15,7 @@ const SacredMoment: FC = () => {
         <div>
           <p>
             Besoin de vous <b>relaxer</b>, de <b>relâcher les tensions</b> ou
-            simplement de
-            <b>prendre soin de vous</b> ?
+            simplement de <b>prendre soin de vous</b> ?
           </p>
           <p>
             Offrez-vous un moment de <b>détente</b> et de <b>relaxation</b> avec
@@ -32,9 +34,11 @@ const SacredMoment: FC = () => {
         <img src={illu_pres} alt="" className="illu__pres" />
         <div className="block">
           <h3>Où se déroulent les séances ?</h3>
+          <div className="underline"></div>
+
           <p>
             Je me déplace jusqu'à chez vous (dans le secteur de <b>Bernay</b> et
-            ses environs), ou si vous venez à mon domicile, à{" "}
+            ses environs), ou si vous venez à mon domicile, au{" "}
             <b>Mesnil-en-Ouche</b>, vous serez accueillis dans une ambiance{" "}
             <b>calme et apaisante</b>.
           </p>
@@ -42,6 +46,8 @@ const SacredMoment: FC = () => {
 
         <div className="block">
           <h3>Un massage bien-être unique</h3>
+          <div className="underline"></div>
+
           <p>
             Le massage bien-être est un outil précieux pour vous accompagner
             vers une <b>détente profonde</b>, une reconnexion{" "}
@@ -54,10 +60,32 @@ const SacredMoment: FC = () => {
             <b>pure détente</b>. Chaque séance est une combinaison{" "}
             <b>adaptée</b> à vos besoins.
           </p>
+          <p>
+            Pour sublimer chaque soin, j’utilise notamment les huiles gourmandes{" "}
+            <b>« Secret de Miel »</b>, proposées en partenariat avec Amélie
+            Beaumet, conseillère de la marque. Leur <b>texture douce</b> et leur{" "}
+            <b>parfum délicatement sucré</b> ajoutent une touche{" "}
+            <b>sensorielle</b> supplémentaire à vos massages.
+            <br />
+          </p>
+
+          <ButtonBase
+            link={CONTACT_PARTNERSHIP.facebookUrl}
+            className="toLinkExt"
+            btnContent={
+              <>
+                <LinkOutlined />
+                <span>Découvrir la marque</span>
+                <span>🐝</span>
+              </>
+            }
+          />
         </div>
 
         <div className="block">
           <h3>Une approche intuitive</h3>
+          <div className="underline"></div>
+
           <p>
             Je me fie avant tout à mon intuition, en écoutant les{" "}
             <b>tensions du corps</b>, mais aussi en étant attentive à ce que

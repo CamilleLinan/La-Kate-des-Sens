@@ -1,14 +1,8 @@
 import type { Opinion } from "models/Opinion";
 
-const RandomPickShort = (
-  items: Opinion[],
-  count: number,
-  longLimit = 250
-): Opinion[] => {
+const RandomPickShort = (items: Opinion[], count: number): Opinion[] => {
   // Select short opinions only
-  const shortItems = items.filter(
-    (item) => (item.opinion || "").length <= longLimit
-  );
+  const shortItems = items.filter((item) => (item.opinion || "").length <= 200);
 
   const max = Math.min(shortItems.length, count);
   const shuffled = [...shortItems].sort(() => Math.random() - 0.5);
