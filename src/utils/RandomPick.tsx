@@ -5,7 +5,7 @@ const RandomPickShort = (
   count: number,
   longLimit = 250
 ): Opinion[] => {
-  // Keep short opinions only
+  // Select short opinions only
   const shortItems = items.filter(
     (item) => (item.opinion || "").length <= longLimit
   );
