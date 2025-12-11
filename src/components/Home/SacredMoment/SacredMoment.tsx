@@ -5,7 +5,7 @@ import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 import { LinkOutlined } from "@ant-design/icons";
 import { CONTACT_PARTNERSHIP } from "@utils/constants";
-import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
+import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
 
 const SacredMoment: FC = () => {
   return (
@@ -62,17 +62,17 @@ const SacredMoment: FC = () => {
           </p>
           <p>
             Pour sublimer chaque soin, j’utilise notamment les huiles gourmandes{" "}
-            <b>« Secret de Miel »</b>, proposées en partenariat avec Amélie
-            Beaumet, conseillère de la marque. Leur <b>texture douce</b> et leur{" "}
+            <b>« Secret de Miel »</b>, proposées en partenariat avec Amélie Api
+            Miel, conseillère de la marque. Leur <b>texture douce</b> et leur{" "}
             <b>parfum délicatement sucré</b> ajoutent une touche{" "}
             <b>sensorielle</b> supplémentaire à vos massages.
             <br />
           </p>
 
-          <ButtonBase
-            link={CONTACT_PARTNERSHIP.facebookUrl}
-            className="toLinkExt"
-            btnContent={
+          <CustomNavLink
+            title="Page Facebook Amélie Api Miel"
+            linkExt={CONTACT_PARTNERSHIP.facebookUrl}
+            navContent={
               <>
                 <LinkOutlined />
                 <span>Découvrir la marque</span>

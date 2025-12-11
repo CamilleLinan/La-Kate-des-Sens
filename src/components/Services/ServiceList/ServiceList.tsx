@@ -6,9 +6,9 @@ import Icon from "@assets/lotus.svg?react";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomList from "@components/shared/CustomList/CustomList";
 import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
-import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 import { LinkOutlined } from "@ant-design/icons";
 import { CONTACT_PARTNERSHIP } from "@utils/constants";
+import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
 
 const ServiceList: FC = () => {
   return (
@@ -47,17 +47,17 @@ const ServiceList: FC = () => {
                   la ruche.{" "}
                 </span>
                 <span>
-                  Grâce à mon partenariat avec Amélie Beaumet, conseillère de la
-                  marque, je sélectionne des huiles qui{" "}
+                  Grâce à mon partenariat avec Amélie Api Miel, conseillère de
+                  la marque, je sélectionne des huiles qui{" "}
                   <b>nourrissent la peau</b> tout en offrant une expérience
                   sensorielle <b>chaleureuse et apaisante</b>.
                 </span>
               </p>
 
-              <ButtonBase
-                link={CONTACT_PARTNERSHIP.facebookUrl}
-                className="toLinkExt"
-                btnContent={
+              <CustomNavLink
+                title="Page Facebook Amélie Api Miel"
+                linkExt={CONTACT_PARTNERSHIP.facebookUrl}
+                navContent={
                   <>
                     <LinkOutlined />
                     <span>Découvrir la marque</span>

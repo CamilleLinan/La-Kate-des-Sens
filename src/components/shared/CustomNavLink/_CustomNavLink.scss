@@ -1,0 +1,35 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.navlink-ext {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-top: 1em;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 16px;
+  background: linear-gradient(
+    155deg,
+    $pryClr,
+    color.scale($pryClr, $lightness: -18%)
+  );
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  width: fit-content;
+  min-width: 220px;
+  height: fit-content;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba($pryClr, 0.55);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba($pryClr, 0.55);
+    background: linear-gradient(135deg, $pryClr, $sdyClr);
+  }
+}
