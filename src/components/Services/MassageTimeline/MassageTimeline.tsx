@@ -56,7 +56,8 @@ const MassageTimeline: FC = () => {
                   <ClockCircleOutlined /> {massage.duration}
                 </span>
                 <span>
-                  <CreditCardOutlined /> {massage.price} €
+                  <CreditCardOutlined /> {massage.price}
+                  {massage.price2 && ` - ${massage.price2}`} €
                 </span>
               </p>
             ) : (
