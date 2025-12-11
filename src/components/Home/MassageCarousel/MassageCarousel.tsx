@@ -1,6 +1,7 @@
 import { type FC } from "react";
 import "./_MassageCarousel.scss";
 import { massages } from "@data/massages";
+import { ClockCircleOutlined, CreditCardOutlined } from "@ant-design/icons";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 import CustomCarousel from "@components/shared/CustomCarousel/CustomCarousel";
@@ -24,12 +25,19 @@ const MassageCarousel: FC = () => {
                 <h3 className="massage-card__title">{massage.title}</h3>
                 <p>{massage.description}</p>
                 <div className="massage-card__small__infos">
-                  <span>{massage.duration}</span>
-                  <span>
-                    {massage.price
-                      ? `${massage.price}€`
-                      : "Tarif et durée sur mesure"}
-                  </span>
+                  {massage.price ? (
+                    <>
+                      <span>
+                        <ClockCircleOutlined /> {massage.duration}
+                      </span>
+                      <span>
+                        <CreditCardOutlined /> {massage.price}
+                        {massage.price2 && ` - ${massage.price2}`} €
+                      </span>
+                    </>
+                  ) : (
+                    <span>Tarif et durée sur mesure</span>
+                  )}
                 </div>
               </div>
             </div>
