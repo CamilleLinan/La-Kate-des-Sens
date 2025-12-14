@@ -8,8 +8,11 @@ const OfferParrain: FC = () => {
       <div className="underline"></div>
 
       <p className="offers__text">
-        Obtenez <b>1 heure de massage offerte</b> en recommandant mes services
-        autour de vous.
+        Obtenez{" "}
+        <b>
+          1 heure de <strong>massage</strong> offerte
+        </b>{" "}
+        en recommandant mes services autour de vous.
       </p>
       <p className="offers__text">
         Pour chaque personne venant de votre part, vous cumulez

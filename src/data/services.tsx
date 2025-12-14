@@ -1,6 +1,10 @@
 export const services = [
   <span>
-    Une <b>table de massage professionnelle</b> pour un soutien optimal.
+    Une{" "}
+    <b>
+      table de <strong>massage professionnelle</strong>
+    </b>{" "}
+    pour un soutien optimal.
   </span>,
   <span>
     Un <b>matelas chauffant</b> pour une relaxation profonde.

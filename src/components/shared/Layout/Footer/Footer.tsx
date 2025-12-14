@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_Footer.scss";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "@assets/logo/logo.png";
+import logo from "@assets/logo/logo.webp";
 import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayContactInfo";
 
 const Footer: FC = () => {

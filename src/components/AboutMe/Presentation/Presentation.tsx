@@ -3,8 +3,8 @@ import "./_Presentation.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
-import profil from "@assets/aboutme/profil.jpg";
-import sakuraFrame from "@assets/aboutme/sakura-frame.png";
+import profil from "@assets/aboutme/profil.webp";
+import sakuraFrame from "@assets/aboutme/sakura-frame.webp";
 
 const Presentation: FC = () => {
   return (
@@ -41,20 +41,22 @@ const Presentation: FC = () => {
                   </p>
                   <p>
                     C’est cette approche qui m’a conduite à me former en
-                    <b> massage bien-être</b>. Au fil de ma formation, j’ai
-                    découvert l’importance de <b>prendre soin de soi</b>, tant
-                    sur le plan physique que mental.
+                    <strong> massage bien-être</strong>. Au fil de ma formation,
+                    j’ai découvert l’importance de{" "}
+                    <strong>prendre soin de soi</strong>, tant sur le plan
+                    physique que mental.
                   </p>
                 </div>
               </div>
 
               <p>
-                J’aime créer un espace où chacun peut se ressourcer, se
-                reconnecter à soi-même et <b>lâcher prise</b>. Mon objectif est
-                de vous offrir une <b>expérience unique et personnalisée</b>,
-                adaptée à vos besoins — que vous cherchiez à réduire le stress,
-                à soulager des tensions ou simplement à vous accorder un moment
-                de douceur.
+                J’aime créer un espace où chacun peut se <b>ressourcer</b>, se
+                <b>reconnecter à soi-même</b> et <strong>lâcher prise</strong>.
+                Mon objectif est de vous offrir une{" "}
+                <strong>expérience unique et personnalisée</strong>, adaptée à
+                vos besoins — que vous cherchiez à réduire le stress, à soulager
+                des tensions ou simplement à vous accorder un{" "}
+                <strong>moment de douceur</strong>.
               </p>
             </div>
           </article>

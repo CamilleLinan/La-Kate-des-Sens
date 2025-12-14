@@ -12,7 +12,10 @@ const OfferGift: FC = () => {
 
       <p className="offers__text">
         Envie de faire plaisir à un proche&nbsp;? Le <b>bon cadeau</b> est idéal
-        pour offrir un moment de relaxation unique, une <b>pause bien-être</b>{" "}
+        pour offrir un moment de relaxation unique, une{" "}
+        <b>
+          pause <strong>bien-être</strong>
+        </b>{" "}
         dont on se souvient.
       </p>
       <p className="offers__text">

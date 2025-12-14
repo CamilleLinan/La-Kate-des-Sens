@@ -3,7 +3,7 @@ import "./_CustomRequest.scss";
 import ButtonBase, {
   type BtnProps,
 } from "@components/shared/ButtonBase/ButtonBase";
-import illu_request from "@assets/illu_request.png";
+import illu_request from "@assets/banner/illu_request.webp";
 
 interface CustomRequestProps {
   column?: boolean;
