@@ -7,7 +7,7 @@ import {
   FacebookFilled,
 } from "@ant-design/icons";
 import { Dropdown } from "antd";
-import logo from "@assets/logo/logo_stars.png";
+import logo from "@assets/logo/logo_stars.webp";
 import { CONTACT_INFO } from "@utils/constants";
 import "./_Header.scss";
 

@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_SacredMoment.scss";
-import illu_pres from "@assets/illu_pres.png";
+import illu_pres from "@assets/illu_pres.webp";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 import { LinkOutlined } from "@ant-design/icons";
@@ -15,11 +15,11 @@ const SacredMoment: FC = () => {
         <div>
           <p>
             Besoin de vous <b>relaxer</b>, de <b>relâcher les tensions</b> ou
-            simplement de <b>prendre soin de vous</b> ?
+            simplement de <strong>prendre soin de vous</strong> ?
           </p>
           <p>
-            Offrez-vous un moment de <b>détente</b> et de <b>relaxation</b> avec
-            un massage bien-être. Une parenthèse pour vous aider à{" "}
+            Offrez-vous un moment de <b>détente</b> avec un{" "}
+            <strong>massage bien-être</strong>. Une parenthèse pour vous aider à{" "}
             <b>lâcher prise</b>.
           </p>
           <p>
@@ -37,22 +37,23 @@ const SacredMoment: FC = () => {
           <div className="underline"></div>
 
           <p>
-            Je me déplace jusqu'à chez vous (dans le secteur de <b>Bernay</b> et
-            ses environs), ou si vous venez à mon domicile, au{" "}
-            <b>Mesnil-en-Ouche</b>, vous serez accueillis dans une ambiance{" "}
-            <b>calme et apaisante</b>.
+            Je me déplace jusqu'à chez vous (dans le secteur de{" "}
+            <strong>Bernay</strong> et ses environs), ou si vous venez à mon
+            domicile, au <strong>Mesnil-en-Ouche</strong>, vous serez accueillis
+            dans une ambiance <b>calme et apaisante</b>.
           </p>
         </div>
 
         <div className="block">
-          <h3>Un massage bien-être unique</h3>
+          <h3>
+            Un <strong>massage bien-être</strong> unique
+          </h3>
           <div className="underline"></div>
 
           <p>
-            Le massage bien-être est un outil précieux pour vous accompagner
-            vers une <b>détente profonde</b>, une reconnexion{" "}
-            <b>corps – cœur – esprit</b>. Je vous propose des massages bien-être
-            uniques et personnalisés.
+            Le <strong>massage bien-être</strong> est un outil précieux pour
+            vous accompagner vers une <b>détente profonde</b>, une reconnexion{" "}
+            <b>corps – cœur – esprit</b>.
           </p>
           <p>
             Peu importe le nom exotique qu'on lui donne (massage balinais,
@@ -65,7 +66,7 @@ const SacredMoment: FC = () => {
             <b>« Secret de Miel »</b>, proposées en partenariat avec Amélie Api
             Miel, conseillère de la marque. Leur <b>texture douce</b> et leur{" "}
             <b>parfum délicatement sucré</b> ajoutent une touche{" "}
-            <b>sensorielle</b> supplémentaire à vos massages.
+            <b>sensorielle</b> supplémentaire aux massages.
             <br />
           </p>
 

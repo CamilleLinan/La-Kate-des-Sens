@@ -11,7 +11,7 @@ const OpinionIntro: FC = () => {
           <TitleSection titleText="Moments Partagés" />
           <p className="opinions-banner__text">
             Pendant ma formation, j’ai eu l’occasion de <b>pratiquer</b>{" "}
-            plusieurs techniques de <b>massage</b>.
+            plusieurs techniques de <strong>massage</strong>.
           </p>
           <p>
             Ici, vous pouvez découvrir les témoignages de celles et ceux qui ont

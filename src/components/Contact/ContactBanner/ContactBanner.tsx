@@ -11,9 +11,9 @@ const ContactBanner: FC = () => {
         <article className="contact__banner">
           <TitleSection titleText="Me Contacter" />
           <p className="contact__banner__subtitle">
-            Chaque personne est <b>unique</b>, et je prends le temps d’
-            <b>écouter vos besoins </b> pour vous orienter vers le
-            <b> massage le plus adapté</b>.
+            Chaque personne est <b>unique</b>, et je prends le temps{" "}
+            <b>d’écouter vos besoins </b> pour vous orienter vers le
+            <strong> massage</strong> le plus adapté .
           </p>
           <p className="contact__banner__subtitle">
             N’hésitez pas à me contacter pour poser vos questions, discuter de
@@ -24,8 +24,8 @@ const ContactBanner: FC = () => {
           <p className="contact__banner__subtitle">
             Vous pouvez <b>m’écrire directement</b> à l’aide du formulaire
             ci-dessous. Je vous répondrai avec plaisir pour échanger sur vos
-            besoins ou vous aider à{" "}
-            <b>choisir le massage qui vous correspond le mieux</b>.
+            besoins ou vous aider à choisir le <strong>massage</strong> qui vous
+            correspond le mieux .
           </p>
         </article>
       }

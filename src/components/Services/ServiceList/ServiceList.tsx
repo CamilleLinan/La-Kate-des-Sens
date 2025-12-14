@@ -20,8 +20,8 @@ const ServiceList: FC = () => {
             <p className="services__text">
               Lorsque je me rends chez vous tout est fait pour transformer votre
               espace en un <b>lieu de sérénité</b>. Chaque détail est
-              soigneusement étudié pour recréer une ambiance <b>spa</b> dans
-              votre domicile.
+              soigneusement étudié pour recréer une ambiance{" "}
+              <strong>spa</strong> dans votre domicile.
             </p>
 
             <CustomList
@@ -78,7 +78,7 @@ const ServiceList: FC = () => {
             <p className="services__text">
               Votre massage se terminera par une <b>remise au monde</b>, en
               prenant le temps d’apprécier le soin reçu autour d’un thé ou d’une
-              infusion... Un pur moment de <b>détente</b>.
+              infusion... Un pur moment de <strong>détente</strong>.
             </p>
             <p className="services__note">
               * Les frais de déplacement sont à ajouter aux tarifs des
