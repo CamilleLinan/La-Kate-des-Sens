@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import "./_GiftBanner.scss";
 import ButtonBase from "../ButtonBase/ButtonBase";
-import bannerLeft from "@assets/banner/gift-banner-left.jpeg";
-import bannerRight from "@assets/banner/gift-banner-right.jpeg";
+import bannerLeft from "@assets/banner/gift-banner-left.webp";
+import bannerRight from "@assets/banner/gift-banner-right.webp";
 
 const GiftBanner: FC = () => {
   return (
