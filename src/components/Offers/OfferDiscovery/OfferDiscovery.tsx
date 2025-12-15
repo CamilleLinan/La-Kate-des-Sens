@@ -17,7 +17,7 @@ const OfferDiscovery: FC = () => {
             <div className="underline"></div>
 
             <p className="offers__text">
-              Profitez de <b>10€ de réduction</b> sur votre première séance de
+              Profitez de <b>10€ de réduction</b> sur votre première séance de{" "}
               <strong>massage</strong>. Une belle occasion de découvrir un
               moment de détente et de bien-être.
             </p>

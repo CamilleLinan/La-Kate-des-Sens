@@ -50,7 +50,7 @@ const Presentation: FC = () => {
               </div>
 
               <p>
-                J’aime créer un espace où chacun peut se <b>ressourcer</b>, se
+                J’aime créer un espace où chacun peut se <b>ressourcer</b>, se{" "}
                 <b>reconnecter à soi-même</b> et <strong>lâcher prise</strong>.
                 Mon objectif est de vous offrir une{" "}
                 <strong>expérience unique et personnalisée</strong>, adaptée à
