@@ -23,6 +23,11 @@
     width: 100%;
     max-width: 1250px;
     padding: 0 0.5em 0.5em 0.5em;
+
+    & p {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
   }
 
   &__title {
