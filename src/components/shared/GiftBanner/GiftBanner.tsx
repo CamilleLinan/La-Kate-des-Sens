@@ -10,11 +10,11 @@ const GiftBanner: FC = () => {
       <img
         src={bannerLeft}
         alt="gift-banner"
-        className="gift-banner_img left"
+        className="gift-banner__img left"
       />
-      <article className="gift-banner_content">
+      <article className="gift-banner__content">
         <div>
-          <h3 className="gift-banner_title">
+          <h3 className="gift-banner__title">
             Noël approche, faites plaisir...
           </h3>
           <p className="gift-banner_subtitle">
@@ -31,7 +31,7 @@ const GiftBanner: FC = () => {
       <img
         src={bannerRight}
         alt="gift-banner"
-        className="gift-banner_img right"
+        className="gift-banner__img right"
       />
     </section>
   );

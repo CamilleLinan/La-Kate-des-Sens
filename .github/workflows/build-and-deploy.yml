@@ -1,0 +1,49 @@
+name: Build et Deploy React
+
+on:
+  push:
+    branches:
+      - Deployment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+
+      - name: Installer Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Build Vite
+        run: npm run build
+
+      - name: Sauvegarder le build
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Télécharger le build
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: ./dist
+
+      - name: Upload via FTP to Host
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./www/
