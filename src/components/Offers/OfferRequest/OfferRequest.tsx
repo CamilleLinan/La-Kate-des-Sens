@@ -9,7 +9,7 @@ const OfferRequest: FC = () => {
       description="Vous souhaitez en savoir plus sur mes prestations, mes disponibilités ou le déroulement d’un soin ? N’hésitez pas à me contacter, je vous répondrai avec plaisir."
       buttons={[
         {
-          children: "Contactez-moi",
+          btnContent: "Contactez-moi",
           variant: "primary",
           link: "/contact",
         },

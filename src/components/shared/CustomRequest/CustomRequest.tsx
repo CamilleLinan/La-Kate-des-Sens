@@ -3,7 +3,7 @@ import "./_CustomRequest.scss";
 import ButtonBase, {
   type BtnProps,
 } from "@components/shared/ButtonBase/ButtonBase";
-import illu_request from "@assets/illu_request.png";
+import illu_request from "@assets/banner/illu_request.webp";
 
 interface CustomRequestProps {
   column?: boolean;
@@ -28,7 +28,7 @@ const CustomRequest: FC<CustomRequestProps> = ({
         <p>{description}</p>
       </div>
 
-      <div className="btns">
+      <div className={buttons.length <= 1 ? "btns" : "btns multi"}>
         {buttons.map((btn, i) => (
           <ButtonBase key={i} {...btn} />
         ))}

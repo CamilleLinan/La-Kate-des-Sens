@@ -43,7 +43,7 @@ export const massages: Massage[] = [
     descriptionLong: [
       "Ce massage favorise une profonde relaxation en dénouant les tensions accumulées dans le visage, la nuque et la tête. Il calme l’esprit, améliore la qualité du sommeil et procure une agréable sensation de légèreté. Plongez dans un océan de sérénité, là où le bien être règne.",
     ],
-    duration: "40 mn",
+    duration: "40mn",
     price: 40,
     image: visage,
   },
@@ -54,7 +54,7 @@ export const massages: Massage[] = [
     descriptionLong: [
       "Spécifiquement conçu pour dénouer les nœuds et apaiser les contractures, ce massage soulage les zones les plus sollicitées au quotidien. Idéal pour retrouver confort et légèreté.",
     ],
-    duration: "40 mn",
+    duration: "40mn",
     price: 40,
     image: dos,
   },
@@ -67,8 +67,9 @@ export const massages: Massage[] = [
       "Agissant comme un dialogue entre vos pieds et le reste de votre corps et en stimulant des points spécifiques de la voûte plantaire, ce massage aide à rééquilibrer le Chi, l’énergie vitale, et relance les processus naturels d’harmonisation du corps.",
       "Il est particulièrement efficace pour réduire le stress et procurer une détente profonde. Ce massage thaïlandais ne se limite pas aux pieds mais s’applique également à toute la jambe. Traditionnellement, ce soin peut être enrichi de pressions douces sur les mains, le cou et le cuir chevelu, pour renforcer l’harmonie du corps.",
     ],
-    duration: "45 mn",
-    price: 45,
+    duration: "30mn - 1h",
+    price: 30,
+    price2: 60,
     image: pied,
   },
   {
@@ -80,7 +81,7 @@ export const massages: Massage[] = [
       "Ce massage du pied avec le bol Kansu est très connu dans l’Ayurveda. Ce massage touche les points réflexes du pied en libérant les énergies et leur permettre de circuler dans le corps. Il favorise également le sommeil, et apporte une relaxation profonde pendant le massage.",
       "Le bol Kansu est fabriqué à partir d’un alliage de 5 métaux aux vertus complémentaires : l’or, le zinc, le bronze, le cuivre, l’argent et l’étain. Selon l'ayurvéda, le cuivre absorbe l'excès de chaleur, le zinc favorise le métabolisme, et l'étain équilibre les émotions.",
     ],
-    duration: "30 mn",
+    duration: "30mn",
     price: 30,
     image: kansu,
   },
@@ -92,7 +93,7 @@ export const massages: Massage[] = [
     descriptionLong: [
       "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées, les personnes en situation de handicap ou les personnes en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
     ],
-    duration: "30 mn",
+    duration: "30mn",
     price: 30,
     image: senior,
   },

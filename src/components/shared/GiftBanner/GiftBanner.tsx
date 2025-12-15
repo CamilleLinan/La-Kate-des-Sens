@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import "./_GiftBanner.scss";
 import ButtonBase from "../ButtonBase/ButtonBase";
-import bannerLeft from "@assets/banner/gift-banner-left.jpeg";
-import bannerRight from "@assets/banner/gift-banner-right.jpeg";
+import bannerLeft from "@assets/banner/gift-banner-left.webp";
+import bannerRight from "@assets/banner/gift-banner-right.webp";
 
 const GiftBanner: FC = () => {
   return (
@@ -17,15 +17,16 @@ const GiftBanner: FC = () => {
           <h3 className="gift-banner__title">
             Noël approche, faites plaisir...
           </h3>
-          <p className="gift-banner__subtitle">
-            ...Offrez un massage bien-être à domicile à vos proches ! 🎁
+          <p className="gift-banner_subtitle">
+            ...Offrez un <strong>massage bien-être à domicile</strong> à vos
+            proches ! 🎁
           </p>
-          <p className="gift-banner__subtitle">
-            En ce moment, profitez de 10€ de réduction sur les massages de 1h et
-            plus !
+          <p className="gift-banner_subtitle">
+            En ce moment, profitez de <b>10€ de réduction</b> sur les massages
+            de 1h et plus !
           </p>
         </div>
-        <ButtonBase children="Contactez-moi" link="/contact" />
+        <ButtonBase btnContent="Contactez-moi" link="/contact" />
       </article>
       <img
         src={bannerRight}

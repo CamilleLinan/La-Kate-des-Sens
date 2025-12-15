@@ -1,0 +1,76 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.opinions__list {
+  max-width: 950px;
+  margin: auto;
+
+  &__text {
+    margin: auto;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: relative;
+    margin: 2rem 1.5em;
+    overflow: hidden;
+  }
+
+  &__block {
+    border: 1px solid $pryClr;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--light {
+      background: #fff;
+    }
+
+    &--rose {
+      background: color.scale($pryClr, $lightness: 85%);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $sdyClr;
+    font-weight: 500;
+  }
+
+  &__desc {
+    color: #5a5a5a;
+    font-size: 0.95rem;
+  }
+
+  &__info {
+    margin: 0;
+    padding-top: 1em;
+    font-size: 16px;
+    color: $tryClr;
+    border-top: 1px solid $pryClr;
+    display: flex;
+    justify-content: end;
+  }
+
+  & .btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .opinions__list {
+    &__text {
+      padding: 0 1.5em;
+    }
+  }
+}

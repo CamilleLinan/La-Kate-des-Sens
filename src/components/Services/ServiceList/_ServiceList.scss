@@ -1,0 +1,136 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+.services {
+  &__content {
+    max-width: 850px;
+    margin: 2rem auto;
+  }
+
+  & .title {
+    margin-bottom: 1.8rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  &__partner .services__text {
+    margin-top: 0;
+  }
+
+  &__note {
+    font-size: 0.9rem;
+    color: $tryClr;
+    font-style: italic;
+    text-align: right;
+    margin: 1em 0;
+    opacity: 0.8;
+  }
+
+  &__quote {
+    font-style: italic;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border: 3px solid $tryClr;
+    border-style: double;
+    border-radius: 5px;
+    color: #6a4c50;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  & .separator {
+    width: 100%;
+    max-width: 470px;
+    box-sizing: border-box;
+    height: 3px;
+    margin: 2.8em auto 2.8em auto;
+    background-color: $sdyClr;
+    opacity: 0.5;
+  }
+}
+
+.oils__list {
+  margin: 2.3em 0 1.2em 0;
+  border: 5px dotted rgb(226, 200, 224);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 0 1em 0.5em;
+
+  & div {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+
+    & span {
+      opacity: 0.8;
+      font-size: 15px;
+    }
+  }
+
+  &__title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  & .custom__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      padding-left: 1.8em;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .services {
+    & .oils__list {
+      & div {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+      }
+
+      &__title {
+        margin-bottom: 0;
+      }
+    }
+
+    &__partner .services__text {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      & span {
+        display: block;
+      }
+    }
+
+    & .custom__list.service__item li {
+      align-items: start;
+
+      & svg {
+        margin-top: 7px;
+      }
+    }
+
+    & .oils__list .custom__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      &__item {
+        padding-left: 1em;
+      }
+
+      & li {
+        align-items: start;
+
+        & svg {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}

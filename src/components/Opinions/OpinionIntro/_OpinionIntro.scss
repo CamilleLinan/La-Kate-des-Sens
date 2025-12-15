@@ -1,0 +1,14 @@
+.opinions-banner {
+  max-width: 750px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .opinions-banner {
+    & .title {
+      gap: 0.45em;
+      padding: 0;
+    }
+  }
+}

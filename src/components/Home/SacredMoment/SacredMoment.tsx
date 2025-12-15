@@ -1,8 +1,11 @@
 import type { FC } from "react";
 import "./_SacredMoment.scss";
-import illu_pres from "@assets/illu_pres.png";
+import illu_pres from "@assets/illu_pres.webp";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
+import { LinkOutlined } from "@ant-design/icons";
+import { CONTACT_PARTNERSHIP } from "@utils/constants";
+import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
 
 const SacredMoment: FC = () => {
   return (
@@ -11,12 +14,18 @@ const SacredMoment: FC = () => {
         <TitleSection titleText="Instant Sacré" />
         <div>
           <p>
-            Besoin de vous relaxer, de relâcher les tensions ou simplement de
-            prendre soin de vous ?
+            Besoin de vous <b>relaxer</b>, de <b>relâcher les tensions</b> ou
+            simplement de <strong>prendre soin de vous</strong> ?
           </p>
           <p>
-            Offrez-vous un moment de détente et de relaxation avec un massage
-            bien-être. Une parenthèse pour vous aider à lâcher prise.
+            Offrez-vous un moment de <b>détente</b> avec un{" "}
+            <strong>massage bien-être</strong>. Une parenthèse pour vous aider à{" "}
+            <b>lâcher prise</b>.
+          </p>
+          <p>
+            Et pour <b>remercier</b> celles et ceux qui reviennent
+            régulièrement, une <b>carte de fidélité</b> est disponible afin de
+            vous offrir des <b>avantages</b> au fil des séances.
           </p>
         </div>
       </div>
@@ -25,20 +34,26 @@ const SacredMoment: FC = () => {
         <img src={illu_pres} alt="" className="illu__pres" />
         <div className="block">
           <h3>Où se déroulent les séances ?</h3>
+          <div className="underline"></div>
+
           <p>
-            Je me déplace jusqu'à chez vous (dans le secteur de <b>Bernay</b> et
-            ses environs), ou si vous venez à mon domicile, à <b>Granchain</b>,
-            vous serez accueillis dans une ambiance <b>calme et apaisante</b>.
+            Je me déplace jusqu'à chez vous (dans le secteur de{" "}
+            <strong>Bernay</strong> et ses environs), ou si vous venez à mon
+            domicile, au <strong>Mesnil-en-Ouche</strong>, vous serez accueillis
+            dans une ambiance <b>calme et apaisante</b>.
           </p>
         </div>
 
         <div className="block">
-          <h3>Un massage bien-être unique</h3>
+          <h3>
+            Un <strong>massage bien-être</strong> unique
+          </h3>
+          <div className="underline"></div>
+
           <p>
-            Le massage bien-être est un outil précieux pour vous accompagner
-            vers une <b>détente profonde</b>, une reconnexion{" "}
-            <b>corps – cœur – esprit</b>. Je vous propose des massages bien-être
-            uniques et personnalisés.
+            Le <strong>massage bien-être</strong> est un outil précieux pour
+            vous accompagner vers une <b>détente profonde</b>, une reconnexion{" "}
+            <b>corps – cœur – esprit</b>.
           </p>
           <p>
             Peu importe le nom exotique qu'on lui donne (massage balinais,
@@ -46,10 +61,32 @@ const SacredMoment: FC = () => {
             <b>pure détente</b>. Chaque séance est une combinaison{" "}
             <b>adaptée</b> à vos besoins.
           </p>
+          <p>
+            Pour sublimer chaque soin, j’utilise notamment les huiles gourmandes{" "}
+            <b>« Secret de Miel »</b>, proposées en partenariat avec Amélie Api
+            Miel, conseillère de la marque. Leur <b>texture douce</b> et leur{" "}
+            <b>parfum délicatement sucré</b> ajoutent une touche{" "}
+            <b>sensorielle</b> supplémentaire aux massages.
+            <br />
+          </p>
+
+          <CustomNavLink
+            title="Page Facebook Amélie Api Miel"
+            linkExt={CONTACT_PARTNERSHIP.facebookUrl}
+            navContent={
+              <>
+                <LinkOutlined />
+                <span>Découvrir la marque</span>
+                <span>🐝</span>
+              </>
+            }
+          />
         </div>
 
         <div className="block">
           <h3>Une approche intuitive</h3>
+          <div className="underline"></div>
+
           <p>
             Je me fie avant tout à mon intuition, en écoutant les{" "}
             <b>tensions du corps</b>, mais aussi en étant attentive à ce que

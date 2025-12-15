@@ -9,7 +9,7 @@ const HomeRequest: FC = () => {
       description="Profitez de réductions, de jolis bons cadeaux et d’un programme de parrainage pour vivre ou offrir un moment de bien-être. Consultez la page dédiée pour en savoir plus."
       buttons={[
         {
-          children: "Voir les Offres",
+          btnContent: "Voir les Offres",
           variant: "primary",
           link: "/offres",
         },

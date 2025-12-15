@@ -8,9 +8,14 @@ const OfferGift: FC = () => {
   return (
     <article className="offers__block gift">
       <h3 className="offers__title">Bons Cadeaux</h3>
+      <div className="underline"></div>
+
       <p className="offers__text">
         Envie de faire plaisir à un proche&nbsp;? Le <b>bon cadeau</b> est idéal
-        pour offrir un moment de relaxation unique, une <b>pause bien-être</b>{" "}
+        pour offrir un moment de relaxation unique, une{" "}
+        <b>
+          pause <strong>bien-être</strong>
+        </b>{" "}
         dont on se souvient.
       </p>
       <p className="offers__text">

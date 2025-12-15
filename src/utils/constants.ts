@@ -4,7 +4,11 @@ export const CONTACT_INFO = {
   businessDesc: "Massage bien-être chez moi ou à votre domicile.",
   phone: "06 31 77 57 17",
   email: "la.kate.des.sens@gmail.com",
-  location: "27410 Granchain",
+  location: "27410 Mesnil-en-Ouche",
   facebookUrl: "https://www.facebook.com/lakatedessens",
   instagramUrl: "https://www.instagram.com/lakatedessens",
+};
+
+export const CONTACT_PARTNERSHIP = {
+  facebookUrl: "https://www.facebook.com/amelie.beaumet.3",
 };

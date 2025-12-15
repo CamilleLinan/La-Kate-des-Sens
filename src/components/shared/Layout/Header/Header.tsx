@@ -6,8 +6,8 @@ import {
   InstagramOutlined,
   FacebookFilled,
 } from "@ant-design/icons";
-import { Dropdown, Menu } from "antd";
-import logo from "@assets/logo/logo_stars.png";
+import { Dropdown } from "antd";
+import logo from "@assets/logo/logo_stars.webp";
 import { CONTACT_INFO } from "@utils/constants";
 import "./_Header.scss";
 
@@ -68,6 +68,19 @@ const Header: FC = () => {
       ),
     },
     {
+      key: "opinions",
+      label: (
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "link active" : "link inactive"
+          }
+          to="/avis"
+        >
+          Avis
+        </NavLink>
+      ),
+    },
+    {
       key: "contact",
       label: (
         <NavLink
@@ -118,7 +131,7 @@ const Header: FC = () => {
     },
   ];
 
-  const mobileMenu = <Menu mode="vertical" items={menuItems} />;
+  // const mobileMenu = <Menu mode="vertical" items={menuItems} />;
 
   return (
     <header className="header">
@@ -140,7 +153,7 @@ const Header: FC = () => {
         {/* Burger menu */}
         <div className="header__nav mobile__menu">
           <Dropdown
-            overlay={mobileMenu}
+            menu={{ items: menuItems }}
             trigger={["click"]}
             placement="bottomRight"
             open={visible}

@@ -5,11 +5,11 @@ import type { FC } from "react";
 
 const Contact: FC = () => {
   return (
-    <>
+    <section className="contact">
       <ContactBanner />
       <ContactForm />
       <ContactRequest />
-    </>
+    </section>
   );
 };
 
