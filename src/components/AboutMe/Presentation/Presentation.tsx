@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_Presentation.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 import profil from "@assets/aboutme/profil.webp";
 import sakuraFrame from "@assets/aboutme/sakura-frame.webp";
