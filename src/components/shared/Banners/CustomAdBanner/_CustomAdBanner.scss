@@ -3,6 +3,7 @@
 .ad-banner {
   position: relative;
   overflow: hidden;
+  min-height: 200px;
   display: flex;
   justify-content: space-between;
   border-top: 2px double green;
