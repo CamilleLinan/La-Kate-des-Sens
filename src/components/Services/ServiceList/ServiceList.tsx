@@ -5,7 +5,7 @@ import { oils } from "@data/oils";
 import Icon from "@assets/lotus.svg?react";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomList from "@components/shared/CustomList/CustomList";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import { LinkOutlined } from "@ant-design/icons";
 import { CONTACT_PARTNERSHIP } from "@utils/constants";
 import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
