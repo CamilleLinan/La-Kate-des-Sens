@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_OpinionIntro.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 
 const OpinionIntro: FC = () => {
   return (

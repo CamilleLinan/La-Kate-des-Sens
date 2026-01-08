@@ -2,7 +2,7 @@ import type { FC } from "react";
 import "./_ContactBanner.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import DisplayContactInfo from "@components/shared/DisplayContactInfo/DisplayContactInfo";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 
 const ContactBanner: FC = () => {
   return (

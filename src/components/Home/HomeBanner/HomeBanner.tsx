@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_HomeBanner.scss";
-import CustomBanner from "@components/shared/CustomBanner/CustomBanner";
+import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import illu from "@assets/banner/illu_banner1.webp";
 import ButtonBase from "../../shared/ButtonBase/ButtonBase";
 
