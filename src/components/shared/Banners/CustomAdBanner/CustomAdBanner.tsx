@@ -20,19 +20,18 @@ const CustomAdBanner: FC<CustomAdBannerProps> = ({
   subtitles,
 }) => {
   return (
-    <section className={`gift-banner ${bannerType}`}>
+    <section id={`${bannerType}`} className="ad-banner">
       <img
         src={imgSrcLeft}
         alt={imgAlt}
-        className={`gift-banner__img left ${bannerType}`}
+        className="ad-banner__img ad-banner__img--left"
       />
-      <article className={`gift-banner__content ${bannerType}`}>
+      <article className="ad-banner__content">
         <div>
-          <h3 className="gift-banner__title">{title}</h3>
+          <h3 className="ad-banner__title">{title}</h3>
           {subtitles.map((subtitle, i) => (
-            <p className="gift-banner_subtitle" key={i}>
-              {" "}
-              {subtitle}{" "}
+            <p className="ad-banner_subtitle" key={i}>
+              {subtitle}
             </p>
           ))}
         </div>
@@ -42,8 +41,8 @@ const CustomAdBanner: FC<CustomAdBannerProps> = ({
 
       <img
         src={imgSrcRight}
-        alt="gift-banner"
-        className={`gift-banner__img right ${bannerType}`}
+        alt="ad-banner"
+        className="ad-banner__img ad-banner__img--right"
       />
     </section>
   );
