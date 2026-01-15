@@ -13,8 +13,18 @@
     padding: 0.5em 0.5em;
 
     & .custom__list__item {
+      display: flex;
+      align-items: flex-start;
       padding-left: 1.5em;
       padding-right: 0.5em;
+
+      & svg {
+        margin-top: 9px;
+      }
+    }
+
+    & .custom__list__text span strong {
+      font-weight: normal;
     }
   }
 }
@@ -30,8 +40,6 @@
     &__giftlist {
       & .custom__list__item {
         padding-left: 1em;
-        display: flex;
-        align-items: flex-start;
 
         & .custom__list__icon svg {
           margin-top: 8px;

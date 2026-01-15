@@ -5,6 +5,11 @@ import bannerRight from "@assets/banner/sakura-banner-right.webp";
 import CustomAdBanner from "../CustomAdBanner/CustomAdBanner";
 
 const NewYearBanner: FC = () => {
+  const now = new Date();
+  const endOfferDate = new Date("2026-01-31T23:59:59");
+
+  const showOffer = now <= endOfferDate;
+
   return (
     <CustomAdBanner
       imgSrcLeft={bannerLeft}
@@ -23,6 +28,14 @@ const NewYearBanner: FC = () => {
           Accordez-vous un moment de <strong>massage</strong>… Un instant pour
           vous détendre, respirer et récupérer <b>en douceur</b>.
         </>,
+        ...(showOffer
+          ? [
+              <>
+                <b>Offre du moment:</b> - 20% sur{" "}
+                <strong>tous les massages</strong> jusqu'au 31 janvier 2026.
+              </>,
+            ]
+          : []),
       ]}
     />
   );
