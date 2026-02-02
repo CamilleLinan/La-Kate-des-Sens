@@ -3,12 +3,13 @@ import "./_OfferBanner.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import giftIllu from "@assets/gift-illu.webp";
+import { OFFERS_DATES } from "@utils/constants";
+import isActiveOffer from "@utils/IsActiveOffer";
+import Icon from "@assets/lotus.svg?react";
 
 const OfferBanner: FC = () => {
-  const now = new Date();
-  const endOfferDate = new Date("2026-01-31T23:59:59");
-
-  const showOffer = now <= endOfferDate;
+  const showOfferNewYear = isActiveOffer(OFFERS_DATES.newYear);
+  const showOfferValentine = isActiveOffer(OFFERS_DATES.valentine);
 
   return (
     <CustomBanner
@@ -28,17 +29,56 @@ const OfferBanner: FC = () => {
             </p>
           </article>
 
-          {showOffer && (
-            <article className="offers__block offer-banner temporary">
-              <h3 className="offers__title">Offre du Moment</h3>
-              <div className="underline"></div>
+          {showOfferNewYear ||
+            (showOfferValentine && (
+              <article className="offers__block offer-banner temporary">
+                <h3 className="offers__title">Offre du Moment</h3>
+                <div className="underline"></div>
 
-              <p className="offers__text">
-                En ce moment, profitez de <b>-20% sur tous les massages</b>{" "}
-                jusqu'au 31 janvier 2026.
-              </p>
-            </article>
-          )}
+                {showOfferNewYear && (
+                  <p className="offers__text">
+                    En ce moment, profitez de <b>-20% sur tous les massages</b>{" "}
+                    jusqu'au 31 janvier 2026.
+                  </p>
+                )}
+
+                {showOfferValentine && (
+                  <div className="offers__list">
+                    En ce moment:
+                    <ul>
+                      <li>
+                        <Icon />
+                        <span>
+                          Le massage{" "}
+                          <a
+                            href="/prestations#eveil-des-sens"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            « L'Éveil des Sens »
+                          </a>{" "}
+                          est à <b>40€</b> au lieu de 60€ (1h) ;
+                        </span>
+                      </li>
+                      <li>
+                        <Icon />
+                        <span>
+                          Le massage{" "}
+                          <a
+                            href="/prestations#carpe-diem"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            « Le CarpeDiem »
+                          </a>{" "}
+                          est à <b>50€</b> au lieu de 70€ (1h30) ;
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </article>
+            ))}
         </div>
       }
     />

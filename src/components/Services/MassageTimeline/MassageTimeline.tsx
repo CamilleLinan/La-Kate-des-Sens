@@ -9,6 +9,21 @@ const MassageTimeline: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+
+    setTimeout(() => {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 0);
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 980);
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -25,7 +40,8 @@ const MassageTimeline: FC = () => {
       <div className="massages__grid">
         {massages.map((massage, i) => (
           <div
-            key={massage.id}
+            id={massage.id}
+            key={i}
             className={`massages__block ${
               isMobile
                 ? i % 2 === 0

@@ -1,5 +1,5 @@
 export interface Massage {
-  id: number;
+  id: string;
   title: string;
   description: string;
   descriptionLong: string[];
