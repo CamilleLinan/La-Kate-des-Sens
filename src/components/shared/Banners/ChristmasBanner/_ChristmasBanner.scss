@@ -1,0 +1,67 @@
+@use "sass:color";
+@use "@scss/variables" as *;
+
+#christmas {
+  .ad-banner {
+    background-color: #fffff6;
+
+    &__img {
+      height: 160px;
+    }
+
+    &__content {
+      padding: 0 0.5em 0.5em 0.5em;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 1155px) {
+  #christmas {
+    .ad-banner {
+      &__img {
+        &--left {
+          display: none;
+        }
+
+        &--right {
+          height: 200px;
+        }
+      }
+
+      &__content {
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  #christmas {
+    .ad-banner {
+      &__img {
+        opacity: 0.5;
+        position: absolute;
+        filter: blur(0.5px);
+
+        &--left {
+          left: 0;
+        }
+
+        &--right {
+          right: 0;
+        }
+      }
+
+      &__content {
+        flex-direction: column;
+        align-items: baseline;
+        padding: 0.5em 1em 1em 1em;
+
+        & .btn {
+          margin: 1em auto 0 auto;
+        }
+      }
+    }
+  }
+}

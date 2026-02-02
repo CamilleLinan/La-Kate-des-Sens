@@ -11,7 +11,7 @@ import dos from "./images/3dos.jpg";
 
 export const massages: Massage[] = [
   {
-    id: 1,
+    id: "carpe-diem",
     title: "Massage « Carpe Diem »",
     description:
       "Enveloppant, qui invite au lâcher-prise et à la reconnexion avec soi-même.",
@@ -25,7 +25,7 @@ export const massages: Massage[] = [
     image: carpediem,
   },
   {
-    id: 2,
+    id: "eveil-des-sens",
     title: "Massage « L'Éveil des Sens »",
     description: "Fluide et relaxant, qui apaise autant le corps que l’esprit.",
     descriptionLong: [
@@ -36,7 +36,7 @@ export const massages: Massage[] = [
     image: californien,
   },
   {
-    id: 3,
+    id: "sphere-essence-ciel",
     title: "Massage « Sphère Essence Ciel »",
     description:
       "Un massage tout en douceur du décolleté, du visage et du crâne.",
@@ -48,7 +48,7 @@ export const massages: Massage[] = [
     image: visage,
   },
   {
-    id: 4,
+    id: "massage-du-dos",
     title: "Massage du Dos",
     description: "Ciblé pour libérer les tensions accumulées dans le dos.",
     descriptionLong: [
@@ -59,7 +59,7 @@ export const massages: Massage[] = [
     image: dos,
   },
   {
-    id: 5,
+    id: "massage-thai",
     title: "Massage Thaï du Pied & Jambes",
     description:
       "Stimulant, qui rééquilibre l’énergie vitale par la réflexologie plantaire.",
@@ -73,7 +73,7 @@ export const massages: Massage[] = [
     image: pied,
   },
   {
-    id: 6,
+    id: "massage-bol-kansu",
     title: "Massage au Bol Kansu",
     description:
       "Un rituel Ayurvédique apaisant qui harmonise corps et esprit.",
@@ -86,7 +86,7 @@ export const massages: Massage[] = [
     image: kansu,
   },
   {
-    id: 7,
+    id: "douceur-et-reconfort",
     title: "Massage « Douceur & Réconfort »",
     description:
       "Tendre et apaisant, pensé pour les personnes sensibles, en situation de handicap ou âgées.",
