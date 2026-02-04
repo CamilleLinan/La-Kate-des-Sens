@@ -53,10 +53,6 @@
           }
         }
       }
-
-      // &:nth-last-child(1) {
-      //   padding-top: 0.5em;
-      // }
     }
   }
 }
@@ -69,6 +65,13 @@
       justify-content: center;
       gap: 0px;
       padding-bottom: 1em;
+    }
+    &__subtitle {
+      & ul {
+        & li {
+          padding-left: 0;
+        }
+      }
     }
   }
 }
