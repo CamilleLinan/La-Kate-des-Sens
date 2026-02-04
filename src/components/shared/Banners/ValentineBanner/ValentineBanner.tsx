@@ -25,7 +25,7 @@ const ValentineBanner: FC = () => {
                 >
                   « Le CarpeDiem »
                 </a>{" "}
-                est à <b>50€</b> au lieu de 70€ (1h30) ;
+                est à <b>50€</b> au lieu de 70€ (1h30)
               </span>
             </li>
             <li>
@@ -39,7 +39,7 @@ const ValentineBanner: FC = () => {
                 >
                   « L'Éveil des Sens »
                 </a>{" "}
-                est à <b>40€</b> au lieu de 60€ (1h) ;
+                est à <b>40€</b> au lieu de 60€ (1h)
               </span>
             </li>
           </ul>
