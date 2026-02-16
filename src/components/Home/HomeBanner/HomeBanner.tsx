@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_HomeBanner.scss";
 import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
-import illu from "@assets/banner/illu_banner1.webp";
+import illu from "@assets/banner/illu_home_banner.webp";
 import ButtonBase from "../../shared/ButtonBase/ButtonBase";
 
 const HomeBanner: FC = () => {
@@ -33,7 +33,14 @@ const HomeBanner: FC = () => {
 
               <ButtonBase btnContent="Prendre rendez-vous" link="/contact" />
             </article>
-            <img src={illu} alt="banniere" className="banner__container__img" />
+
+            <div className="banner__container__shadow">
+              <img
+                src={illu}
+                alt="banniere"
+                className="banner__container__shadow__img"
+              />
+            </div>
           </div>
         }
       />
