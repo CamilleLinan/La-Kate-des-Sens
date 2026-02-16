@@ -84,7 +84,41 @@
   }
 }
 
+.frame-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 650px;
+  width: 650px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px #00000061;
+  overflow: hidden;
+  border: 0.5em solid white;
+  box-sizing: border-box;
+
+  & .photo {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+
 /* Responsive */
+@media (max-width: 680px) {
+  .frame-box {
+    width: 100%;
+    height: fit-content;
+
+    & .photo {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .services {
     & .oils__list {
@@ -131,6 +165,14 @@
           margin-top: 7px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .frame-box {
+    & .photo {
+      height: 200px;
     }
   }
 }

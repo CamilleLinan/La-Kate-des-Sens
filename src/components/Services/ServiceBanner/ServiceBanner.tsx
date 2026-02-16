@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import "./_ServiceList.scss";
+import "./_ServiceBanner.scss";
 import { services } from "@data/services";
 import { oils } from "@data/oils";
 import Icon from "@assets/lotus.svg?react";
@@ -9,6 +9,7 @@ import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import { LinkOutlined } from "@ant-design/icons";
 import { CONTACT_PARTNERSHIP } from "@utils/constants";
 import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
+import photo from "@assets/frames/photokate3.webp";
 
 const ServiceList: FC = () => {
   return (
@@ -16,6 +17,11 @@ const ServiceList: FC = () => {
       bannerContent={
         <article className="services">
           <TitleSection titleText="Mes Prestations" />
+
+          <div className="frame-box">
+            <img src={photo} alt="gift-illustration" className="photo" />
+          </div>
+
           <div className="services__content">
             <p className="services__text">
               Lorsque je me rends chez vous tout est fait pour transformer votre

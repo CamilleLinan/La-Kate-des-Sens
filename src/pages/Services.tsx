@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import ServiceList from "@components/Services/ServiceList/ServiceList";
+import ServiceList from "@components/Services/ServiceBanner/ServiceBanner";
 import MassageTimeline from "@components/Services/MassageTimeline/MassageTimeline";
 import ServiceRequest from "@components/Services/ServiceRequest/ServiceRequest";
 
