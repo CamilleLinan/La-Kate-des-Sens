@@ -3,6 +3,8 @@
 .banner__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 3em;
 
   &__text {
     font-size: 18px;
@@ -24,32 +26,62 @@
     }
   }
 
-  &__img {
-    margin-top: -2em;
-    margin-bottom: -4em;
-    width: 370px;
-    object-fit: contain;
-    opacity: 0.75;
+  &__shadow {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      pointer-events: none;
+
+      background: radial-gradient(
+        ellipse 52% 51% at center,
+        rgba(245, 240, 243, 0) 80%,
+        rgba(245, 240, 243, 0.5) 90%,
+        rgba(245, 240, 243, 1) 100%
+      );
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      opacity: 0.85;
+    }
   }
 }
 
 /* Responsive */
 @media (max-width: 980px) {
   .banner__container {
+    position: relative;
+
     & .title {
       text-align: inherit;
     }
 
     &__text {
       width: 100%;
+      z-index: 1;
 
       & .btn {
         margin: auto;
       }
     }
 
-    &__img {
-      display: none;
+    &__shadow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
     }
   }
 }
