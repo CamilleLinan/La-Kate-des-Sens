@@ -1,11 +1,13 @@
+import type { MassageOption } from "./MassageOption";
+
 export interface Massage {
   id: string;
   title: string;
   description: string;
   descriptionLong: string[];
   bonus?: string;
-  duration?: string | null;
-  price?: number | null;
-  price2?: number | null;
+  duration?: string;
+  prices?: number[];
+  options?: MassageOption[];
   image: string;
 }
