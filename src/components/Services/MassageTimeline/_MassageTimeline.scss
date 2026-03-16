@@ -12,7 +12,7 @@
       font-style: italic;
       text-align: right;
       margin-right: 3rem;
-      width: 500px;
+      max-width: 600px;
       font-size: 13px;
     }
   }
@@ -145,6 +145,10 @@
   .massages {
     &__text {
       padding: 0 1.5em;
+
+      &.bonus {
+        margin-right: 0.5rem;
+      }
     }
 
     &__grid {

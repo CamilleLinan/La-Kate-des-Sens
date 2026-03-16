@@ -87,26 +87,17 @@ export const massages: Massage[] = [
     image: kansu,
   },
   {
-    id: "douceur-et-reconfort",
-    title: "Massage « Douceur & Réconfort »",
-    description:
-      "Tendre et apaisant, pensé pour les personnes sensibles, en situation de handicap ou âgées.",
-    descriptionLong: [
-      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées, les personnes en situation de handicap ou les personnes en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
-    ],
-    duration: "30mn",
-    prices: [30],
-    image: senior,
-  },
-  {
     id: "massage-bebe",
-    title: "Massage & Ateliers bébé « 1er voyage au cœur des sens »",
+    title: "Massage & Ateliers Bébé",
+    title2: "« Premier Voyage au Cœur des Sens »",
     description:
       "Un moment de douceur et de présence pour votre bébé dès les premières semaines de vie.",
     descriptionLong: [
-      "Le massage pour bébé est une quête silencieuse, un voyage au cœur de l’essentiel. Chaque geste devient une promesse, chaque contact une présence. Le bébé guide, le parent ressent, et le cœur s’ouvre.",
+      "Offrez à votre bébé un moment de douceur, de présence et d'amour, dès les premières semaines de vie.",
+      "Le massage pour bébé est une quête silencieuse, un voyage au cœur de l’essentiel. Chaque geste devient une promesse, chaque contact une présence. On suit le rythme fragile et puissant de la vie qui commence. Le bébé guide, le parent ressent, et le cœur s’ouvre.",
       "Ce moment favorise l’attachement, apaise les tensions et crée une bulle hors du temps. Une approche douce et respectueuse, au rythme de bébé.",
-      "Les huiles utilisées sont naturelles, neutres et spécialement adaptées aux bébés.",
+      "La séance se déroule dans un cadre calme et chaleureux. Les huiles utilisées sont naturelles, neutres et spécialement adaptées aux bébés.",
+      '🎁 Le massage bébé "Premier Voyage au Coeur des Sens" peut être offert en carte cadeau. Un cadeau qui touche... au coeur. ❤️',
     ],
     bonus:
       "Bienfaits : apaise les pleurs, soulage les coliques, stimule le développement sensoriel et renforce le sentiment de sécurité affective.",
@@ -137,5 +128,17 @@ export const massages: Massage[] = [
       },
     ],
     image: bebe1,
+  },
+  {
+    id: "douceur-et-reconfort",
+    title: "Massage « Douceur & Réconfort »",
+    description:
+      "Tendre et apaisant, pensé pour les personnes sensibles, en situation de handicap ou âgées.",
+    descriptionLong: [
+      "Conçu pour offrir un moment de réconfort et de bienveillance, ce massage s’adresse particulièrement aux personnes âgées, les personnes en situation de handicap ou les personnes en quête de douceur. Ses gestes lents et enveloppants apaisent le corps et procurent une sensation de sécurité et de sérénité.",
+    ],
+    duration: "30mn",
+    prices: [30],
+    image: senior,
   },
 ];

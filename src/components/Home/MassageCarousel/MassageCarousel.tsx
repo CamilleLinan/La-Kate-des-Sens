@@ -39,7 +39,7 @@ const MassageCarousel: FC = () => {
 
               <div className="massage-card__content">
                 <h3 className="massage-card__title">
-                  {slide.title}
+                  {slide.title2 ?? slide.title}
                   {slide.option && <> - {slide.option.label}</>}
                 </h3>
 

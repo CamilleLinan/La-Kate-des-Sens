@@ -97,7 +97,9 @@ const MassageTimeline: FC = () => {
           <div className="massages--options__intro">
             <TitleSection titleText="Moments à partager" />
 
-            <h3 className="massages--options__title">{massage.title}</h3>
+            <h3 className="massages--options__title">
+              {massage.title} {massage.title2 && `- ${massage.title2}`}
+            </h3>
 
             {massage.descriptionLong.map((desc, i) => (
               <p key={i} className="massages__desc">
@@ -112,7 +114,18 @@ const MassageTimeline: FC = () => {
 
           <div className="massages--options__container">
             {massage.options?.map((option, i) => (
-              <div key={i} className="massages__block">
+              <div
+                key={i}
+                className={`massages__block ${
+                  isMobile
+                    ? i % 2 === 0
+                      ? "massages__block--light"
+                      : "massages__block--rose"
+                    : i % 3 === 1
+                      ? "massages__block--rose"
+                      : "massages__block--light"
+                }`}
+              >
                 <h4 className="massages__title">{option.label}</h4>
 
                 <p className="massages__desc">{option.description}</p>
