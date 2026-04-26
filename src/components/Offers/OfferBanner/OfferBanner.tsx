@@ -19,13 +19,22 @@ const OfferBanner: FC = () => {
           <img src={giftIllu} alt="gift-illustration" className="offers__img" />
 
           <article className="offers__block offer-banner">
-            <h3 className="offers__title">Offre Découverte</h3>
+            <h3 className="offers__title">Programme de Fidélité</h3>
             <div className="underline"></div>
 
             <p className="offers__text">
-              Profitez de <b>10€ de réduction</b> sur votre première séance de{" "}
-              <strong>massage</strong>. Une belle occasion de découvrir un
-              moment de détente et de bien-être.
+              Pour vous remercier de votre <b>fidélité</b>, chaque séance vous
+              permet de <b>cumuler des tampons</b> sur votre carte de fidélité.
+            </p>
+
+            <p className="offers__text">
+              Une fois <b>5 tampons acquis</b>, vous avez droit à{" "}
+              <b>30% de réduction</b> sur votre séance.
+            </p>
+
+            <p className="offers__text">
+              Et une fois <b>complète</b>, profitez d’un avantage exclusif : une{" "}
+              <b>séance gratuite</b> !
             </p>
           </article>
 
