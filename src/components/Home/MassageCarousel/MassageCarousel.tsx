@@ -5,8 +5,8 @@ import { ClockCircleOutlined, CreditCardOutlined } from "@ant-design/icons";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import ButtonBase from "@components/shared/ButtonBase/ButtonBase";
 import CustomCarousel from "@components/shared/CustomCarousel/CustomCarousel";
-import type { Massage } from "models/Massage";
-import type { MassageOption } from "models/MassageOption";
+import type { Massage } from "@models/Massage";
+import type { MassageOption } from "@models/MassageOption";
 
 type MassageSlide = Massage & {
   option?: MassageOption;
@@ -16,7 +16,7 @@ const MassageCarousel: FC = () => {
   const slides = massages.flatMap((massage): MassageSlide[] => {
     if (!massage.options) return [massage];
 
-    return massage.options.map((option) => ({
+    return massage.options.map((option: MassageOption) => ({
       ...massage,
       option,
     }));

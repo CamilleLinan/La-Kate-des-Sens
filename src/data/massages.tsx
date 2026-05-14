@@ -1,4 +1,4 @@
-import type { Massage } from "models/Massage";
+import type { Massage } from "@models/Massage";
 
 import carpediem from "./images/1carpediem.jpg";
 import californien from "./images/2californien.jpg";
