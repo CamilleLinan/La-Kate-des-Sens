@@ -1,4 +1,4 @@
-import type { Opinion } from "models/Opinion";
+import type { Opinion } from "@models/Opinion";
 
 export const opinions: Opinion[] = [
   {

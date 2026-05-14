@@ -1,4 +1,4 @@
-import type { Opinion } from "models/Opinion";
+import type { Opinion } from "@models/Opinion";
 
 const RandomPickShort = (items: Opinion[], count: number): Opinion[] => {
   // Select short opinions only

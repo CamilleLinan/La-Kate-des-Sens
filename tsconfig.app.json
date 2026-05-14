@@ -17,6 +17,7 @@
     "paths": {
       "@scss/*": ["./src/styles/*"],
       "@data/*": ["./src/data/*"],
+      "@models/*": ["./src/models/*"],
       "@utils/*": ["./src/utils/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"]
