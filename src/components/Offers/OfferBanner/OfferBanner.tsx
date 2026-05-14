@@ -2,10 +2,10 @@ import type { FC } from "react";
 import "./_OfferBanner.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
-import giftIllu from "@assets/gift-illu.webp";
+import giftIllu from "@assets/banner/gift-illu.webp";
 import { OFFERS_DATES } from "@utils/constants";
 import isActiveOffer from "@utils/IsActiveOffer";
-import Icon from "@assets/lotus.svg?react";
+import Icon from "@assets/icons/lotus.svg?react";
 
 const OfferBanner: FC = () => {
   const showOfferNewYear = isActiveOffer(OFFERS_DATES.newYear);

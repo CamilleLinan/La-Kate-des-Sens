@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import "./_SacredMoment.scss";
-import illu_pres from "@assets/illu_pres.webp";
+import illu_pres from "@assets/banner/illu_pres.webp";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
 import { LinkOutlined } from "@ant-design/icons";

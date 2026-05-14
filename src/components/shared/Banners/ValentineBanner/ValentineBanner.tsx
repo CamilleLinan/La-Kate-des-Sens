@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_ValentineBanner.scss";
 import banner from "@assets/banner/candles1.jpg";
-import Icon from "@assets/lotus.svg?react";
+import Icon from "@assets/icons/lotus.svg?react";
 import CustomAdBanner from "../CustomAdBanner/CustomAdBanner";
 
 const ValentineBanner: FC = () => {
