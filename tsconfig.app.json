@@ -14,14 +14,13 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
+
     "paths": {
-      "@scss/*": ["styles/*"],
-      "@data/*": ["data/*"],
-      "@utils/*": ["utils/*"],
-      "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@redux/*": ["redux/*"]
+      "@scss/*": ["./src/styles/*"],
+      "@data/*": ["./src/data/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"]
     },
 
     /* Linting */
