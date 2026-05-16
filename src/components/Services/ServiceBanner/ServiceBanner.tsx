@@ -2,14 +2,14 @@ import type { FC } from "react";
 import "./_ServiceBanner.scss";
 import { services } from "@data/services";
 import { oils } from "@data/oils";
-import Icon from "@assets/lotus.svg?react";
+import Icon from "@assets/icons/lotus.svg?react";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomList from "@components/shared/CustomList/CustomList";
 import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
 import { LinkOutlined } from "@ant-design/icons";
 import { CONTACT_PARTNERSHIP } from "@utils/constants";
 import CustomNavLink from "@components/shared/CustomNavLink/CustomNavLink";
-import photo from "@assets/frames/photokate3.webp";
+import photo from "@assets/profil/photokate3.webp";
 
 const ServiceList: FC = () => {
   return (

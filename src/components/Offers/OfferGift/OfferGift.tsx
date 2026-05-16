@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import "./_OfferGift.scss";
 import CustomList from "@components/shared/CustomList/CustomList";
-import Icon from "@assets/lotus.svg?react";
+import Icon from "@assets/icons/lotus.svg?react";
 import { offers } from "@data/offers";
 
 const OfferGift: FC = () => {

@@ -2,9 +2,8 @@ import type { FC } from "react";
 import "./_Presentation.scss";
 import TitleSection from "@components/shared/TitleSection/TitleSection";
 import CustomBanner from "@components/shared/Banners/CustomBanner/CustomBanner";
-import CustomQuote from "@components/shared/CustomQuote/CustomQuote";
-import profil from "@assets/aboutme/profil.webp";
-import sakuraFrame from "@assets/aboutme/sakura-frame.webp";
+import profil from "@assets/profil/profil.webp";
+import sakuraFrame from "@assets/profil/sakura-frame.webp";
 
 const Presentation: FC = () => {
   return (
@@ -60,25 +59,6 @@ const Presentation: FC = () => {
               </p>
             </div>
           </article>
-        }
-      />
-
-      <CustomQuote
-        text={
-          <>
-            <p className="quote__title">
-              <b>
-                « Take time to drink your tea » — Prenez le temps de boire votre
-                thé
-              </b>
-            </p>
-            <span>
-              Le bonheur est possible quand vous êtes capable de faire les
-              choses et d’être ce qui vous voulez être.
-            </span>
-            <br />
-            <cite>— Thich Nhat Hanh, Réponses du cœur</cite>
-          </>
         }
       />
     </>
