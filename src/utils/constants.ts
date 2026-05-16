@@ -7,6 +7,7 @@ export const CONTACT_INFO = {
   location: "27410 Mesnil-en-Ouche",
   facebookUrl: "https://www.facebook.com/lakatedessens",
   instagramUrl: "https://www.instagram.com/lakatedessens",
+  tiktokUrl: "https://www.tiktok.com/@lakatedessens",
 };
 
 export const CONTACT_PARTNERSHIP = {

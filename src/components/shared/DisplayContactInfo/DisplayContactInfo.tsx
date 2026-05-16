@@ -7,6 +7,7 @@ import {
   PhoneOutlined,
   MailOutlined,
   EnvironmentOutlined,
+  TikTokFilled,
 } from "@ant-design/icons";
 import { CONTACT_INFO } from "@utils/constants";
 import { NavLink } from "react-router-dom";
@@ -35,6 +36,7 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
 
       <p>
         <NavLink
+          id="instagram"
           className="link icon"
           title="Page Instagram"
           to={CONTACT_INFO.instagramUrl}
@@ -48,6 +50,7 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
 
       <p>
         <NavLink
+          id="facebook"
           className="link icon"
           title="Page Facebook"
           to={CONTACT_INFO.facebookUrl}
@@ -56,6 +59,20 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
         >
           <FacebookFilled />{" "}
           <span className="link-text">facebook.com/lakatedessens</span>
+        </NavLink>
+      </p>
+
+      <p>
+        <NavLink
+          id="tiktok"
+          className="link icon"
+          title="Page TikTok"
+          to={CONTACT_INFO.tiktokUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TikTokFilled />{" "}
+          <span className="link-text">tiktok.com/@lakatedessens</span>
         </NavLink>
       </p>
     </div>
