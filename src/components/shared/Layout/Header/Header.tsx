@@ -5,6 +5,7 @@ import {
   MenuOutlined,
   InstagramOutlined,
   FacebookFilled,
+  TikTokFilled,
 } from "@ant-design/icons";
 import { Dropdown } from "antd";
 import logo from "@assets/logo/logo_stars.webp";
@@ -125,6 +126,14 @@ const Header: FC = () => {
             rel="noopener noreferrer"
           >
             <FacebookFilled />
+          </NavLink>
+          <NavLink
+            className="link icon"
+            to={CONTACT_INFO.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TikTokFilled />
           </NavLink>
         </div>
       ),
