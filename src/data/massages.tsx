@@ -23,7 +23,7 @@ export const massages: Massage[] = [
     bonus:
       "Comprend un rituel avec un bain de pieds délassant, au début du massage. Sans oublier le Bol Kansu, un beau bijou de l’Ayurveda, à la fin du massage.",
     duration: "1h30",
-    prices: [70],
+    prices: [90],
     image: carpediem,
   },
   {

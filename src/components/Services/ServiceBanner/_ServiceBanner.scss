@@ -49,6 +49,12 @@
     background-color: $sdyClr;
     opacity: 0.5;
   }
+
+  & .link-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+  }
 }
 
 .oils__list {
@@ -165,6 +171,11 @@
           margin-top: 7px;
         }
       }
+    }
+
+    & .link-container {
+      flex-direction: column;
+      gap: 0em;
     }
   }
 }
