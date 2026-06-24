@@ -11,7 +11,8 @@ export const CONTACT_INFO = {
 };
 
 export const CONTACT_PARTNERSHIP = {
-  facebookUrl: "https://www.facebook.com/amelie.beaumet.3",
+  secretDeMiel: "https://www.facebook.com/amelie.beaumet.3",
+  laBelleVerte: "https://www.labelleverte-cosmetiquesnormands.com",
 };
 
 export const OFFERS_DATES = {
