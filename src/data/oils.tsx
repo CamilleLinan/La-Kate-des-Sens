@@ -1,1 +1,6 @@
-export const oils = ["Weleda", "Secret de miel", "Puressentiel"];
+export const oils = [
+  "Weleda",
+  "Secret de miel",
+  "Puressentiel",
+  "La Belle Verte",
+];

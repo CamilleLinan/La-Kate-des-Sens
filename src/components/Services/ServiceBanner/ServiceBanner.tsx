@@ -47,30 +47,50 @@ const ServiceList: FC = () => {
             <article className="services__partner">
               <p className="services__text">
                 <span>
-                  Parmi ces huiles, j’ai le plaisir de travailler avec la gamme{" "}
-                  <b>« Secret de Miel »</b>, connue pour ses{" "}
-                  <b>textures douces</b> et ses <b>parfums naturels</b> issus de
-                  la ruche.{" "}
-                </span>
-                <span>
-                  Grâce à mon partenariat avec Amélie Api Miel, conseillère de
-                  la marque, je sélectionne des huiles qui{" "}
-                  <b>nourrissent la peau</b> tout en offrant une expérience
-                  sensorielle <b>chaleureuse et apaisante</b>.
+                  J’utilise la gamme <b>« Secret de Miel »</b>, composée
+                  d’huiles aux textures douces et aux parfums naturels issus de
+                  la ruche. Elles accompagnent le massage en apportant une
+                  sensation de confort et une expérience sensorielle{" "}
+                  <b>douce et apaisante</b>.
                 </span>
               </p>
 
-              <CustomNavLink
-                title="Page Facebook Amélie Api Miel"
-                linkExt={CONTACT_PARTNERSHIP.facebookUrl}
-                navContent={
-                  <>
-                    <LinkOutlined />
-                    <span>Découvrir la marque</span>
-                    <span>🐝</span>
-                  </>
-                }
-              />
+              <p className="services__text">
+                <span>
+                  J’utilise également les baumes de massage{" "}
+                  <b>« La Belle Verte »</b>, élaborés à partir d’huiles
+                  végétales, de cire d’abeille et d’huiles essentielles. Leur
+                  texture fondante se transforme au contact de la peau pour
+                  faciliter le massage, tout en <b>nourrissant et hydratant</b>
+                  le corps. Ces produits sont bio et labellisés « I am Normand
+                  ».
+                </span>
+              </p>
+
+              <div className="link-container">
+                <CustomNavLink
+                  title="Page Facebook Amélie Api Miel"
+                  linkExt={CONTACT_PARTNERSHIP.secretDeMiel}
+                  navContent={
+                    <>
+                      <LinkOutlined />
+                      <span>Découvrir Secret de Miel</span>
+                      <span>🐝</span>
+                    </>
+                  }
+                />
+                <CustomNavLink
+                  title="La Belle Verte"
+                  linkExt={CONTACT_PARTNERSHIP.laBelleVerte}
+                  navContent={
+                    <>
+                      <LinkOutlined />
+                      <span>Découvrir La Belle Verte</span>
+                      <span>🌿</span>
+                    </>
+                  }
+                />
+              </div>
             </article>
 
             <div className="separator"></div>

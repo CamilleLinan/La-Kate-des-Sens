@@ -69,18 +69,38 @@ const SacredMoment: FC = () => {
             <b>sensorielle</b> supplémentaire aux massages.
             <br />
           </p>
+          <p>
+            J’utilise également les baumes de massage de Delphine{" "}
+            <b>« La Belle Verte »</b>, élaborés à partir d’ingrédients naturels
+            et biologiques. Leur texture fondante nourrit la peau tout en
+            prolongeant ce moment de <b>détente et de bien-être</b>.
+            <br />
+          </p>
 
-          <CustomNavLink
-            title="Page Facebook Amélie Api Miel"
-            linkExt={CONTACT_PARTNERSHIP.facebookUrl}
-            navContent={
-              <>
-                <LinkOutlined />
-                <span>Découvrir la marque</span>
-                <span>🐝</span>
-              </>
-            }
-          />
+          <div className="link-container">
+            <CustomNavLink
+              title="Page Facebook Amélie Api Miel"
+              linkExt={CONTACT_PARTNERSHIP.secretDeMiel}
+              navContent={
+                <>
+                  <LinkOutlined />
+                  <span>Découvrir Secret de Miel</span>
+                  <span>🐝</span>
+                </>
+              }
+            />
+            <CustomNavLink
+              title="La Belle Verte"
+              linkExt={CONTACT_PARTNERSHIP.laBelleVerte}
+              navContent={
+                <>
+                  <LinkOutlined />
+                  <span>Découvrir La Belle Verte</span>
+                  <span>🌿</span>
+                </>
+              }
+            />
+          </div>
         </div>
 
         <div className="block">

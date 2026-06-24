@@ -85,6 +85,12 @@
       }
     }
   }
+
+  .link-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+  }
 }
 
 /* Responsive */
@@ -100,6 +106,11 @@
       & .illu__pres {
         left: -20%;
       }
+    }
+
+    & .link-container {
+      flex-direction: column;
+      gap: 0em;
     }
   }
 }
