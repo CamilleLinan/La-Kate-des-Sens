@@ -30,9 +30,14 @@ const DisplayContactInfo: FC<DisplayContactInfoProps> = ({
       <p>
         <PhoneOutlined /> {CONTACT_INFO.phone}
       </p>
-      <p>
-        <MailOutlined /> {CONTACT_INFO.email}
-      </p>
+
+      <a
+        className="link icon"
+        href={`mailto:${CONTACT_INFO.email}`}
+        title="Envoyer un e-mail"
+      >
+        <MailOutlined /> <span className="link-text">{CONTACT_INFO.email}</span>
+      </a>
 
       <p>
         <NavLink
